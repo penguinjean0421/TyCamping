@@ -13,10 +13,17 @@ public class SoundManager
 
     // 타이핑 효과음
     [Header("#SFX")]
+<<<<<<< Updated upstream
     public AudioClip [] sfxClip;
     public float sfxVolume;
     public int channels;
     AudioSource [] sfxPlayer;
+=======
+    public AudioClip[] sfxClip;
+    public float sfxVolume;
+    public int channels;
+    AudioSource[] sfxPlayer;
+>>>>>>> Stashed changes
     public int channelIndex;
 
     void Awake()
@@ -29,6 +36,7 @@ public class SoundManager
     {
         // 배경음 플레이어 초기화
 
+<<<<<<< Updated upstream
         // 효과음 플레이어 초기화
     }
 
@@ -100,3 +108,7 @@ public class SoundManager
     
     }
 }
+=======
+        // 효과음 플레이어 초기화 
+    }
+>>>>>>> Stashed changes
