@@ -5,18 +5,18 @@ public class SoundManager
 {
     public static SoundManager instance;
 
-    // 배경음악
+    // �������
     [Header("#BGM")]
     public AudioClip bgmClip;
     public float bgmVolume;
     AudioSource bgmPlayer;
 
-    // 타이핑 효과음
+    // ȿ����
     [Header("#SFX")]
-    public AudioClip [] sfxClip;
+    public AudioClip[] sfxClip;
     public float sfxVolume;
     public int channels;
-    AudioSource [] sfxPlayer;
+    AudioSource[] sfxPlayer;
     public int channelIndex;
 
     void Awake()
@@ -27,7 +27,17 @@ public class SoundManager
 
     void Init()
     {
-        // 배경음 플레이어 초기화
+        // ����� �÷��̾� �ʱ�ȭ
+        GameObject bgmObject = new GameObject("BgmPlayer");
+        bgmObject.transform.parent = transform;
+        bgmPlayer = bgmObject.AddComponent<AudioSource>();
+        bgmPlayer.playOnAwake = false;
+        bgmPlayer.loop = true;
+        bgmPlayer.volume = bgmVolume;
+        bgmPlayer.clip = bgmClip;
 
-        // 효과음 플레이어 초기화 
+        // ȿ���� �÷��̾� �ʱ�ȭ
+        GameObject sfxObject = new GameObject("SfxPlayer");
+        sfxObject.transform.parent = transform;
     }
+}
