@@ -25,4 +25,16 @@ public class SoundManager
     { 
     
     }
+
+    // 타자 완성
+    public void Completion()
+    { 
+    
+    } 
+    
+    // UI 클릭
+    public void UIClick()
+    {
+
+    }
 }
