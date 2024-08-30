@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class SoundManager
 {
@@ -10,6 +11,12 @@ public class SoundManager
 
     // 오답 타이핑
     public void WrongAnswerTyping()
+    {
+
+    }
+
+    // 지우기
+    public void DeleteTyping()
     {
 
     }
