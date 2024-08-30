@@ -5,13 +5,13 @@ public class SoundManager
 {
     public static SoundManager instance;
 
-    // ¹è°æÀ½¾Ç
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     [Header("#BGM")]
     public AudioClip bgmClip;
     public float bgmVolume;
     AudioSource bgmPlayer;
 
-    // È¿°úÀ½
+    // È¿ï¿½ï¿½ï¿½ï¿½
     [Header("#SFX")]
     public AudioClip[] sfxClip;
     public float sfxVolume;
@@ -27,7 +27,7 @@ public class SoundManager
 
     void Init()
     {
-        // ¹è°æÀ½ ÇÃ·¹ÀÌ¾î ÃÊ±âÈ­
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½Ê±ï¿½È­
         GameObject bgmObject = new GameObject("BgmPlayer");
         bgmObject.transform.parent = transform;
         bgmPlayer = bgmObject.AddComponent<AudioSource>();
@@ -36,7 +36,7 @@ public class SoundManager
         bgmPlayer.volume = bgmVolume;
         bgmPlayer.clip = bgmClip;
 
-        // È¿°úÀ½ ÇÃ·¹ÀÌ¾î ÃÊ±âÈ­
+        // È¿ï¿½ï¿½ï¿½ï¿½ ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½Ê±ï¿½È­
         GameObject sfxObject = new GameObject("SfxPlayer");
         sfxObject.transform.parent = transform;
     }
