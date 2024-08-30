@@ -27,6 +27,18 @@ public class SoundManager
 
     }
 
+    // 타자 완성
+    public void Completion()
+    {
+
+    }
+
+    // UI 클릭
+    public void UIClick()
+    {
+
+    }
+
     // 전체적으로 깔리는 배경음악
     public void BackGroundMusic()
     { 
@@ -37,17 +49,5 @@ public class SoundManager
     public void EnviromentMusic()
     { 
     
-    }
-
-    // 타자 완성
-    public void Completion()
-    { 
-    
-    } 
-    
-    // UI 클릭
-    public void UIClick()
-    {
-
     }
 }
