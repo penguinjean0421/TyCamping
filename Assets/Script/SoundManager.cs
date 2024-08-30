@@ -1,15 +1,89 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class SoundManager
 {
-    // 정답 타이핑
-    public void CorrectAnswerTyping()
+    public static SoundManager instance;
+
+    // 배경음악
+    [Header("#BGM")]
+    public AudioClip bgmClip;
+    public float bgmVolume;
+    AudioSource bgmPlayer;
+
+    // 타이핑 효과음
+    [Header("#SFX")]
+    public AudioClip [] sfxClip;
+    public float sfxVolume;
+    public int channels;
+    AudioSource [] sfxPlayer;
+    public int channelIndex;
+
+    void Awake()
+    {
+        instance = this;
+        Init();
+    }
+
+    void Init()
+    {
+        // 배경음 플레이어 초기화
+
+        // 효과음 플레이어 초기화
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // 타이핑
+    public void Typing()
+    { 
+    
+    }
+
+    // 정답 
+    public void SuccessTyping()
     { 
 
     }
 
-    // 오답 타이핑
-    public void WrongAnswerTyping()
+    // 오답
+    public void FailTyping()
+    {
+
+    }
+
+    // 지우기
+    public void DeleteTyping()
+    {
+
+    }
+
+    // 타자 완성
+    public void Completion()
+    {
+
+    }
+
+    // UI 클릭
+    public void UIClick()
     {
 
     }
@@ -24,17 +98,5 @@ public class SoundManager
     public void EnviromentMusic()
     { 
     
-    }
-
-    // 타자 완성
-    public void Completion()
-    { 
-    
-    } 
-    
-    // UI 클릭
-    public void UIClick()
-    {
-
     }
 }
