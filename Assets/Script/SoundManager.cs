@@ -3,14 +3,20 @@ using UnityEngine.Audio;
 
 public class SoundManager
 {
-    // 정답 타이핑
-    public void CorrectAnswerTyping()
+    // 타이핑
+    public void Typing()
+    { 
+    
+    }
+
+    // 정답 
+    public void SuccessTyping()
     { 
 
     }
 
-    // 오답 타이핑
-    public void WrongAnswerTyping()
+    // 오답
+    public void FailTyping()
     {
 
     }
