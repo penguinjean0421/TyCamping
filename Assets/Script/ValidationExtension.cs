@@ -13,7 +13,7 @@ public static class ValidationExtension
         int i = 0;
         foreach (var c in input)
         {
-            if (!IsCorrect(c, target[i]))
+            if (i >= target.Length || !IsCorrect(c, target[i]))
             {
                 return false;
             }

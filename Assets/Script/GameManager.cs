@@ -3,6 +3,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -27,6 +28,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         CheckInput();
+        _inputField.ActivateInputField();
     }
     public void Initialize()
     {
@@ -60,11 +62,18 @@ public class GameManager : MonoBehaviour
         else if (ValidationExtension.CheckPart(_targetText.text, _inputField.text))
         {
             OnCheckPartCorrect();
-
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                ClearInputField();
+            }
         }
         else
         {
             OnCheckPartWrong();
+              if (Input.GetKeyDown(KeyCode.Return))
+            {
+                ClearInputField();
+            }
         }
     }
 
@@ -72,7 +81,6 @@ public class GameManager : MonoBehaviour
     {
         _inputField.text = "";
     }
-
     private void OnCheckPartWrong()
     {
         onCheckPartWrongEvent.Invoke();
@@ -80,7 +88,6 @@ public class GameManager : MonoBehaviour
         Debug.Log("part worng");
 #endif
     }
-
     private void OnCorrect()
     {
         onCorrectEvent.Invoke();
@@ -88,7 +95,6 @@ public class GameManager : MonoBehaviour
         Debug.Log("correct");
 #endif
     }
-
     private void OnCheckPartCorrect()
     {
         onCheckPartCorrectEvent.Invoke();
