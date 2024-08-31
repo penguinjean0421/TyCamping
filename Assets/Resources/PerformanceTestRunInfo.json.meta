@@ -1,4 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
+=======
+<<<<<<<< HEAD:Assets/Prefabs/Effects/P_StarGlow_S1-01.prefab.meta
+guid: 9ca094e3059b3f24791811c3cceefd7a
+PrefabImporter:
+========
+>>>>>>> Stashed changes
 guid: fada4b8bb0f50c34d94296bf81abdb1d
 TextScriptImporter:
   externalObjects: {}
