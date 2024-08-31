@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Script/Audio.meta
 guid: 4253cd119c54bd647b8cf757c04f99e2
+========
+guid: 4b97f0a3a4190ad47bb154495985005b
+>>>>>>>> 26eb01a88af9ee3035d66c10a97054737a3b86b6:Assets/Resources/BG/Stage1-1/Text/Old.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
