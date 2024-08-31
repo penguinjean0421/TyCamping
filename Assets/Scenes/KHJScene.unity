@@ -312,7 +312,7 @@ MonoBehaviour:
   m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_SubmitAction: {fileID: 0}
   m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
@@ -614,8 +614,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3289650
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0}
+    rgba: 0
+  m_fontColor: {r: 0, g: 0, b: 0, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -714,13 +714,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inputField: {fileID: 1868940814}
-  targetText: {fileID: 1880145450}
+  _printer: {fileID: 1692501664}
+  _preview: {fileID: 1880145450}
   _stage: {fileID: 1532599972}
   _cutNum: 3
-  onCheckPartCorrectEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  onCheckPartWrongEvent:
+  onWrongEvent:
     m_PersistentCalls:
       m_Calls: []
   onCorrectEvent:
@@ -785,15 +783,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f37945eb3558ea499c633ca959d7678, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTextList:
-  - "\uC548\uB155\uD558\uC138\uC6941\r"
-  - "\uC548\uB155\uD558\uC138\uC6942\r"
-  - "\uC548\uB155\uD558\uC138\uC6943\r"
-  - "\uC548\uB155\uD558\uC138\uC6944\r"
-  - "\uC548\uB155\uD558\uC138\uC6945\r"
-  - "\uC548\uB155\uD558\uC138\uC6946"
+  snodeList:
+  - target: "\uB450\uADFC\uB450\uADFC \uCCAB \uCEA0\uD551 \uB3D7\uC790\uB9AC"
+  - target: "\uD654\uB974\uB975 \uBAA8\uB2E5\uBD88"
+  - target: "\uB9D1\uC740 \uD55C\uB0AE\uC758 \uD558\uB298"
+  - target: "\uD478\uB974\uB978 \uC0C8\uC2F9\uC758 \uB4E4\uD310"
+  - target: "\uBB49\uAC8C\uBB49\uAC8C \uBB49\uAC8C\uAD6C\uB984"
+  - target: "\uB192\uB514\uB192\uC740 \uC18D\uB9AC\uC0B0 \uBD09\uC6B0\uB9AC"
+  - target: "\uC6B8\uCC3D\uD55C \uD478\uB978 \uC18C\uB098\uBB34"
+  - target: "\uC559\uC99D\uB9DE\uC740 \uB0AE\uC740 \uB364\uBD88"
+  - target: "\uAE5C\uCC0D\uD558\uACE0 \uADC0\uC5EC\uC6B4 \uD770\uD1A0\uB07C"
+  - target: "\uC6B0\uB9AC\uAC00\uC871\uC758 \uCCAB \uCEA0\uD551"
   index: 0
-  targetText: 
   baseAsset: {fileID: 4900000, guid: 75de6db45bdd8eb498889ce6ae9dae77, type: 3}
 --- !u!1 &1580642185
 GameObject:
@@ -883,8 +884,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 2.5}
+  m_SizeDelta: {x: 0, y: -5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1692501664
 MonoBehaviour:
@@ -930,7 +931,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
