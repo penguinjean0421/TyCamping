@@ -6,7 +6,7 @@ using static UnityEngine.GraphicsBuffer;
 
 namespace Assets.Script.Game
 {
-    public class Stage1 : StageBase
+    public class Stage1_1 : StageBase
     {
         private bool cut8flag1 = false;
         private bool cut8flag2 = false;

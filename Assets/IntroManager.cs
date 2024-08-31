@@ -5,6 +5,6 @@ public class IntroManager : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("Stage1");
+        SceneManager.LoadScene("Stage1_1");
     }
 }
