@@ -48,7 +48,7 @@ public class TextAnimationInputFieldHighlighter : MonoBehaviour
         _printer.PrintImmediate();
         if (text.Length > 1)
         {
-            // Debug.Log("Length : " + text.Length + " Highlight : " + text);
+            AudioManager.instance.PlaySfx(AudioManager.Sfx.Typing);
             if (scaleHandler != null)
             {
                 scaleHandler.Rewind();
