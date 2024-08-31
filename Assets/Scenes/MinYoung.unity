@@ -326,7 +326,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bgmClip: {fileID: 0}
   bgmVolume: 0
-  sfxClips: []
+  sfxClips:
+  - {fileID: 8300000, guid: f4869179537b298479c75b9421cf068f, type: 3}
+  - {fileID: 8300000, guid: b26ad321656478443b72aaf2a0b83446, type: 3}
+  - {fileID: 8300000, guid: cd51d43bdf0eee94a9399eca99df4ba2, type: 3}
+  - {fileID: 8300000, guid: 10144227306a537428640ebc32a9b7d9, type: 3}
   sfxVolume: 0
   channels: 0
 --- !u!1 &905775188

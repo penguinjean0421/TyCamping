@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using System.Text;
 using UnityEngine.UI;
+using static UnityEngine.Rendering.DebugUI;
 
 [RequireComponent(typeof(TMP_InputField))]
 public class TextAnimationInputFieldHighlighter : MonoBehaviour
@@ -48,7 +49,7 @@ public class TextAnimationInputFieldHighlighter : MonoBehaviour
         _printer.PrintImmediate();
         if (text.Length > 1)
         {
-            Debug.Log("Length : " + text.Length + " Highlight : " + text);
+           // Debug.Log("Length : " + text.Length + " Highlight : " + text);
             if (scaleHandler != null)
             {
                 scaleHandler.Rewind();
@@ -73,6 +74,5 @@ public class TextAnimationInputFieldHighlighter : MonoBehaviour
         byte[] temp = Encoding.Unicode.GetBytes(s);
         return temp.Length;
     }
-
 
 }

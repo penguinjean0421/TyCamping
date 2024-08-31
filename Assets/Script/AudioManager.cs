@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class AudioManager : MonoBehaviour
 {
@@ -18,7 +20,11 @@ public class AudioManager : MonoBehaviour
     AudioSource[] sfxPlayers;
     int channelIndex;
 
-    public enum Sfx { Dead, Hit, LevelUp = 3, Lose, Melee, Range = 7, Select, Win };
+    public enum Sfx
+    {
+        Typing, EnterHit, BackSpaceHit, Button
+    }
+
 
     void Awake()
     {
@@ -54,20 +60,17 @@ public class AudioManager : MonoBehaviour
     {
         for (int index = 0; index < sfxPlayers.Length; index++)
         {
-            int loopIndex = (index + channelIndex) % sfxPlayers.Length;
+            int loopindex = (index + channelIndex) % sfxPlayers.Length;
 
-            if (sfxPlayers[loopIndex].isPlaying)
-                continue;
-
-            int ranIndex = 0;
-            if (sfx == Sfx.Hit || sfx == Sfx.Melee)
+            if (sfxPlayers[loopindex].isPlaying)
             {
-                ranIndex = Random.Range(0, 2);
+                continue;
             }
 
-            channelIndex = loopIndex;
-            sfxPlayers[loopIndex].clip = sfxClips[(int)sfx];
-            sfxPlayers[loopIndex].Play();
+            channelIndex = loopindex;
+            sfxPlayers[loopindex].clip = sfxClips[(int)sfx];
+            sfxPlayers[loopindex].Play();
+            
             break;
         }
     }
