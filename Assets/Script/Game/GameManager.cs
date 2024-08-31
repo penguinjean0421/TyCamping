@@ -1,20 +1,10 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
 using Assets.Script.Game;
 using DG.Tweening;
 using TMPro;
-using Unity.VisualScripting;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-using Util;
-using static UnityEngine.GraphicsBuffer;
-using static UnityEngine.Rendering.DebugUI;
 
 public class GameManager : MonoBehaviour
 {
@@ -85,7 +75,7 @@ public class GameManager : MonoBehaviour
             bool isCorrect = false;
             foreach (var snode in snodeList)
             {
-                if (ValidationExtension.IsCorrect(snode.target, currentInputText))
+                if (!ValidationExtension.IsCorrect(snode.target, currentInputText))
                 {
                     snodeList.Remove(snode);
                     snode.hint.DOColor(new Vector4(1, 1, 1, 0), 1.0f).OnComplete(() =>
