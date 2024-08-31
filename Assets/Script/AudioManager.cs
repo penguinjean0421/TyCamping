@@ -22,7 +22,7 @@ public class AudioManager : MonoBehaviour
 
     public enum Sfx
     {
-        SfxTyping, SfxEnterHit, SfxBackSpaceHit, SfxButton
+        Typing, EnterHit, BackSpaceHit, Button
     }
 
 
