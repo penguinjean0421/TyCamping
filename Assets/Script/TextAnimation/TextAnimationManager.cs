@@ -8,6 +8,7 @@ public class TextAnimationManager : MonoBehaviour
 {
     [SerializeField] private TextAnimationAsset dialogAsset;
     [SerializeField] private SpeechBubble speechBubble;
+    [SerializeField] private Image image;
 
     [SerializeField] private int currentIndex;
 
@@ -19,6 +20,7 @@ public class TextAnimationManager : MonoBehaviour
     {
         var data = dialogAsset.speechBubbles[index];
         //speechBubble.SetSprite(data.sprite);
+        image.sprite = data.sprite;
         speechBubble.SetPosition(transform.position = data.position);
         speechBubble.SetSize(data.size);
         speechBubble.Print(dialogAsset.phrases[index]);

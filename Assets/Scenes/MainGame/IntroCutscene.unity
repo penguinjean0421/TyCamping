@@ -228,6 +228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogAsset: {fileID: 11400000, guid: 24d0d073e287c244a851df9f10b9190f, type: 2}
   speechBubble: {fileID: 2111518655}
+  image: {fileID: 904713679}
   currentIndex: 0
   key: 323
   endEvent:
