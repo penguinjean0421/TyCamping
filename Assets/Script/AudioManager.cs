@@ -33,7 +33,7 @@ public class AudioManager : MonoBehaviour
     
     public enum EnvirBgm
     {
-        Stage11, Stage12, Stage13, Stage14, Stage15
+        Stage11, Stage12, Stage21, Stage22, Stage31, Stage32
     }
 
 
@@ -51,7 +51,16 @@ public class AudioManager : MonoBehaviour
 
     void Init()
     {
-        //환경음 플레이어 초기화
+        // 배경�악 초기
+        GameObject bgmObject = new GameObject("BgmPlayer");
+        bgmObject.transform.parent = transform;
+        bgmPlayer = bgmObject.AddComponent<AudioSource>();
+        bgmPlayer.playOnAwake = false;
+        bgmPlayer.loop = true;
+        bgmPlayer.volume = bgmVolume;
+        bgmPlayer.clip = bgmClip;
+
+        //�경�레�어 초기
         GameObject envirBgmObject = new GameObject("EnvirBgmPlayer");
         envirBgmObject.transform.parent = transform;
         envirBgmPlayers = new AudioSource[envirBgmChannels];
@@ -60,15 +69,11 @@ public class AudioManager : MonoBehaviour
         {
             envirBgmPlayers[index] = envirBgmObject.AddComponent<AudioSource>();
             envirBgmPlayers[index].volume = sfxVolume;
+            envirBgmPlayers[index].playOnAwake = false;
             envirBgmPlayers[index].loop = true;
         }
-        //bgmPlayer = bgmObject.AddComponent<AudioSource>();
-        //bgmPlayer.playOnAwake = false;
-        //bgmPlayer.loop = true;
-        //bgmPlayer.volume = bgmVolume;
-        //bgmPlayer.clip = bgmClip;
-
-        //효과음 플레이어 초기화
+    
+        //�과�레�어 초기
         GameObject sfxObject = new GameObject("SfxObject");
         sfxObject.transform.parent = transform;
         sfxPlayers = new AudioSource[sfxChannels];
@@ -81,7 +86,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    // 배경음악 재생
+    // 배경�악 �생
     public void PlayBGM(bool isPlay)
     {
         if (isPlay)
@@ -95,11 +100,9 @@ public class AudioManager : MonoBehaviour
     }
 
 
-    // 환경음악 재생
+    // �경�악 �생
     public void PlayEnvirBgm(EnvirBgm envirBgm)
     {
-        // 루프 추가 예정
-
         for (int index = 0; index < sfxPlayers.Length; index++)
         {
             int loopindex = (index + channelIndex) % envirBgmPlayers.Length;
@@ -118,7 +121,7 @@ public class AudioManager : MonoBehaviour
     }
 
 
-    // 효과음 재생
+    // �과�생
     public void PlaySfx(Sfx sfx)
     {
         for (int index = 0; index < sfxPlayers.Length; index++)
