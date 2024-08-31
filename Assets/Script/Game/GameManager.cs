@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using Assets.Script.Game;
+using DG.Tweening;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEditor.SceneManagement;
@@ -19,19 +20,19 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TMP_InputField _inputField;
     [SerializeField] private TextAnimationPrinter _printer;
     [SerializeField] private TMP_Text _preview;
+    [SerializeField] private TMP_Text _clearCountText;
 
     public static List<SNode> snodeList;
+    public int clearCount=0;
 
     [SerializeField] private StageBase _stage;
-
-    [SerializeField] private int _cutNum = 3;
 
     private string currentInputText;
 
     public UnityEvent onWrongEvent;
     public UnityEvent onCorrectEvent;
 
-    private void Start()
+    private void Awake()
     {
         Initialize();
     }
@@ -46,6 +47,9 @@ public class GameManager : MonoBehaviour
         {
             _preview.text += snode.target + "\n";
         }
+
+        _clearCountText.text = clearCount + "/" +_stage.snodeList.Count;
+
     }
     public void Initialize()
     {
@@ -68,12 +72,18 @@ public class GameManager : MonoBehaviour
             bool isCorrect = false;
             foreach (var snode in snodeList)
             {
-                if (ValidationExtension.IsCorrect(snode.target, currentInputText))
+                if (!ValidationExtension.IsCorrect(snode.target, currentInputText))
                 {
                     snodeList.Remove(snode);
                     snode.action.Invoke();
                     OnCorrect();
                     isCorrect = true;
+                    _clearCountText.transform.DOShakeScale(0.1f, Vector3.one * 0.5f);
+                    _inputField.transform.DOMoveY(-5, 0.5f).SetRelative().OnComplete(() =>
+                    {
+                        _inputField.transform.DOMoveY(5, 1f).SetRelative();
+                    });
+                    clearCount++;
                     break;
                 }
 

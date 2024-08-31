@@ -6,6 +6,7 @@ using System.Reflection;
 using System.Runtime.Serialization;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 [ExecuteAlways]
@@ -54,15 +55,9 @@ public class SpeechBubble : MonoBehaviour
 
     public void Print(string text)
     {
-        _printer.StopPrinting();
         _printer.SetText(text);
-        transform.localScale = Vector3.zero;
-        transform.DOScale(Vector3.one, appearDuration)
-            .SetEase(appearEase)
-            .OnComplete(() =>
-            {
-                StartCoroutine(_printer.Print());
-            });
+        _printer.StopPrinting(); 
+        StartCoroutine(_printer.Print());
     }
 
     public void PrintImmediate(string text)
@@ -88,7 +83,7 @@ public class SpeechBubble : MonoBehaviour
         {
             position = _rectTransform.localPosition,
             size = _rectTransform.sizeDelta,
-            sprite = _image.sprite,
+            //sprite = _image.sprite,
             appearEase = appearEase,
             appearDuration = appearDuration
         };
@@ -99,7 +94,7 @@ public class SpeechBubble : MonoBehaviour
     {
         _rectTransform.localPosition = data.position;
         _rectTransform.sizeDelta = data.size;
-        _image.sprite = data.sprite;
+        //_image.sprite = data.sprite;
         appearEase = data.appearEase;
         appearDuration = data.appearDuration;
     }
