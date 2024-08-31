@@ -29,7 +29,11 @@ namespace Assets.Script.Game
             {
                 snode.spriteGroup.SetActive(false);
             }
+
             //사운드 BGM
+            AudioManager.instance.PlayBGM(true);
+            AudioManager.instance.PlayEnvirBgm(AudioManager.EnvirBgm.Stage11, true);
+
         }
 
         public void OnCutActive0()
@@ -181,6 +185,8 @@ namespace Assets.Script.Game
             snodeList[9].spriteGroup.transform.GetChild(0).position = snodeList[9].spriteGroup.transform.GetChild(0).position - Vector3.up * 0.5f;
             snodeList[9].spriteGroup.transform.GetChild(0).DOMoveY(0.5f, 0.5f).SetRelative();
             Debug.Log("우리가족의 첫 캠핑");
+
+            AudioManager.instance.PlayEnvirBgm(AudioManager.EnvirBgm.Stage11, false);
         }
     }
 }
