@@ -52,7 +52,7 @@ public class TextAnimationManager : MonoBehaviour
         if (Input.GetKeyDown(key) && !speechBubble.IsPrinting() && currentIndex < dialogAsset.phrases.Count - 1)
         {
             currentIndex++;
-            if (currentIndex < dialogAsset.phrases.Count - 1)
+            if (currentIndex < dialogAsset.phrases.Count)
             {
                 ShowDialog(currentIndex);
             }
