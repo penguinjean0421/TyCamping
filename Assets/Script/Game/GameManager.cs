@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TMP_Text _clearCountText;
     [SerializeField] private RectTransform finishUI;
     [SerializeField] private StageBase _stage;
+    [SerializeField] private CharacterManager characterManager;
 
     public static List<SNode> snodeList;
     public int clearCount=0;
@@ -37,6 +38,7 @@ public class GameManager : MonoBehaviour
     {
         Initialize();
     }
+
 
     private void LateUpdate()
     {
@@ -58,6 +60,8 @@ public class GameManager : MonoBehaviour
     {
         snodeList = new List<SNode>();
         finishUI.gameObject.SetActive(false);
+
+
     }
 
 
@@ -81,7 +85,7 @@ public class GameManager : MonoBehaviour
             bool isCorrect = false;
             foreach (var snode in snodeList)
             {
-                if (!ValidationExtension.IsCorrect(snode.target, currentInputText))
+                if (ValidationExtension.IsCorrect(snode.target, currentInputText))
                 {
                     snodeList.Remove(snode);
                     snode.hint.DOColor(new Vector4(1, 1, 1, 0), 1.0f).OnComplete(() =>
@@ -103,12 +107,19 @@ public class GameManager : MonoBehaviour
                         finishUI.gameObject.SetActive(true);
                     }
 
+                    // 캐릭터 성공 액션
+                    characterManager.SuccessAction();
+
                     break;
                 }
             }
             if (!isCorrect)
             {
                 OnWrong();
+
+                // 캐릭터 실패 액션
+                characterManager.FailureAction();
+
             }
 
             ClearInputField();
