@@ -16,9 +16,15 @@ public class AudioManager : MonoBehaviour
     [Header("#SFX")]
     public AudioClip[] sfxClips;
     public float sfxVolume;
-    public int channels;
+    public int sfxChannels;
     AudioSource[] sfxPlayers;
     int channelIndex;
+
+    public enum Bgm
+    {
+        Stage11, Stage12, Stage13, Stage14, Stage15
+    }
+
 
     public enum Sfx
     {
@@ -46,7 +52,7 @@ public class AudioManager : MonoBehaviour
         //효과음 플레이어 초기화
         GameObject sfxObject = new GameObject("SfxObject");
         sfxObject.transform.parent = transform;
-        sfxPlayers = new AudioSource[channels];
+        sfxPlayers = new AudioSource[sfxChannels];
 
         for (int index = 0; index < sfxPlayers.Length; index++)
         {
@@ -56,6 +62,21 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    // 배경음악 재생
+    public void PlayBGM(bool isPlay)
+    {
+        if(isPlay)
+        {
+            bgmPlayer.Play();
+        }
+        else
+        {
+            bgmPlayer.Stop();
+        }
+    }
+
+
+    // 효과음 재생
     public void PlaySfx(Sfx sfx)
     {
         for (int index = 0; index < sfxPlayers.Length; index++)
