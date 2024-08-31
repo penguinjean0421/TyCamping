@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Linq;
 using DG.Tweening;
 using System.Text.RegularExpressions;
@@ -43,13 +43,12 @@ public class TextAnimationInputFieldHighlighter : MonoBehaviour
 
     public void Highlight(string text)
     {
-
         _printer.textComponent.ClearMesh();
         _printer.SetText(text);
         _printer.PrintImmediate();
         if (text.Length > 1)
         {
-           // Debug.Log("Length : " + text.Length + " Highlight : " + text);
+            // Debug.Log("Length : " + text.Length + " Highlight : " + text);
             if (scaleHandler != null)
             {
                 scaleHandler.Rewind();
