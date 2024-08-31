@@ -1,0 +1,3731 @@
+fileFormatVersion: 2
+guid: ba4bc7e27154d0449b223f0f860e0103
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7694502624460167473
+    second: TitleBG_MapIcon_0
+  - first:
+      213: -7884646924055318900
+    second: TitleBG_MapIcon_1
+  - first:
+      213: -6619680022829142520
+    second: TitleBG_MapIcon_2
+  - first:
+      213: -3937427109086813768
+    second: TitleBG_MapIcon_3
+  - first:
+      213: -9154293521518984603
+    second: TitleBG_MapIcon_4
+  - first:
+      213: -2509396899288273002
+    second: TitleBG_MapIcon_5
+  - first:
+      213: 782407729188756347
+    second: TitleBG_MapIcon_6
+  - first:
+      213: 6318429830503719230
+    second: TitleBG_MapIcon_7
+  - first:
+      213: 8481861639025651554
+    second: TitleBG_MapIcon_8
+  - first:
+      213: -2294316945896163105
+    second: TitleBG_MapIcon_9
+  - first:
+      213: -8519125561879069683
+    second: TitleBG_MapIcon_10
+  - first:
+      213: -251773148467874311
+    second: TitleBG_MapIcon_11
+  - first:
+      213: -7299020514300969537
+    second: TitleBG_MapIcon_12
+  - first:
+      213: 5066405481057066576
+    second: TitleBG_MapIcon_13
+  - first:
+      213: 3631114348347303378
+    second: TitleBG_MapIcon_14
+  - first:
+      213: 6767026260321178063
+    second: TitleBG_MapIcon_15
+  - first:
+      213: 976182503385167493
+    second: TitleBG_MapIcon_16
+  - first:
+      213: -1264845951070283823
+    second: TitleBG_MapIcon_17
+  - first:
+      213: -2538858542718005155
+    second: TitleBG_MapIcon_18
+  - first:
+      213: -2165928619123775893
+    second: TitleBG_MapIcon_19
+  - first:
+      213: 7290548078527155025
+    second: TitleBG_MapIcon_20
+  - first:
+      213: -6258333056397869236
+    second: TitleBG_MapIcon_21
+  - first:
+      213: -3521998421832673333
+    second: TitleBG_MapIcon_22
+  - first:
+      213: -4552512273363262409
+    second: TitleBG_MapIcon_23
+  - first:
+      213: 405067575858364087
+    second: TitleBG_MapIcon_24
+  - first:
+      213: 4156368160692308472
+    second: TitleBG_MapIcon_25
+  - first:
+      213: -3362505919514070590
+    second: TitleBG_MapIcon_26
+  - first:
+      213: -2351189205952813914
+    second: TitleBG_MapIcon_27
+  - first:
+      213: 8061484135283432978
+    second: TitleBG_MapIcon_28
+  - first:
+      213: 2608725965361397897
+    second: TitleBG_MapIcon_29
+  - first:
+      213: 7599379355720872147
+    second: TitleBG_MapIcon_30
+  - first:
+      213: -478525371184818682
+    second: TitleBG_MapIcon_31
+  - first:
+      213: 6453942904312591024
+    second: TitleBG_MapIcon_32
+  - first:
+      213: -3454038198164728477
+    second: TitleBG_MapIcon_33
+  - first:
+      213: -4803838743408386745
+    second: TitleBG_MapIcon_34
+  - first:
+      213: 4999488838899130631
+    second: TitleBG_MapIcon_35
+  - first:
+      213: -664523068617462884
+    second: TitleBG_MapIcon_36
+  - first:
+      213: 6887530689566979852
+    second: TitleBG_MapIcon_37
+  - first:
+      213: -2830095120375901361
+    second: TitleBG_MapIcon_38
+  - first:
+      213: 2101255115110012895
+    second: TitleBG_MapIcon_39
+  - first:
+      213: -6376352014687200748
+    second: TitleBG_MapIcon_40
+  - first:
+      213: -8207660674328649468
+    second: TitleBG_MapIcon_41
+  - first:
+      213: -7629938151030798857
+    second: TitleBG_MapIcon_42
+  - first:
+      213: -5265063908897173178
+    second: TitleBG_MapIcon_43
+  - first:
+      213: -3629894763635630569
+    second: TitleBG_MapIcon_44
+  - first:
+      213: 1462276064422445770
+    second: TitleBG_MapIcon_45
+  - first:
+      213: -2788042364791079011
+    second: TitleBG_MapIcon_46
+  - first:
+      213: 188406472744962206
+    second: TitleBG_MapIcon_47
+  - first:
+      213: 3987759478993754843
+    second: TitleBG_MapIcon_48
+  - first:
+      213: 1925960165246968351
+    second: TitleBG_MapIcon_49
+  - first:
+      213: 7092420248306771750
+    second: TitleBG_MapIcon_50
+  - first:
+      213: 424293093276161553
+    second: TitleBG_MapIcon_51
+  - first:
+      213: -8018007051658810396
+    second: TitleBG_MapIcon_52
+  - first:
+      213: -1661531034004006185
+    second: TitleBG_MapIcon_53
+  - first:
+      213: -1168146409572194817
+    second: TitleBG_MapIcon_54
+  - first:
+      213: 3799019097636699882
+    second: TitleBG_MapIcon_55
+  - first:
+      213: -5489546999744005562
+    second: TitleBG_MapIcon_56
+  - first:
+      213: 9146431112437148066
+    second: TitleBG_MapIcon_57
+  - first:
+      213: -808789666425109238
+    second: TitleBG_MapIcon_58
+  - first:
+      213: 6059558387765027031
+    second: TitleBG_MapIcon_59
+  - first:
+      213: 4751630531470479666
+    second: TitleBG_MapIcon_60
+  - first:
+      213: -6634329897630229057
+    second: TitleBG_MapIcon_61
+  - first:
+      213: -870364183866147733
+    second: TitleBG_MapIcon_62
+  - first:
+      213: 3467463710169916517
+    second: TitleBG_MapIcon_63
+  - first:
+      213: 431222752840481390
+    second: TitleBG_MapIcon_64
+  - first:
+      213: 3434383637418457469
+    second: TitleBG_MapIcon_65
+  - first:
+      213: -2361859102776412513
+    second: TitleBG_MapIcon_66
+  - first:
+      213: 8947122216372734834
+    second: TitleBG_MapIcon_67
+  - first:
+      213: -6668064604904654542
+    second: TitleBG_MapIcon_68
+  - first:
+      213: -1964519255326202701
+    second: TitleBG_MapIcon_69
+  - first:
+      213: 1613297628309639707
+    second: TitleBG_MapIcon_70
+  - first:
+      213: 698083870406709989
+    second: TitleBG_MapIcon_71
+  - first:
+      213: -2080080396575018764
+    second: TitleBG_MapIcon_72
+  - first:
+      213: -9130307862011986949
+    second: TitleBG_MapIcon_73
+  - first:
+      213: 3968301624716788655
+    second: TitleBG_MapIcon_74
+  - first:
+      213: 3662022868141695298
+    second: TitleBG_MapIcon_75
+  - first:
+      213: 3797056073504918624
+    second: TitleBG_MapIcon_76
+  - first:
+      213: 1892527152753813777
+    second: TitleBG_MapIcon_77
+  - first:
+      213: -50113936602919892
+    second: TitleBG_MapIcon_78
+  - first:
+      213: -5057398959102299788
+    second: TitleBG_MapIcon_79
+  - first:
+      213: 2519634569101590201
+    second: TitleBG_MapIcon_80
+  - first:
+      213: -5038320848075486398
+    second: TitleBG_MapIcon_81
+  - first:
+      213: -5368007836149051990
+    second: TitleBG_MapIcon_82
+  - first:
+      213: -797614524259861035
+    second: TitleBG_MapIcon_83
+  - first:
+      213: 3571987715455471819
+    second: TitleBG_MapIcon_84
+  - first:
+      213: 2394392611285778538
+    second: TitleBG_MapIcon_85
+  - first:
+      213: -6012321460368200363
+    second: TitleBG_MapIcon_86
+  - first:
+      213: -8407344409148629176
+    second: TitleBG_MapIcon_87
+  - first:
+      213: -191128563829119984
+    second: TitleBG_MapIcon_88
+  - first:
+      213: -8375507278884925968
+    second: TitleBG_MapIcon_89
+  - first:
+      213: 7207789196199482381
+    second: TitleBG_MapIcon_90
+  - first:
+      213: -1937691005242035587
+    second: TitleBG_MapIcon_91
+  - first:
+      213: 9038873457432137932
+    second: TitleBG_MapIcon_92
+  - first:
+      213: -2948554668602781479
+    second: TitleBG_MapIcon_93
+  - first:
+      213: -3901492397381356621
+    second: TitleBG_MapIcon_94
+  - first:
+      213: -6685007080576813831
+    second: TitleBG_MapIcon_95
+  - first:
+      213: 2250193784296094178
+    second: TitleBG_MapIcon_96
+  - first:
+      213: -3363585284532028602
+    second: TitleBG_MapIcon_97
+  - first:
+      213: -2073981435783010829
+    second: TitleBG_MapIcon_98
+  - first:
+      213: -8621624180745134719
+    second: TitleBG_MapIcon_99
+  - first:
+      213: 1536522242372321025
+    second: TitleBG_MapIcon_100
+  - first:
+      213: -1929294281747509314
+    second: TitleBG_MapIcon_101
+  - first:
+      213: -8062522401655473565
+    second: TitleBG_MapIcon_102
+  - first:
+      213: 7994141423153128862
+    second: TitleBG_MapIcon_103
+  - first:
+      213: -1367891762851507662
+    second: TitleBG_MapIcon_104
+  - first:
+      213: 6996877206440853408
+    second: TitleBG_MapIcon_105
+  - first:
+      213: -1427645642553124111
+    second: TitleBG_MapIcon_106
+  - first:
+      213: 7985928088738036987
+    second: TitleBG_MapIcon_107
+  - first:
+      213: -3921849160461498019
+    second: TitleBG_MapIcon_108
+  - first:
+      213: -446187671162788874
+    second: TitleBG_MapIcon_109
+  - first:
+      213: -6257111704424703927
+    second: TitleBG_MapIcon_110
+  - first:
+      213: 5173674410534163247
+    second: TitleBG_MapIcon_111
+  - first:
+      213: -4560778295812132170
+    second: TitleBG_MapIcon_112
+  - first:
+      213: 7534341817050853561
+    second: TitleBG_MapIcon_113
+  - first:
+      213: 1721454052593848999
+    second: TitleBG_MapIcon_114
+  - first:
+      213: 2769375924080204269
+    second: TitleBG_MapIcon_115
+  - first:
+      213: 2709994414042225945
+    second: TitleBG_MapIcon_116
+  - first:
+      213: 8304847999348454359
+    second: TitleBG_MapIcon_117
+  - first:
+      213: 5022840142587416442
+    second: TitleBG_MapIcon_118
+  - first:
+      213: -7614587783908033354
+    second: TitleBG_MapIcon_119
+  - first:
+      213: -512856058622453930
+    second: TitleBG_MapIcon_120
+  - first:
+      213: 3238213195121254286
+    second: TitleBG_MapIcon_121
+  - first:
+      213: 6929310877424316141
+    second: TitleBG_MapIcon_122
+  - first:
+      213: 7208302273645817511
+    second: TitleBG_MapIcon_123
+  - first:
+      213: 6421029469492604663
+    second: TitleBG_MapIcon_124
+  - first:
+      213: -8992653939687934163
+    second: TitleBG_MapIcon_125
+  - first:
+      213: 5891488053397449781
+    second: TitleBG_MapIcon_126
+  - first:
+      213: -3454449731094747429
+    second: TitleBG_MapIcon_127
+  - first:
+      213: 2595191834822213176
+    second: TitleBG_MapIcon_128
+  - first:
+      213: -7678454490745266266
+    second: TitleBG_MapIcon_129
+  - first:
+      213: -2081302350982841651
+    second: TitleBG_MapIcon_130
+  - first:
+      213: -1713600397136050535
+    second: TitleBG_MapIcon_131
+  - first:
+      213: -6341232433877521767
+    second: TitleBG_MapIcon_132
+  - first:
+      213: 7882404664237365463
+    second: TitleBG_MapIcon_133
+  - first:
+      213: -7805200133386025277
+    second: TitleBG_MapIcon_134
+  - first:
+      213: -2173894974947106907
+    second: TitleBG_MapIcon_135
+  - first:
+      213: 2374891399987107883
+    second: TitleBG_MapIcon_136
+  - first:
+      213: 95449357447739772
+    second: TitleBG_MapIcon_137
+  - first:
+      213: 126251274094726209
+    second: TitleBG_MapIcon_138
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_0
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 957
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1395246ae5d58ca60800000000000000
+      internalID: 7694502624460167473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_1
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 959
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8e6e40b56b149290800000000000000
+      internalID: -7884646924055318900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_2
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 962
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80ee480871c2224a0800000000000000
+      internalID: -6619680022829142520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_3
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 908
+        width: 147
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b123e9d7e27b59c0800000000000000
+      internalID: -3937427109086813768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_4
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 945
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56283303b8a65f080800000000000000
+      internalID: -9154293521518984603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_5
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 944
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69fa471c0d4dc2dd0800000000000000
+      internalID: -2509396899288273002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_6
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 889
+        width: 217
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7bd0df2fababda00800000000000000
+      internalID: 782407729188756347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_7
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 959
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e31e76154729fa750800000000000000
+      internalID: 6318429830503719230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_8
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 956
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26fe22cc830a5b570800000000000000
+      internalID: 8481861639025651554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_9
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 957
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd833bdb4e2f820e0800000000000000
+      internalID: -2294316945896163105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_10
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 925
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c7f3f007cf5c980800000000000000
+      internalID: -8519125561879069683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_11
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 930
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f53799c7a5818cf0800000000000000
+      internalID: -251773148467874311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_12
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 934
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbd3dcc938ba4ba90800000000000000
+      internalID: -7299020514300969537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_13
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 884
+        width: 83
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05e9f7a21fc7f4640800000000000000
+      internalID: 5066405481057066576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_14
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 849
+        width: 135
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d5a018e24f446230800000000000000
+      internalID: 3631114348347303378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_15
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 939
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc11f20d78e49ed50800000000000000
+      internalID: 6767026260321178063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_16
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 930
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 586793690d81c8d00800000000000000
+      internalID: 976182503385167493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_17
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 928
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d75dd61f4d527ee0800000000000000
+      internalID: -1264845951070283823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_18
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 939
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d50d35a5b9924ccd0800000000000000
+      internalID: -2538858542718005155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_19
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 835
+        width: 131
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b666640856311f1e0800000000000000
+      internalID: -2165928619123775893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_20
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 865
+        width: 135
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15b8486b9da3d2560800000000000000
+      internalID: 7290548078527155025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_21
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 867
+        width: 45
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4ff1574e3fe529a0800000000000000
+      internalID: -6258333056397869236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_22
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 891
+        width: 45
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc75d2f78195f1fc0800000000000000
+      internalID: -3521998421832673333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_23
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 794
+        width: 124
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 734a396253a32d0c0800000000000000
+      internalID: -4552512273363262409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_24
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 736
+        width: 278
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bef01960d61f9500800000000000000
+      internalID: 405067575858364087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_25
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 829
+        width: 136
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f90fcd12d26ea930800000000000000
+      internalID: 4156368160692308472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_26
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 851
+        width: 84
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c137387eaaf551d0800000000000000
+      internalID: -3362505919514070590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_27
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 809
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a42373dfd5ee5fd0800000000000000
+      internalID: -2351189205952813914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_28
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 658
+        width: 179
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21e14060c1520ef60800000000000000
+      internalID: 8061484135283432978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_29
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 818
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98044b1a17e043420800000000000000
+      internalID: 2608725965361397897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_30
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 820
+        width: 7
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d0fd23c24b667960800000000000000
+      internalID: 7599379355720872147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_31
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 822
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6065482d5bfeb59f0800000000000000
+      internalID: -478525371184818682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_32
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 776
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b2743480e2019950800000000000000
+      internalID: 6453942904312591024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_33
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 777
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 365d2cd1f8ac010d0800000000000000
+      internalID: -3454038198164728477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_34
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 778
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d52ec5d16555db0800000000000000
+      internalID: -4803838743408386745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_35
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 641
+        width: 182
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 701ec1d4c90c16540800000000000000
+      internalID: 4999488838899130631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_36
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 699
+        width: 160
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9be0063ac327c6f0800000000000000
+      internalID: -664523068617462884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_37
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 696
+        width: 235
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c07bd33abac659f50800000000000000
+      internalID: 6887530689566979852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_38
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 738
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f439d658b7b79b8d0800000000000000
+      internalID: -2830095120375901361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_39
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 740
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd7da9ee468292d10800000000000000
+      internalID: 2101255115110012895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_40
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 744
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a19b140a5a287a0800000000000000
+      internalID: -6376352014687200748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_41
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 731
+        width: 20
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 401a2bd4a18881e80800000000000000
+      internalID: -8207660674328649468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_42
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 698
+        width: 100
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f5cb914da30d1690800000000000000
+      internalID: -7629938151030798857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_43
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 630
+        width: 184
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6415476354cbee6b0800000000000000
+      internalID: -5265063908897173178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_44
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 694
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71e9279c1f500adc0800000000000000
+      internalID: -3629894763635630569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_45
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 693
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac2c477455c0b4410800000000000000
+      internalID: 1462276064422445770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_46
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 697
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9f33ebad32ee49d0800000000000000
+      internalID: -2788042364791079011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_47
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 670
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e98095150ba5d9200800000000000000
+      internalID: 188406472744962206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_48
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 660
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bda9e1b3e1e575730800000000000000
+      internalID: 3987759478993754843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_49
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 630
+        width: 167
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f12291de0926aba10800000000000000
+      internalID: 1925960165246968351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_50
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 654
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 627ec1a73a65d6260800000000000000
+      internalID: 7092420248306771750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_51
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 590
+        width: 78
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1169061025463e500800000000000000
+      internalID: 424293093276161553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_52
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 659
+        width: 62
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ebac4751115ab090800000000000000
+      internalID: -8018007051658810396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_53
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 569
+        width: 116
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7da57e6e35e01f8e0800000000000000
+      internalID: -1661531034004006185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_54
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 591
+        width: 72
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff52dc39709e9cfe0800000000000000
+      internalID: -1168146409572194817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_55
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 599
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee7f81cdb3d8b430800000000000000
+      internalID: 3799019097636699882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_56
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 520
+        width: 159
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64a727ea61631d3b0800000000000000
+      internalID: -5489546999744005562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_57
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 609
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a9a56b03a6aeee70800000000000000
+      internalID: 9146431112437148066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_58
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 620
+        width: 46
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0589b2651a96c4f0800000000000000
+      internalID: -808789666425109238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_59
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 569
+        width: 305
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d0297eaf30e71450800000000000000
+      internalID: 6059558387765027031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_60
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 600
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 231d23c0bce21f140800000000000000
+      internalID: 4751630531470479666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_61
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 600
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbd1ff8bb102ee3a0800000000000000
+      internalID: -6634329897630229057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_62
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 517
+        width: 58
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6c7f6bd268dbe3f0800000000000000
+      internalID: -870364183866147733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_63
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 600
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5646c3c7fd7ee1030800000000000000
+      internalID: 3467463710169916517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_64
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 600
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6a7f1a1fc20cf500800000000000000
+      internalID: 431222752840481390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_65
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 547
+        width: 12
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d79bdbad8b169af20800000000000000
+      internalID: 3434383637418457469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_66
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 559
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f963d71e8adf83fd0800000000000000
+      internalID: -2361859102776412513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_67
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 544
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27b07ec70409a2c70800000000000000
+      internalID: 8947122216372734834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_68
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 562
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2397d4d12964673a0800000000000000
+      internalID: -6668064604904654542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_69
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 567
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b4eddf4520acb4e0800000000000000
+      internalID: -1964519255326202701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_70
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 567
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b12506435a5936610800000000000000
+      internalID: 1613297628309639707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_71
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 568
+        width: 80
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e2950fd49710b900800000000000000
+      internalID: 698083870406709989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_72
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 563
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f074e966e11223e0800000000000000
+      internalID: -2080080396575018764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_73
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 568
+        width: 64
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfbb1dabf51aa4180800000000000000
+      internalID: -9130307862011986949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_74
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 565
+        width: 37
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa389de7d4d321730800000000000000
+      internalID: 3968301624716788655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_75
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 574
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24161f6756e12d230800000000000000
+      internalID: 3662022868141695298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_76
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 545
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06c0085916ad1b430800000000000000
+      internalID: 3797056073504918624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_77
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 545
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1192cab1b6b934a10800000000000000
+      internalID: 1892527152753813777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_78
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 521
+        width: 19
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2c8c72e3a5fd4ff0800000000000000
+      internalID: -50113936602919892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_79
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 542
+        width: 36
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 471f643217280d9b0800000000000000
+      internalID: -5057398959102299788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_80
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 542
+        width: 67
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9be381f7a4a87f220800000000000000
+      internalID: 2519634569101590201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_81
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 539
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24b040202e9441ab0800000000000000
+      internalID: -5038320848075486398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_82
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 546
+        width: 43
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad82de50510185b0800000000000000
+      internalID: -5368007836149051990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_83
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 510
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dd7ccde0dd4ee4f0800000000000000
+      internalID: -797614524259861035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_84
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 378
+        width: 101
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc058c9e6ef329130800000000000000
+      internalID: 3571987715455471819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_85
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 506
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a604288d4679a3120800000000000000
+      internalID: 2394392611285778538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_86
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 496
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55dab478c71ff8ca0800000000000000
+      internalID: -6012321460368200363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_87
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 466
+        width: 16
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84f545ccdcc135b80800000000000000
+      internalID: -8407344409148629176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_88
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 385
+        width: 179
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 014e8867599f85df0800000000000000
+      internalID: -191128563829119984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_89
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 496
+        width: 25
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fd8d54518834cb80800000000000000
+      internalID: -8375507278884925968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_90
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 503
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d045e5fd516370460800000000000000
+      internalID: 7207789196199482381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_91
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 504
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d72341c0c40fb15e0800000000000000
+      internalID: -1937691005242035587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_92
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 500
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc013fff487807d70800000000000000
+      internalID: 9038873457432137932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_93
+      rect:
+        serializedVersion: 2
+        x: 1461
+        y: 487
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d09c19a621a417d0800000000000000
+      internalID: -2948554668602781479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_94
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 488
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b37238e55d1bd9c0800000000000000
+      internalID: -3901492397381356621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_95
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 362
+        width: 69
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f47f399a751a33a0800000000000000
+      internalID: -6685007080576813831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_96
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 338
+        width: 285
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e9b2c4235b4a3f10800000000000000
+      internalID: 2250193784296094178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_97
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 399
+        width: 80
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64bbcb731052251d0800000000000000
+      internalID: -3363585284532028602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_98
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 440
+        width: 18
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f526616fdcb733e0800000000000000
+      internalID: -2073981435783010829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_99
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 123
+        width: 323
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18d94c7ac76d95880800000000000000
+      internalID: -8621624180745134719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_100
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 465
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10fb61ea6d2d25510800000000000000
+      internalID: 1536522242372321025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_101
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 466
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf4f359215c935e0800000000000000
+      internalID: -1929294281747509314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_102
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 467
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a32bfb79a2c1090800000000000000
+      internalID: -8062522401655473565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_103
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 385
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9527430545e0fe60800000000000000
+      internalID: 7994141423153128862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_104
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 415
+        width: 22
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2329d0860b5440de0800000000000000
+      internalID: -1367891762851507662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_105
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 363
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af3fea8fb6e91160800000000000000
+      internalID: 6996877206440853408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_106
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 342
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fa9c722adbff2ce0800000000000000
+      internalID: -1427645642553124111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_107
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 124
+        width: 293
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfc7b031947b3de60800000000000000
+      internalID: 7985928088738036987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_108
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 247
+        width: 212
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d594708a7fac299c0800000000000000
+      internalID: -3921849160461498019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_109
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 297
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f3ee255da2dec9f0800000000000000
+      internalID: -446187671162788874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_110
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 311
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94893d17e064a29a0800000000000000
+      internalID: -6257111704424703927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_111
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 335
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f23da6f07759cc740800000000000000
+      internalID: 5173674410534163247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_112
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 339
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b27ec2dd4cd4b0c0800000000000000
+      internalID: -4560778295812132170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_113
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 333
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b0ffa5c6fb5f8860800000000000000
+      internalID: 7534341817050853561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_114
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 249
+        width: 92
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a253061755d3e710800000000000000
+      internalID: 1721454052593848999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_115
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 240
+        width: 55
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de9d15ceabcce6620800000000000000
+      internalID: 2769375924080204269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_116
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 305
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91d9748bf85db9520800000000000000
+      internalID: 2709994414042225945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_117
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 303
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d337c2214fb04370800000000000000
+      internalID: 8304847999348454359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_118
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 299
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7fce7e5f76b4b540800000000000000
+      internalID: 5022840142587416442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_119
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 281
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bcf12d11cc835690800000000000000
+      internalID: -7614587783908033354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_120
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 241
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 657d6e4c128f1e8f0800000000000000
+      internalID: -512856058622453930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_121
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 277
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8f5f228eb170fc20800000000000000
+      internalID: 3238213195121254286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_122
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 235
+        width: 68
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dee602ba78bd92060800000000000000
+      internalID: 6929310877424316141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_123
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 201
+        width: 98
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aeac460ab8090460800000000000000
+      internalID: 7208302273645817511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_124
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 263
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7feeb6d48441c1950800000000000000
+      internalID: 6421029469492604663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_125
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 267
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2732e013eca33380800000000000000
+      internalID: -8992653939687934163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_126
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 266
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53c663d8b25c2c150800000000000000
+      internalID: 5891488053397449781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_127
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 210
+        width: 57
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd667a3a5445f00d0800000000000000
+      internalID: -3454449731094747429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_128
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 181
+        width: 151
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83e729e4939f30420800000000000000
+      internalID: 2595191834822213176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_129
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 205
+        width: 45
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6af1027a256a07590800000000000000
+      internalID: -7678454490745266266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_130
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 202
+        width: 45
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca7b7bf98abd13e0800000000000000
+      internalID: -2081302350982841651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_131
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 193
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 996ccb194811838e0800000000000000
+      internalID: -1713600397136050535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_132
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 187
+        width: 46
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99a6b8cd2ba6ff7a0800000000000000
+      internalID: -6341232433877521767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_133
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 187
+        width: 45
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d810c3874de36d60800000000000000
+      internalID: 7882404664237365463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_134
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 149
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c6c1b815db5ea390800000000000000
+      internalID: -7805200133386025277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_135
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 158
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5af554fb906c4d1e0800000000000000
+      internalID: -2173894974947106907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_136
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 157
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b289c54452f45f020800000000000000
+      internalID: 2374891399987107883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_137
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 156
+        width: 46
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7936b45faa135100800000000000000
+      internalID: 95449357447739772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleBG_MapIcon_138
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 139
+        width: 45
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14c4bd86dd880c100800000000000000
+      internalID: 126251274094726209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TitleBG_MapIcon_0: 7694502624460167473
+      TitleBG_MapIcon_1: -7884646924055318900
+      TitleBG_MapIcon_10: -8519125561879069683
+      TitleBG_MapIcon_100: 1536522242372321025
+      TitleBG_MapIcon_101: -1929294281747509314
+      TitleBG_MapIcon_102: -8062522401655473565
+      TitleBG_MapIcon_103: 7994141423153128862
+      TitleBG_MapIcon_104: -1367891762851507662
+      TitleBG_MapIcon_105: 6996877206440853408
+      TitleBG_MapIcon_106: -1427645642553124111
+      TitleBG_MapIcon_107: 7985928088738036987
+      TitleBG_MapIcon_108: -3921849160461498019
+      TitleBG_MapIcon_109: -446187671162788874
+      TitleBG_MapIcon_11: -251773148467874311
+      TitleBG_MapIcon_110: -6257111704424703927
+      TitleBG_MapIcon_111: 5173674410534163247
+      TitleBG_MapIcon_112: -4560778295812132170
+      TitleBG_MapIcon_113: 7534341817050853561
+      TitleBG_MapIcon_114: 1721454052593848999
+      TitleBG_MapIcon_115: 2769375924080204269
+      TitleBG_MapIcon_116: 2709994414042225945
+      TitleBG_MapIcon_117: 8304847999348454359
+      TitleBG_MapIcon_118: 5022840142587416442
+      TitleBG_MapIcon_119: -7614587783908033354
+      TitleBG_MapIcon_12: -7299020514300969537
+      TitleBG_MapIcon_120: -512856058622453930
+      TitleBG_MapIcon_121: 3238213195121254286
+      TitleBG_MapIcon_122: 6929310877424316141
+      TitleBG_MapIcon_123: 7208302273645817511
+      TitleBG_MapIcon_124: 6421029469492604663
+      TitleBG_MapIcon_125: -8992653939687934163
+      TitleBG_MapIcon_126: 5891488053397449781
+      TitleBG_MapIcon_127: -3454449731094747429
+      TitleBG_MapIcon_128: 2595191834822213176
+      TitleBG_MapIcon_129: -7678454490745266266
+      TitleBG_MapIcon_13: 5066405481057066576
+      TitleBG_MapIcon_130: -2081302350982841651
+      TitleBG_MapIcon_131: -1713600397136050535
+      TitleBG_MapIcon_132: -6341232433877521767
+      TitleBG_MapIcon_133: 7882404664237365463
+      TitleBG_MapIcon_134: -7805200133386025277
+      TitleBG_MapIcon_135: -2173894974947106907
+      TitleBG_MapIcon_136: 2374891399987107883
+      TitleBG_MapIcon_137: 95449357447739772
+      TitleBG_MapIcon_138: 126251274094726209
+      TitleBG_MapIcon_14: 3631114348347303378
+      TitleBG_MapIcon_15: 6767026260321178063
+      TitleBG_MapIcon_16: 976182503385167493
+      TitleBG_MapIcon_17: -1264845951070283823
+      TitleBG_MapIcon_18: -2538858542718005155
+      TitleBG_MapIcon_19: -2165928619123775893
+      TitleBG_MapIcon_2: -6619680022829142520
+      TitleBG_MapIcon_20: 7290548078527155025
+      TitleBG_MapIcon_21: -6258333056397869236
+      TitleBG_MapIcon_22: -3521998421832673333
+      TitleBG_MapIcon_23: -4552512273363262409
+      TitleBG_MapIcon_24: 405067575858364087
+      TitleBG_MapIcon_25: 4156368160692308472
+      TitleBG_MapIcon_26: -3362505919514070590
+      TitleBG_MapIcon_27: -2351189205952813914
+      TitleBG_MapIcon_28: 8061484135283432978
+      TitleBG_MapIcon_29: 2608725965361397897
+      TitleBG_MapIcon_3: -3937427109086813768
+      TitleBG_MapIcon_30: 7599379355720872147
+      TitleBG_MapIcon_31: -478525371184818682
+      TitleBG_MapIcon_32: 6453942904312591024
+      TitleBG_MapIcon_33: -3454038198164728477
+      TitleBG_MapIcon_34: -4803838743408386745
+      TitleBG_MapIcon_35: 4999488838899130631
+      TitleBG_MapIcon_36: -664523068617462884
+      TitleBG_MapIcon_37: 6887530689566979852
+      TitleBG_MapIcon_38: -2830095120375901361
+      TitleBG_MapIcon_39: 2101255115110012895
+      TitleBG_MapIcon_4: -9154293521518984603
+      TitleBG_MapIcon_40: -6376352014687200748
+      TitleBG_MapIcon_41: -8207660674328649468
+      TitleBG_MapIcon_42: -7629938151030798857
+      TitleBG_MapIcon_43: -5265063908897173178
+      TitleBG_MapIcon_44: -3629894763635630569
+      TitleBG_MapIcon_45: 1462276064422445770
+      TitleBG_MapIcon_46: -2788042364791079011
+      TitleBG_MapIcon_47: 188406472744962206
+      TitleBG_MapIcon_48: 3987759478993754843
+      TitleBG_MapIcon_49: 1925960165246968351
+      TitleBG_MapIcon_5: -2509396899288273002
+      TitleBG_MapIcon_50: 7092420248306771750
+      TitleBG_MapIcon_51: 424293093276161553
+      TitleBG_MapIcon_52: -8018007051658810396
+      TitleBG_MapIcon_53: -1661531034004006185
+      TitleBG_MapIcon_54: -1168146409572194817
+      TitleBG_MapIcon_55: 3799019097636699882
+      TitleBG_MapIcon_56: -5489546999744005562
+      TitleBG_MapIcon_57: 9146431112437148066
+      TitleBG_MapIcon_58: -808789666425109238
+      TitleBG_MapIcon_59: 6059558387765027031
+      TitleBG_MapIcon_6: 782407729188756347
+      TitleBG_MapIcon_60: 4751630531470479666
+      TitleBG_MapIcon_61: -6634329897630229057
+      TitleBG_MapIcon_62: -870364183866147733
+      TitleBG_MapIcon_63: 3467463710169916517
+      TitleBG_MapIcon_64: 431222752840481390
+      TitleBG_MapIcon_65: 3434383637418457469
+      TitleBG_MapIcon_66: -2361859102776412513
+      TitleBG_MapIcon_67: 8947122216372734834
+      TitleBG_MapIcon_68: -6668064604904654542
+      TitleBG_MapIcon_69: -1964519255326202701
+      TitleBG_MapIcon_7: 6318429830503719230
+      TitleBG_MapIcon_70: 1613297628309639707
+      TitleBG_MapIcon_71: 698083870406709989
+      TitleBG_MapIcon_72: -2080080396575018764
+      TitleBG_MapIcon_73: -9130307862011986949
+      TitleBG_MapIcon_74: 3968301624716788655
+      TitleBG_MapIcon_75: 3662022868141695298
+      TitleBG_MapIcon_76: 3797056073504918624
+      TitleBG_MapIcon_77: 1892527152753813777
+      TitleBG_MapIcon_78: -50113936602919892
+      TitleBG_MapIcon_79: -5057398959102299788
+      TitleBG_MapIcon_8: 8481861639025651554
+      TitleBG_MapIcon_80: 2519634569101590201
+      TitleBG_MapIcon_81: -5038320848075486398
+      TitleBG_MapIcon_82: -5368007836149051990
+      TitleBG_MapIcon_83: -797614524259861035
+      TitleBG_MapIcon_84: 3571987715455471819
+      TitleBG_MapIcon_85: 2394392611285778538
+      TitleBG_MapIcon_86: -6012321460368200363
+      TitleBG_MapIcon_87: -8407344409148629176
+      TitleBG_MapIcon_88: -191128563829119984
+      TitleBG_MapIcon_89: -8375507278884925968
+      TitleBG_MapIcon_9: -2294316945896163105
+      TitleBG_MapIcon_90: 7207789196199482381
+      TitleBG_MapIcon_91: -1937691005242035587
+      TitleBG_MapIcon_92: 9038873457432137932
+      TitleBG_MapIcon_93: -2948554668602781479
+      TitleBG_MapIcon_94: -3901492397381356621
+      TitleBG_MapIcon_95: -6685007080576813831
+      TitleBG_MapIcon_96: 2250193784296094178
+      TitleBG_MapIcon_97: -3363585284532028602
+      TitleBG_MapIcon_98: -2073981435783010829
+      TitleBG_MapIcon_99: -8621624180745134719
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

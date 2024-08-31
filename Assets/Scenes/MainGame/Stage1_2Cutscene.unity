@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e5e6884f576d046be033f44fef3c84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogAsset: {fileID: 11400000, guid: 4a839a6ed72d8254caba1f05686371b7, type: 2}
+  dialogAsset: {fileID: 11400000, guid: b77a328166370bb4ea2fd687b390eeb7, type: 2}
   speechBubble: {fileID: 1669541985}
   currentIndex: 0
   key: 323
