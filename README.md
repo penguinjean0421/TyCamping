@@ -16,12 +16,11 @@
 https://www.epidemicsound.com/sound-effects/tracks/f8b244d0-2a84-4913-bf86-d904c0656163/) -  1-2 자연소리
 - []() - 2-1 자연소리
 	- 잔잔한 물소리 
-- -[]() - 2-2 자연소리
-	- 코스모스, 
 -  []() - 3-1 자연소리
 	- 시장? 창고?  
 - []() - 3-2 자연소리
 	- 시장? 창고?
+
 ### 효과음
 - [Keyboard, Razer, Typing, Moderate](https://www.epidemicsound.com/sound-effects/tracks/11e80013-c1ae-4705-b557-8d8ff294d1ba/) - 타이핑 효과음
 - [Keyboard, Razer, Enter, Hits 01](https://www.epidemicsound.com/sound-effects/tracks/39cdae5a-2651-41c4-bd1f-2f3c5117a523/) - 엔터 소리 효과음
