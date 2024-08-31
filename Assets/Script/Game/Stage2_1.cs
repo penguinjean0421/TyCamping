@@ -29,7 +29,7 @@ namespace Assets.Script.Game
 
             //사운드 BGM
             AudioManager.instance.PlayBGM(AudioManager.Bgm.Stage, true);
-            AudioManager.instance.PlayEnvirBgm(AudioManager.EnvirBgm.Stage11, true);
+            AudioManager.instance.PlayEnvirBgm(AudioManager.EnvirBgm.Stage21, true);
 
         }
 
@@ -118,74 +118,6 @@ namespace Assets.Script.Game
             snodeList[5].spriteGroup.transform.GetChild(2).DOMoveY(15f, 0.5f).SetRelative().SetDelay(0.5f);
             GameManager.PushTarget(snodeList[6]);
             GameManager.PushTarget(snodeList[7]);
-        }
-
-        public void OnCutActive6()
-        {
-            Debug.Log("울창한 푸른 소나무");
-            snodeList[6].spriteGroup.SetActive(true);
-            snodeList[6].spriteGroup.transform.GetChild(0).position = snodeList[6].spriteGroup.transform.GetChild(0).position - Vector3.up * 15f;
-            snodeList[6].spriteGroup.transform.GetChild(0).DOMoveY(15f, 0.5f).SetRelative();
-            snodeList[6].spriteGroup.transform.GetChild(1).position = snodeList[6].spriteGroup.transform.GetChild(1).position - Vector3.up * 15f;
-            snodeList[6].spriteGroup.transform.GetChild(1).DOMoveY(15f, 0.5f).SetRelative().SetDelay(0.3f);
-            snodeList[6].spriteGroup.transform.GetChild(2).localScale = Vector3.zero;
-            snodeList[6].spriteGroup.transform.GetChild(2).DOScale(Vector3.one, 0.5f).SetRelative().SetEase(Ease.InOutBounce).SetDelay(0.5f);
-            snodeList[6].spriteGroup.transform.GetChild(3).localScale = Vector3.zero;
-            snodeList[6].spriteGroup.transform.GetChild(3).DOScale(Vector3.one, 0.5f).SetRelative().SetDelay(0.7f).SetEase(Ease.InOutBounce);
-            cut8flag1 = true;
-            if (cut8flag2)
-            {
-                GameManager.PushTarget(snodeList[8]);
-            }
-
-        }
-        public void OnCutActive7()
-        {
-            Debug.Log("앙증맞은 낮은 덤불");
-            snodeList[7].spriteGroup.SetActive(true);
-            snodeList[7].spriteGroup.transform.GetChild(0).position = snodeList[7].spriteGroup.transform.GetChild(0).position - Vector3.up * 15f;
-            snodeList[7].spriteGroup.transform.GetChild(0).DOMoveY(15f, 0.5f).SetRelative();
-            snodeList[7].spriteGroup.transform.GetChild(1).position = snodeList[7].spriteGroup.transform.GetChild(1).position - Vector3.up * 15f;
-            snodeList[7].spriteGroup.transform.GetChild(1).DOMoveY(15f, 0.5f).SetRelative().SetDelay(0.3f);
-            snodeList[7].spriteGroup.transform.GetChild(0).localScale = Vector3.zero;
-            snodeList[7].spriteGroup.transform.GetChild(0).DOScale(Vector3.one, 0.5f).SetRelative().SetEase(Ease.InOutBounce);
-            snodeList[7].spriteGroup.transform.GetChild(1).localScale = Vector3.zero;
-            snodeList[7].spriteGroup.transform.GetChild(1).DOScale(Vector3.one, 0.5f).SetRelative().SetDelay(0.3f).SetEase(Ease.InOutBounce);
-            cut8flag2 = true;
-            if (cut8flag1)
-            {
-
-                GameManager.PushTarget(snodeList[8]);
-            }
-
-        }
-
-        public void OnCutActive8()
-        {
-            Debug.Log("깜찍하고 귀여운 흰토끼");
-            snodeList[8].spriteGroup.SetActive(true);
-            snodeList[8].spriteGroup.transform.position = snodeList[8].spriteGroup.transform.position + Vector3.up;
-            snodeList[8].spriteGroup.transform.DOMoveY(-1f, 0.1f).SetRelative().SetLoops(7,LoopType.Yoyo);
-            snodeList[8].spriteGroup.transform.position = snodeList[8].spriteGroup.transform.position + Vector3.right *3;
-            snodeList[8].spriteGroup.transform.DOMoveX(-3f, 0.5f).SetRelative();
-            cut9flag1 = true;
-            if (cut9flag2)
-            {
-                GameManager.PushTarget(snodeList[9]);
-            }
-
-        }
-
-        public void OnCutActive9()
-        {
-            snodeList[9].spriteGroup.SetActive(true);
-            snodeList[9].spriteGroup.transform.GetChild(0).localScale = new Vector3(0.5f, 0.1f, 0f);
-            snodeList[9].spriteGroup.transform.GetChild(0).DOScale(Vector3.one, 0.5f);
-            snodeList[9].spriteGroup.transform.GetChild(0).position = snodeList[9].spriteGroup.transform.GetChild(0).position - Vector3.up * 0.5f;
-            snodeList[9].spriteGroup.transform.GetChild(0).DOMoveY(0.5f, 0.5f).SetRelative();
-            Debug.Log("우리가족의 첫 캠핑");
-
-            AudioManager.instance.PlayEnvirBgm(AudioManager.EnvirBgm.Stage11, false);
         }
     }
 }
