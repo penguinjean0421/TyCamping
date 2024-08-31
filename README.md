@@ -6,7 +6,7 @@
 ### 배경음악
 - []() - 메뉴 배경음악
 	- 방송 오프닝 스타일 
-- [Sweet Nina - Leimoti]() - 스테이지 메인 배경음악
+- [Sweet Nina - Leimoti](https://www.epidemicsound.com/track/gfY8TUpLnO/) - 스테이지 메인 배경음악
 - []() - 컷씬 배경음악
 	- 퍼커션 소리가 강조 되는 귀여운 음악 
 
