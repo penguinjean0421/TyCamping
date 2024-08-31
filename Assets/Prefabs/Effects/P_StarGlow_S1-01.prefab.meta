@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Prefabs/Effects/P_StarGlow_S1-01.prefab.meta
 guid: 5c95cf08913b5e547bcf0ad0361a0e3e
 PrefabImporter:
+========
+guid: fada4b8bb0f50c34d94296bf81abdb1d
+TextScriptImporter:
+>>>>>>>> 26eb01a88af9ee3035d66c10a97054737a3b86b6:Assets/Resources/PerformanceTestRunInfo.json.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
