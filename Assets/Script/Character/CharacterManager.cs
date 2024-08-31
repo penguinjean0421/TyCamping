@@ -17,16 +17,19 @@ public class CharacterManager : MonoBehaviour
 
     public void IdleAction()
     {
+        Debug.Log("CharacterIdleAction!!");
         characterIdle.PerformAction();
     }
 
     public void SuccessAction()
     {
+        Debug.Log("CharacterSuccessAction!!");
         characterSuccess.PerformAction();
     }
 
     public void FailureAction()
     {
+        Debug.Log("CharacterFailureAction!!");
         characterFailure.PerformAction();
     }
 
