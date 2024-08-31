@@ -1468,17 +1468,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1639569782038457630, guid: 39e5d90368b7c104a8928d9c412d1fb4, type: 3}
-      propertyPath: m_Name
-      value: Stage_2-2_Main
-      objectReference: {fileID: 0}
     - target: {fileID: 7419269686144463495, guid: 39e5d90368b7c104a8928d9c412d1fb4, type: 3}
       propertyPath: m_Name
       value: Stage_2-2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7949935536397159148, guid: 39e5d90368b7c104a8928d9c412d1fb4, type: 3}
-      propertyPath: m_Name
-      value: Stage_2-2_BG
       objectReference: {fileID: 0}
     - target: {fileID: 8584196562984617276, guid: 39e5d90368b7c104a8928d9c412d1fb4, type: 3}
       propertyPath: m_LocalPosition.x
