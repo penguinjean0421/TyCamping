@@ -77,6 +77,8 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
+            AudioManager.instance.PlaySfx(AudioManager.Sfx.EnterHit);
+
             Debug.Log(">" + _inputField.text);
             Debug.Log(">>" + _inputField.textComponent.text);
             Debug.Log(">>>" + _inputField.textComponent.GetParsedText());
