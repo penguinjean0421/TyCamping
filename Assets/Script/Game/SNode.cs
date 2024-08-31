@@ -11,5 +11,6 @@ namespace Assets.Script.Game
         public string target;
         public UnityAction action;
         public GameObject spriteGroup;
+        public SpriteRenderer hint;
     }
 }

@@ -28,6 +28,7 @@ namespace Assets.Script.Game
             foreach (var snode in snodeList)
             {
                 snode.spriteGroup.SetActive(false);
+                snode.hint.gameObject.SetActive(false);
             }
 
             //사운드 BGM
@@ -66,6 +67,8 @@ namespace Assets.Script.Game
             snodeList[1].spriteGroup.transform.GetChild(1).localScale = new Vector3(0.1f, 0.1f, 0f);
             snodeList[1].spriteGroup.transform.GetChild(1).DOScale(Vector3.one, 0.5f);
             //나무 생성
+
+            // 이펙트 플레이...
 
             GameManager.PushTarget(snodeList[3]);
         }
