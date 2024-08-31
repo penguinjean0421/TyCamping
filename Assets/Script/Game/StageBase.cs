@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 namespace Assets.Script.Game
 {
-    public abstract class StageBase : MonoBehaviour
+    public class StageBase : MonoBehaviour
     {
 
         public List<SNode> snodeList = new List<SNode>();
@@ -18,6 +18,9 @@ namespace Assets.Script.Game
             GameManager.PushTarget(snodeList[0]);
         }
 
-        public abstract void Initialize();
+        public virtual void Initialize()
+        {
+
+        }
     }
 }
