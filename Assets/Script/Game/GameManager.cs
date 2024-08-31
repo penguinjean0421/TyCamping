@@ -1,24 +1,32 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Security.Cryptography;
 using Assets.Script.Game;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using Util;
+using static UnityEngine.GraphicsBuffer;
+using static UnityEngine.Rendering.DebugUI;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField]
-    private TMP_InputField _inputField;
-    public TMP_Text targetText;
-    public string target;
+    [SerializeField] private TMP_InputField _inputField;
+    [SerializeField] private TextAnimationPrinter _printer;
+    [SerializeField] private TMP_Text _preview;
+
+    public static List<SNode> snodeList;
 
     [SerializeField] private StageBase _stage;
 
     [SerializeField] private int _cutNum = 3;
-    private int _targetIndex = 0;
+
+    private string currentInputText;
 
     public UnityEvent onWrongEvent;
     public UnityEvent onCorrectEvent;
@@ -27,46 +35,61 @@ public class GameManager : MonoBehaviour
     {
         Initialize();
     }
-    private void Update()
+
+    private void LateUpdate()
     {
+        currentInputText = _inputField.text;
         CheckInput();
         _inputField.ActivateInputField();
-        target = _stage.targetText.Trim('\r');
-        targetText.text = target;//추후 삭제 필요
+        _preview.text = "";
+        foreach (var snode in snodeList)
+        {
+            _preview.text += snode.target + "\n";
+        }
     }
     public void Initialize()
     {
-        _targetIndex = 0;
+        snodeList = new List<SNode>();
     }
 
 
-    public void Next()
+    public static void PushTarget(SNode snode)
     {
-
-        _targetIndex++;
-        _stage.Next();
+        snodeList.Add(snode);
     }
 
     public void CheckInput()
     {
-        if (ValidationExtension.IsCorrect(target, _inputField.text))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
-            Debug.Log("Correct");
-            if (Input.GetKeyDown(KeyCode.Return))
+            Debug.Log(">" + _inputField.text);
+            Debug.Log(">>" + _inputField.textComponent.text);
+            Debug.Log(">>>" + _inputField.textComponent.GetParsedText());
+            bool isCorrect = false;
+            foreach (var snode in snodeList)
             {
-                OnCorrect();
-                ClearInputField();
-                Next();
+                if (ValidationExtension.IsCorrect(snode.target, currentInputText))
+                {
+                    snodeList.Remove(snode);
+                    snode.action.Invoke();
+                    OnCorrect();
+                    isCorrect = true;
+                    break;
+                }
+
+                if (isCorrect)
+                {
+                    break;
+                }
             }
-        }
-        else
-        {
-            if (Input.GetKeyDown(KeyCode.Return))
+            if (!isCorrect)
             {
                 OnWrong();
-                ClearInputField();
             }
+
+            ClearInputField();
         }
+
     }
 
     private void ClearInputField()
