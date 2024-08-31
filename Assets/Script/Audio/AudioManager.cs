@@ -152,7 +152,7 @@ public class AudioManager : MonoBehaviour
     }
 
 
-    // �과�생
+    // 효과음 재생
     public void PlaySfx(Sfx sfx)
     {
         for (int index = 0; index < sfxPlayers.Length; index++)

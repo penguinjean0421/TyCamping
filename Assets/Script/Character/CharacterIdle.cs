@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class CharacterIdle : MonoBehaviour
+public class CharacterIdle
 {
     private Animator animator;
     private static readonly int ActionIndex = Animator.StringToHash("ActionIndex");
