@@ -1,4 +1,7 @@
+using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Assets.Script.Game;
 using DG.Tweening;
 using TMPro;
@@ -16,7 +19,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private CharacterManager characterManager;
 
     public static List<SNode> snodeList;
-    public int clearCount=0;
+    public int clearCount = 0;
 
 
     private string currentInputText;
@@ -35,23 +38,12 @@ public class GameManager : MonoBehaviour
         currentInputText = _inputField.text;
         CheckInput();
         _inputField.ActivateInputField();
-        if (_stage.snodeList.Count == clearCount)
-        {
-            if (Input.GetMouseButtonDown(0))
-            {
-                SceneManager.LoadScene(_stage.nextCutScene);
-            }
-        }
-
-        _clearCountText.text = clearCount + "/" +_stage.snodeList.Count;
+        _clearCountText.text = clearCount + "/" + _stage.snodeList.Count;
 
     }
     public void Initialize()
     {
         snodeList = new List<SNode>();
-        finishUI.gameObject.SetActive(false);
-
-
     }
 
 
@@ -82,7 +74,7 @@ public class GameManager : MonoBehaviour
                     {
                         snode.hint.gameObject.SetActive(false);
                     });
-                   
+
                     snode.action.Invoke();
                     OnCorrect();
                     isCorrect = true;
@@ -94,7 +86,7 @@ public class GameManager : MonoBehaviour
                     clearCount++;
                     if (_stage.snodeList.Count == clearCount)
                     {
-                        finishUI.gameObject.SetActive(true);
+                        StartCoroutine(Finish());
                     }
 
                     // 캐릭터 성공 액션
@@ -115,6 +107,13 @@ public class GameManager : MonoBehaviour
             ClearInputField();
         }
 
+    }
+
+    private IEnumerator Finish()
+    {
+        yield return new WaitForSeconds(2f);
+        finishUI.gameObject.SetActive(true);
+        yield return null;
     }
 
     private void ClearInputField()

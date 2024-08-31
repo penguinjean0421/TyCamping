@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Stage2-1_CableCarUp_0: -575456215117996840
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

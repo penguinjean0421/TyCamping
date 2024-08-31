@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Stage2-1_HeartWater_0: -8237994431309666402
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
