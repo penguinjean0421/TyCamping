@@ -29,6 +29,7 @@ namespace Assets.Script.Game
             {
                 snode.spriteGroup.SetActive(false);
             }
+            //사운드 BGM
         }
 
         public void OnCutActive0()
