@@ -2502,6 +2502,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1924379904410063715, guid: 3632a8f8a1593b24aa70972720f4b0c4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.12
+      objectReference: {fileID: 0}
     - target: {fileID: 2395841353983745726, guid: 3632a8f8a1593b24aa70972720f4b0c4, type: 3}
       propertyPath: m_Size.x
       value: 3.94
