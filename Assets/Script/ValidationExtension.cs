@@ -24,7 +24,7 @@ public static class ValidationExtension
 
     public static bool IsCorrect(in string target, in string input) //현재까지의 인풋을 검수
     {
-        return String.Equals(target, input, StringComparison.Ordinal);
+        return String.Equals(target, input, StringComparison.CurrentCulture);
     }
 }
 

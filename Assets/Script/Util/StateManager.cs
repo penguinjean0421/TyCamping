@@ -10,13 +10,12 @@ namespace Util
         {
             if (_currentState != null)
             {
-                Change(_currentState);
+                _currentState.OnActive();
             }
         }
 
         public virtual void Next()
         {
-          
             if (_currentState.next != null)
             {
                 Change(_currentState.next);
@@ -33,7 +32,10 @@ namespace Util
 
         public virtual void Change(T state)
         {
-            _currentState.OnInactive();
+            if (_currentState != null)
+            {
+                _currentState.OnInactive();
+            }
             _currentState = state;
             _currentState.OnActive();
         }
