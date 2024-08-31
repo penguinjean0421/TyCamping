@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class AudioManager : MonoBehaviour
 {
@@ -17,6 +19,12 @@ public class AudioManager : MonoBehaviour
     public int channels;
     AudioSource[] sfxPlayers;
     int channelIndex;
+
+    public enum Sfx
+    {
+        SfxTyping, SfxEnterHit, SfxBackSpaceHit, SfxButton
+    }
+
 
     void Awake()
     {
@@ -45,6 +53,25 @@ public class AudioManager : MonoBehaviour
             sfxPlayers[index] = sfxObject.AddComponent<AudioSource>();
             sfxPlayers[index].playOnAwake = false;
             sfxPlayers[index].volume = sfxVolume;
+        }
+    }
+
+    public void PlaySfx(Sfx sfx)
+    {
+        for (int index = 0; index < sfxPlayers.Length; index++)
+        {
+            int loopindex = (index + channelIndex) % sfxPlayers.Length;
+
+            if (sfxPlayers[loopindex].isPlaying)
+            {
+                continue;
+            }
+
+            channelIndex = loopindex;
+            sfxPlayers[loopindex].clip = sfxClips[(int)sfx];
+            sfxPlayers[loopindex].Play();
+            
+            break;
         }
     }
 }
