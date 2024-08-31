@@ -7,13 +7,16 @@ using DG.Tweening;
 using UnityEditor;
 using UnityEngine;
 
+#if UNITY_EDITOR
 [CustomEditor(typeof(TextAnimationAsset))]
 public class TextAnimationAssetInspector : Editor
 {
     public void OnValidate()
     {
         TextAnimationAsset asset = (TextAnimationAsset)target;
+#if UNITY_EDITOR
         EditorUtility.SetDirty(asset);
+#endif
     }
 
     public override void OnInspectorGUI()
@@ -31,6 +34,8 @@ public class TextAnimationAssetInspector : Editor
         }
     }
 }
+#endif
+
 
 [CreateAssetMenu(fileName = "new DialogAsset", menuName = "Dialog System/Dialog Asset")] 
 public class TextAnimationAsset : ScriptableObject
@@ -67,7 +72,9 @@ public class TextAnimationAsset : ScriptableObject
 
     public void GeneratePhrasesTextFromFile(TextAsset file)
     {
+#if UNITY_EDITOR
         EditorUtility.SetDirty(this);
+#endif
         string[] lines = file.text.Split('\n');
         phrases = new List<string>();
         for (int i = 0; lines.Length > i; i++)

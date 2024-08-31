@@ -8,6 +8,7 @@ using UnityEditor;
 
 namespace Util
 {
+#if UNITY_EDITOR
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
     public class ShowIfAttribute : PropertyAttribute
     {
@@ -35,7 +36,6 @@ namespace Util
             Conditions = conditions;
         }
     }
-
 
     [CustomPropertyDrawer(typeof(ShowIfAttribute), true)]
     public class ShowIfAttributeDrawer : PropertyDrawer
@@ -211,4 +211,5 @@ namespace Util
             }
         }
     }
+#endif
 }
