@@ -67,6 +67,8 @@ namespace Assets.Script.Game
             snodeList[1].spriteGroup.transform.GetChild(1).DOScale(Vector3.one, 0.5f);
             //나무 생성
 
+            // 이펙트 플레이...
+
             GameManager.PushTarget(snodeList[3]);
         }
         public void OnCutActive2()

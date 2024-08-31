@@ -1,9 +1,7 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 using System;
-using UnityEngine;
 using System.Linq;
 using System.Reflection;
 using UnityEditor;
@@ -119,14 +117,14 @@ namespace Util
 
             foreach (var condition in showIfAttribute.Conditions)
             {
-                FieldInfo conditionField = GetField(target, condition); //Method ø°º≠ «ÿ¥Á ¡∂∞« √£¿Ω
+                FieldInfo conditionField = GetField(target, condition); //Method ÏóêÏÑú Ìï¥Îãπ Ï°∞Í±¥ Ï∞æÏùå
                 if (conditionField != null &&
                     conditionField.FieldType == typeof(bool))
                 {
                     conditionValues.Add((bool)conditionField.GetValue(target));
                 }
 
-                MethodInfo conditionMethod = GetMethod(target, condition); //Method ø°º≠ «ÿ¥Á ¡∂∞« √£¿Ω
+                MethodInfo conditionMethod = GetMethod(target, condition); //Method ÏóêÏÑú Ìï¥Îãπ Ï°∞Í±¥ Ï∞æÏùå
                 if (conditionMethod != null &&
                     conditionMethod.ReturnType == typeof(bool) &&
                     conditionMethod.GetParameters().Length == 0)
@@ -134,7 +132,7 @@ namespace Util
                     conditionValues.Add((bool)conditionMethod.Invoke(target, null));
                 }
 
-                PropertyInfo conditionProperty = GetProperty(target, condition); //Property ø°º≠ «ÿ¥Á ¡∂∞« √£¿Ω
+                PropertyInfo conditionProperty = GetProperty(target, condition); //Property ÏóêÏÑú Ìï¥Îãπ Ï°∞Í±¥ Ï∞æÏùå
                 if (conditionProperty != null &&
                     conditionProperty.PropertyType == typeof(bool) &&
                     conditionProperty.GetIndexParameters().Length == 0)

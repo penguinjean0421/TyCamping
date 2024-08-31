@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ed6ccb98e70186a4aa72a3df5fd04159
+guid: e3bdfe6a74bea7c42ac0aa2beb1de3d5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -82290735263834578
-    second: GoobulMask_0
+      213: -3536509386446702007
+    second: ParticleRing_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +52,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 1, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GoobulMask_0
+      name: ParticleRing_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 95
-        height: 1081
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
-      border: {x: 1, y: 0, z: 0, w: 0}
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2e1b442305abdef0800000000000000
-      internalID: -82290735263834578
+      spriteID: 94a7204437bcbeec0800000000000000
+      internalID: -3536509386446702007
       vertices: []
       indices: 
       edges: []
@@ -138,8 +138,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 689b7a7148d486047bd439d1231def71
-    internalID: 349902403
+    spriteID: 
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      GoobulMask_0: -82290735263834578
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
