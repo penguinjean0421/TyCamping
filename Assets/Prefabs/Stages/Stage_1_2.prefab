@@ -859,8 +859,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2728558575532625172}
+  - component: {fileID: 7070002674590516461}
   m_Layer: 0
-  m_Name: Stage_1-2
+  m_Name: Stage_1_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -883,6 +884,47 @@ Transform:
   - {fileID: 4048360866411671713}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7070002674590516461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2954530876137525704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91eb44f731d0c7441a319a2ab7781bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snodeList:
+  - target: "\uB300\uD55C\uBBFC\uAD6D \uC81C 6\uD638 \uAD6D\uB9BD\uACF5\uC6D0 \uC18D\uB9AC\uC0B0"
+    spriteGroup: {fileID: 285082024839522947}
+    hint: {fileID: 0}
+  - target: "\uD30C\uB780 \uD558\uB298 \uAFC8\uC774 \uAC00\uB4DD\uD55C \uD558\uB298"
+    spriteGroup: {fileID: 354742426367378114}
+    hint: {fileID: 0}
+  - target: "\uC57C\uD638 \uCDA9\uCCAD\uBD81\uB3C4\uB85C \uB180\uB7EC\uC624\uC138\uC694"
+    spriteGroup: {fileID: 9103009952709788402}
+    hint: {fileID: 0}
+  - target: "\uC18D\uB9AC\uC0B0 \uBB38\uC7A5\uB300\uB85C \uCD9C\uBC1C"
+    spriteGroup: {fileID: 4676964021867241950}
+    hint: {fileID: 0}
+  - target: "\uB0A0\uC73C\uB294 \uC0C8\uCC98\uB7FC \uB0A0\uACE0 \uC2F6\uC5B4"
+    spriteGroup: {fileID: 7880802422080572968}
+    hint: {fileID: 0}
+  - target: "\uC544\uCC14\uC544\uCC14 \uC0AC\uB2E4\uB9AC\uB294 \uBB34\uC11C\uC6CC"
+    spriteGroup: {fileID: 3048037317260513018}
+    hint: {fileID: 0}
+  - target: "\uC548\uC804\uD558\uAC8C \uC6B0\uB9AC\uB97C \uC9C0\uCF1C\uC8FC\uB294
+      \uC6B8\uD0C0\uB9AC"
+    spriteGroup: {fileID: 5765005015578503119}
+    hint: {fileID: 0}
+  - target: "\uC57C\uD638 \uCDA9\uCCAD\uBD81\uB3C4\uB85C \uB180\uB7EC\uC624\uC138\uC694"
+    spriteGroup: {fileID: 3587169088817947907}
+    hint: {fileID: 0}
+  index: 0
+  baseAsset: {fileID: 0}
+  nextCutScene: 
 --- !u!1 &3048037317260513018
 GameObject:
   m_ObjectHideFlags: 0
