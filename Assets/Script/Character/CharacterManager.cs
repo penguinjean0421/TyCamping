@@ -15,6 +15,11 @@ public class CharacterManager : MonoBehaviour
         characterFailure = new CharacterFailure(animator);
     }
 
+    private void Update()
+    {
+        
+    }
+
     public void IdleAction()
     {
         Debug.Log("CharacterIdleAction!!");
