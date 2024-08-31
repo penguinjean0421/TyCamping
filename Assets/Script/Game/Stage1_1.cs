@@ -42,13 +42,13 @@ namespace Assets.Script.Game
             Debug.Log("두근두근 첫 캠핑 돗자리");
             snodeList[0].spriteGroup.SetActive(true);
             snodeList[0].spriteGroup.transform.GetChild(1).localScale = new Vector3(0.1f, 0.5f, 0f);
-            snodeList[0].spriteGroup.transform.GetChild(1).DOScale(Vector3.one, 0.5f);
+            snodeList[0].spriteGroup.transform.GetChild(1).DOScale(Vector3.one, 1.5f);
             //돗자리 펼치기
 
             snodeList[0].spriteGroup.transform.GetChild(0).localScale = new Vector3(0.1f, 0.5f, 0f);
-            snodeList[0].spriteGroup.transform.GetChild(0).DOScale(Vector3.one, 0.5f);
+            snodeList[0].spriteGroup.transform.GetChild(0).DOScale(Vector3.one, 1.5f);
             snodeList[0].spriteGroup.transform.GetChild(0).position = snodeList[0].spriteGroup.transform.GetChild(0).position + Vector3.up * 2;
-            snodeList[0].spriteGroup.transform.GetChild(0).DOMoveY(-2, 0.5f).SetRelative().SetDelay(0.5f);
+            snodeList[0].spriteGroup.transform.GetChild(0).DOMoveY(-2, 1.5f).SetRelative().SetDelay(0.5f);
             //바구니 내려오기
 
             GameManager.PushTarget(snodeList[1]);
@@ -90,7 +90,7 @@ namespace Assets.Script.Game
             GameManager.PushTarget(snodeList[5]);
             snodeList[3].spriteGroup.SetActive(true);
             snodeList[3].spriteGroup.GetComponentInChildren<SpriteRenderer>().color = new Vector4();
-            snodeList[3].spriteGroup.GetComponentInChildren<SpriteRenderer>().DOColor(Color.white, 0.5f);
+            snodeList[3].spriteGroup.GetComponentInChildren<SpriteRenderer>().DOColor(Color.white, 1.5f);
             snodeList[3].spriteGroup.GetComponentInChildren<SpriteMask>().transform.DOScaleX(0,1.5f);
         }
         public void OnCutActive4()
