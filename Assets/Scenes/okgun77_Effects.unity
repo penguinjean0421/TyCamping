@@ -340,6 +340,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5188722489197524113, guid: 7f16f01bd7ac3f545ab32d1c6a0fd82f, type: 3}
+      propertyPath: UVModule.sprites.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: -3536509386446702007, guid: e3bdfe6a74bea7c42ac0aa2beb1de3d5, type: 3}
+    - target: {fileID: 5235853520935478743, guid: 7f16f01bd7ac3f545ab32d1c6a0fd82f, type: 3}
+      propertyPath: UVModule.sprites.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 7862093185119307866, guid: a8c3a504bcc3b2445a199f1344dc1b22, type: 3}
     - target: {fileID: 7684535450504825738, guid: 7f16f01bd7ac3f545ab32d1c6a0fd82f, type: 3}
       propertyPath: m_Name
       value: P_Glow_Mentor
