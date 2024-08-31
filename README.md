@@ -11,15 +11,13 @@
 	- 퍼커션 소리가 강조 되는 귀여운 음악 
 
 ### 스테이지별 자연소리
-- [Bird Sing, Black Forest Czech Republic](https://www.epidemicsound.com/sound-effects/tracks/01136a7f-b7ce-4e05-be80-be15e7fac08d/) - 1-1 자연소리
+- [Bird Sing, Black Forest Czech Republic](https://www.epidemicsound.com/sound-effects/tracks/01136a7f-b7ce-4e05-be80-be15e7fac08d/) - 1-1 환경소리
 - [Countryside, Active Birds, Meadow, Forest, Spring, Summer, Peaceful](
-https://www.epidemicsound.com/sound-effects/tracks/f8b244d0-2a84-4913-bf86-d904c0656163/) -  1-2 자연소리
-- []() - 2-1 자연소리
+https://www.epidemicsound.com/sound-effects/tracks/f8b244d0-2a84-4913-bf86-d904c0656163/) -  1-2 환경소리
+- []() - 2-1  환경 소리
 	- 잔잔한 물소리 
--  []() - 3-1 자연소리
-	- 시장? 창고?  
-- []() - 3-2 자연소리
-	- 시장? 창고?
+-  [Crowd, Street Market, Walla, Traffic 02](https://www.epidemicsound.com/sound-effects/tracks/ee5221fc-d212-4595-9eab-d97a447a82d2/) - 3-1 환경 소리
+- [Crowd, Street Market, Walla 02](https://www.epidemicsound.com/sound-effects/tracks/aa065786-8f5f-4951-97c0-7599eaff21a8/) - 3-2 환경 소리
 
 ### 효과음
 - [Keyboard, Razer, Typing, Moderate](https://www.epidemicsound.com/sound-effects/tracks/11e80013-c1ae-4705-b557-8d8ff294d1ba/) - 타이핑 효과음
