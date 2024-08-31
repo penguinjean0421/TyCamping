@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Stage1-2_ChungBuk_0: -1621024665035131086
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
