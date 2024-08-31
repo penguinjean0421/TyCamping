@@ -10,6 +10,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Util;
 using static UnityEngine.GraphicsBuffer;
@@ -21,11 +22,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextAnimationPrinter _printer;
     [SerializeField] private TMP_Text _preview;
     [SerializeField] private TMP_Text _clearCountText;
+    [SerializeField] private RectTransform finishUI;
+    [SerializeField] private StageBase _stage;
 
     public static List<SNode> snodeList;
     public int clearCount=0;
 
-    [SerializeField] private StageBase _stage;
 
     private string currentInputText;
 
@@ -48,12 +50,21 @@ public class GameManager : MonoBehaviour
             _preview.text += snode.target + "\n";
         }
 
+        if (_stage.snodeList.Count == clearCount)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                SceneManager.LoadScene(_stage.nextCutScene);
+            }
+        }
+
         _clearCountText.text = clearCount + "/" +_stage.snodeList.Count;
 
     }
     public void Initialize()
     {
         snodeList = new List<SNode>();
+        finishUI.gameObject.SetActive(false);
     }
 
 
@@ -84,11 +95,11 @@ public class GameManager : MonoBehaviour
                         _inputField.transform.DOMoveY(5, 1f).SetRelative();
                     });
                     clearCount++;
-                    break;
-                }
+                    if (_stage.snodeList.Count == clearCount)
+                    {
+                        finishUI.gameObject.SetActive(true);
+                    }
 
-                if (isCorrect)
-                {
                     break;
                 }
             }

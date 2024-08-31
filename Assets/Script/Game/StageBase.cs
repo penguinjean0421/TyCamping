@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
@@ -12,6 +12,7 @@ namespace Assets.Script.Game
 
         public int index = 0;
         public TextAsset baseAsset;
+        public string nextCutScene;
         public void Start()
         {
             Initialize();

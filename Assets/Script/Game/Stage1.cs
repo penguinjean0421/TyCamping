@@ -81,11 +81,9 @@ namespace Assets.Script.Game
             GameManager.PushTarget(snodeList[2]);
             GameManager.PushTarget(snodeList[5]);
             snodeList[3].spriteGroup.SetActive(true);
-            snodeList[3].spriteGroup.transform.position = snodeList[3].spriteGroup.transform.position + Vector3.left * 15f;
-            snodeList[3].spriteGroup.transform.DOMoveX(15f, 0.5f).SetRelative();
             snodeList[3].spriteGroup.GetComponentInChildren<SpriteRenderer>().color = new Vector4();
             snodeList[3].spriteGroup.GetComponentInChildren<SpriteRenderer>().DOColor(Color.white, 0.5f);
-
+            snodeList[3].spriteGroup.GetComponentInChildren<SpriteMask>().transform.DOScaleX(0,0.5f);
         }
         public void OnCutActive4()
         {

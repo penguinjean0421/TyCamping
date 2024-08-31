@@ -276,7 +276,7 @@ public class TextAnimationPrinter : MonoBehaviour
     }
     public void Skip()
     {
-
+        StopPrinting();
         int letterCount = 0;
         while (_usableTextIndex < _usableText.Count)
         {
@@ -284,6 +284,8 @@ public class TextAnimationPrinter : MonoBehaviour
             {
                 AppearTween(GlobalTextAnimationSetting.instance.skipTextAnimationStyle, _usableText[_usableTextIndex][i], letterCount);
             }
+
+            _usableTextIndex++;
         }
         StartCoroutine(RepeatAnimation());
     }

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultSpeechBubbleSprite: {fileID: 0}
   defaultTextAnimationStyle: {fileID: 11400000, guid: 48feeec8c34d5484db96359de359a26b, type: 2}
-  skipTextAnimationStyle: {fileID: 0}
+  skipTextAnimationStyle: {fileID: 11400000, guid: b234306244644d54fa0d1c0b2d219bc5, type: 2}
   dialogStyles: []
