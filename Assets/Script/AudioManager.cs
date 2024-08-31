@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Serialization.Json;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -10,19 +11,27 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
 
     [Header("#BGM")]
-    public AudioClip[] bgmClips;
+    public AudioClip bgmClip;
     public float bgmVolume;
     public int bgmChannels;
-    AudioSource[] bgmPlayers;
+    AudioSource bgmPlayer;
+
+
+    [Header("#ENVIRBGM")]
+    public AudioClip[] envirBgmClips;
+    public float envirBgmVolume;
+    public int envirBgmChannels;
+    AudioSource[] envirBgmPlayers;
+    int channelIndex;
 
     [Header("#SFX")]
     public AudioClip[] sfxClips;
     public float sfxVolume;
     public int sfxChannels;
     AudioSource[] sfxPlayers;
-    int channelIndex;
-        
-    public enum Bgm
+
+    
+    public enum EnvirBgm
     {
         Stage11, Stage12, Stage13, Stage14, Stage15
     }
@@ -42,16 +51,16 @@ public class AudioManager : MonoBehaviour
 
     void Init()
     {
-        //배경음 플레이어 초기화
-        GameObject bgmObject = new GameObject("BgmPlayer");
-        bgmObject.transform.parent = transform;
-        bgmPlayers = new AudioSource[bgmChannels];
+        //환경음 플레이어 초기화
+        GameObject envirBgmObject = new GameObject("EnvirBgmPlayer");
+        envirBgmObject.transform.parent = transform;
+        envirBgmPlayers = new AudioSource[envirBgmChannels];
 
-        for (int index = 0; index < bgmPlayers.Length; index++)
+        for (int index = 0; index < envirBgmPlayers.Length; index++)
         {
-            bgmPlayers[index] = bgmObject.AddComponent<AudioSource>();
-            bgmPlayers[index].volume = sfxVolume;
-            bgmPlayers[index].loop = true;
+            envirBgmPlayers[index] = envirBgmObject.AddComponent<AudioSource>();
+            envirBgmPlayers[index].volume = sfxVolume;
+            envirBgmPlayers[index].loop = true;
         }
         //bgmPlayer = bgmObject.AddComponent<AudioSource>();
         //bgmPlayer.playOnAwake = false;
@@ -73,20 +82,36 @@ public class AudioManager : MonoBehaviour
     }
 
     // 배경음악 재생
-    public void PlayBgm(Bgm bgm, bool isPlay)
+    public void PlayBGM(bool isPlay)
     {
+        if (isPlay)
+        {
+            bgmPlayer.Play();
+        }
+        else
+        {
+            bgmPlayer.Stop();
+        }
+    }
+
+
+    // 환경음악 재생
+    public void PlayEnvirBgm(EnvirBgm envirBgm)
+    {
+        // 루프 추가 예정
+
         for (int index = 0; index < sfxPlayers.Length; index++)
         {
-            int loopindex = (index + channelIndex) % bgmPlayers.Length;
+            int loopindex = (index + channelIndex) % envirBgmPlayers.Length;
 
-            if (sfxPlayers[loopindex].isPlaying)
+            if (envirBgmPlayers[loopindex].isPlaying)
             {
                 continue;
             }
 
             channelIndex = loopindex;
-            bgmPlayers[loopindex].clip = bgmClips[(int)bgm];
-            bgmPlayers[loopindex].Play();
+            envirBgmPlayers[loopindex].clip = envirBgmClips[(int)envirBgm];
+            envirBgmPlayers[loopindex].Play();
 
             break;
         }
