@@ -3475,11 +3475,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2861375037517450459, guid: 26a5a653db98ed4418aee07a0db9a09f, type: 3}
       propertyPath: bgmChannels
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2861375037517450459, guid: 26a5a653db98ed4418aee07a0db9a09f, type: 3}
       propertyPath: envirBgmVolume
       value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2861375037517450459, guid: 26a5a653db98ed4418aee07a0db9a09f, type: 3}
+      propertyPath: envirBgmChannels
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2861375037517450459, guid: 26a5a653db98ed4418aee07a0db9a09f, type: 3}
       propertyPath: bgmClips.Array.size
@@ -3488,11 +3492,11 @@ PrefabInstance:
     - target: {fileID: 2861375037517450459, guid: 26a5a653db98ed4418aee07a0db9a09f, type: 3}
       propertyPath: 'bgmClips.Array.data[0]'
       value: 
-      objectReference: {fileID: 8300000, guid: 9487abd2487ae97438373f2bc77436d1, type: 3}
+      objectReference: {fileID: 8300000, guid: 92de8643f9ea3504f9010b828ec0afbe, type: 3}
     - target: {fileID: 2861375037517450459, guid: 26a5a653db98ed4418aee07a0db9a09f, type: 3}
       propertyPath: 'bgmClips.Array.data[1]'
       value: 
-      objectReference: {fileID: 8300000, guid: 9487abd2487ae97438373f2bc77436d1, type: 3}
+      objectReference: {fileID: 8300000, guid: 483f3b6813f1b0c4d9598c2e27be8d6c, type: 3}
     - target: {fileID: 2861375037517450459, guid: 26a5a653db98ed4418aee07a0db9a09f, type: 3}
       propertyPath: 'bgmClips.Array.data[2]'
       value: 
@@ -3504,7 +3508,7 @@ PrefabInstance:
     - target: {fileID: 2861375037517450459, guid: 26a5a653db98ed4418aee07a0db9a09f, type: 3}
       propertyPath: 'envirBgmClips.Array.data[2]'
       value: 
-      objectReference: {fileID: 8300000, guid: f4869179537b298479c75b9421cf068f, type: 3}
+      objectReference: {fileID: 8300000, guid: 14c3026a7a33a7d44bafe4a0ea99a957, type: 3}
     - target: {fileID: 2861375037517450459, guid: 26a5a653db98ed4418aee07a0db9a09f, type: 3}
       propertyPath: 'envirBgmClips.Array.data[3]'
       value: 
