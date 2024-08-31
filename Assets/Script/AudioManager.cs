@@ -33,7 +33,7 @@ public class AudioManager : MonoBehaviour
     
     public enum EnvirBgm
     {
-        Stage11, Stage12, Stage13, Stage14, Stage15
+        Stage11, Stage12, Stage21, Stage22, Stage31, Stage32
     }
 
 
