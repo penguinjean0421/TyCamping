@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using DG.Tweening;
-using Microsoft.Unity.VisualStudio.Editor;
 using UnityEditor;
 using UnityEngine;
 

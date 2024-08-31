@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: defaultStyle
   m_EditorClassIdentifier: 
   name: default
-  appearInterval: 0.05
+  appearInterval: 0.04
   repeatInterval: 0.1
   useAppearAnimation: 1
   appearUnit: 0
@@ -30,8 +30,8 @@ MonoBehaviour:
   appearEndRotation: {x: 0, y: 0, z: 0}
   appearRotationEase: 0
   appearColorSpeed: 1
-  appearBeginColor: {r: 0, g: 0, b: 0, a: 1}
-  appearEndColor: {r: 0, g: 0, b: 0, a: 1}
+  appearBeginColor: {r: 0.37647063, g: 0.10588236, b: 0.10588236, a: 1}
+  appearEndColor: {r: 0.37647063, g: 0.10588236, b: 0.10588236, a: 1}
   appearColorEase: 0
   useRepeatAnimation: 0
   repeatUnit: 0

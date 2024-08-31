@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using DG.Tweening;
 using Unity.VisualScripting;
 using UnityEditor;
-using UnityEditorInternal.VR;
 using UnityEngine;
 
 [CustomEditor(typeof(TextAnimationEditor))]
@@ -41,7 +40,7 @@ public class TextAnimationInspector : Editor
 [ExecuteInEditMode]
 public class TextAnimationEditor : MonoBehaviour
 {
-    [Header("´ÙÀÌ¾ó·Î±× ¿¡¼Â")]
+    [Header("ë‹¤ì´ì–¼ë¡œê·¸ ì—ì…‹")]
 
     [SerializeField] private TextAnimationAsset target;
     [SerializeField] private SpeechBubble speechBubble;

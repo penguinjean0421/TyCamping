@@ -1,29 +1,19 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
 using Assets.Script.Game;
 using DG.Tweening;
 using TMPro;
-using Unity.VisualScripting;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-using Util;
-using static UnityEngine.GraphicsBuffer;
-using static UnityEngine.Rendering.DebugUI;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private TMP_InputField _inputField;
     [SerializeField] private TextAnimationPrinter _printer;
-    [SerializeField] private TMP_Text _preview;
     [SerializeField] private TMP_Text _clearCountText;
     [SerializeField] private RectTransform finishUI;
     [SerializeField] private StageBase _stage;
+    [SerializeField] private CharacterManager characterManager;
 
     public static List<SNode> snodeList;
     public int clearCount=0;
@@ -39,17 +29,12 @@ public class GameManager : MonoBehaviour
         Initialize();
     }
 
+
     private void LateUpdate()
     {
         currentInputText = _inputField.text;
         CheckInput();
         _inputField.ActivateInputField();
-        _preview.text = "";
-        foreach (var snode in snodeList)
-        {
-            _preview.text += snode.target + "\n";
-        }
-
         if (_stage.snodeList.Count == clearCount)
         {
             if (Input.GetMouseButtonDown(0))
@@ -65,12 +50,17 @@ public class GameManager : MonoBehaviour
     {
         snodeList = new List<SNode>();
         finishUI.gameObject.SetActive(false);
+
+
     }
 
 
     public static void PushTarget(SNode snode)
     {
         snodeList.Add(snode);
+        snode.hint.gameObject.SetActive(true);
+        snode.hint.color = new Vector4(0, 0, 0, 0);
+        snode.hint.DOColor(Color.white, 0.2f);
     }
 
     public void CheckInput()
@@ -88,6 +78,11 @@ public class GameManager : MonoBehaviour
                 if (!ValidationExtension.IsCorrect(snode.target, currentInputText))
                 {
                     snodeList.Remove(snode);
+                    snode.hint.DOColor(new Vector4(1, 1, 1, 0), 1.0f).OnComplete(() =>
+                    {
+                        snode.hint.gameObject.SetActive(false);
+                    });
+                   
                     snode.action.Invoke();
                     OnCorrect();
                     isCorrect = true;
@@ -102,12 +97,19 @@ public class GameManager : MonoBehaviour
                         finishUI.gameObject.SetActive(true);
                     }
 
+                    // 캐릭터 성공 액션
+                    characterManager.SuccessAction();
+
                     break;
                 }
             }
             if (!isCorrect)
             {
                 OnWrong();
+
+                // 캐릭터 실패 액션
+                characterManager.FailureAction();
+
             }
 
             ClearInputField();
