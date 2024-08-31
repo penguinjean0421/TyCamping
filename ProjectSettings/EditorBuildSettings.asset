@@ -23,6 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainGame/Stage1_2Cutscene.unity
     guid: 7b338198162ba3b488b35615d38ca1f5
+  - enabled: 1
+    path: Assets/Scenes/MainGame/Stage2_1.unity
+    guid: 2d7dc3e71e1c51d438a8ddbdbca136f4
+  - enabled: 1
+    path: Assets/Scenes/MainGame/Stage2_1Cutscene.unity
+    guid: e60d244caefe1ef44bce0455bea9adc1
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

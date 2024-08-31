@@ -8,6 +8,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class GameManager : MonoBehaviour
 
     public UnityEvent onWrongEvent;
     public UnityEvent onCorrectEvent;
+    private bool checkable = true;
 
     private void Awake()
     {
@@ -57,7 +59,7 @@ public class GameManager : MonoBehaviour
 
     public void CheckInput()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (checkable && Input.GetKeyDown(KeyCode.Return))
         {
             AudioManager.instance.PlaySfx(AudioManager.Sfx.EnterHit);
 
@@ -79,9 +81,10 @@ public class GameManager : MonoBehaviour
                     OnCorrect();
                     isCorrect = true;
                     _clearCountText.transform.DOShakeScale(0.1f, Vector3.one * 0.5f);
+                    checkable = false;
                     _inputField.transform.DOMoveY(-5, 0.5f).SetRelative().OnComplete(() =>
                     {
-                        _inputField.transform.DOMoveY(5, 1f).SetRelative();
+                        _inputField.transform.DOMoveY(5, 1f).SetRelative().OnComplete(() => { checkable = true; });
                     });
                     clearCount++;
                     if (_stage.snodeList.Count == clearCount)
