@@ -3345,6 +3345,22 @@ PrefabInstance:
       propertyPath: 'bgmClips.Array.data[2]'
       value: 
       objectReference: {fileID: 8300000, guid: 9487abd2487ae97438373f2bc77436d1, type: 3}
+    - target: {fileID: 2861375037517450459, guid: 26a5a653db98ed4418aee07a0db9a09f, type: 3}
+      propertyPath: envirBgmClips.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2861375037517450459, guid: 26a5a653db98ed4418aee07a0db9a09f, type: 3}
+      propertyPath: 'envirBgmClips.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: f4869179537b298479c75b9421cf068f, type: 3}
+    - target: {fileID: 2861375037517450459, guid: 26a5a653db98ed4418aee07a0db9a09f, type: 3}
+      propertyPath: 'envirBgmClips.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8300000, guid: c5661dce0d1fbc0489928e44fd6a9ad6, type: 3}
+    - target: {fileID: 2861375037517450459, guid: 26a5a653db98ed4418aee07a0db9a09f, type: 3}
+      propertyPath: 'envirBgmClips.Array.data[4]'
+      value: 
+      objectReference: {fileID: 8300000, guid: a33d5640dc40fdf49a76859933b5e6d1, type: 3}
     - target: {fileID: 3876374870091848006, guid: 26a5a653db98ed4418aee07a0db9a09f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

@@ -1,60 +1,59 @@
+using System;
 using UnityEditor;
 using UnityEngine;
 
-namespace Util
+
+public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 {
-    public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
+    private static T _instance;
+
+    public static T Instance
     {
-        public static T instance
+        get
         {
-            get
-            {
-                if (_instance == null)
+            if (_instance == null)
+                try
                 {
-                    try
-                    {
-                        _instance = (T)FindObjectOfType<T>();
-                    }
-                    catch (System.Exception e)
-                    {
-                        Debug.LogError(e.StackTrace);
-                        return null;
-                    }
+                    _instance = FindObjectOfType<T>();
+                }
+                catch (Exception e)
+                {
+                    UnityEngine.Debug.LogError(e.StackTrace);
+                    return null;
                 }
 
-                return _instance;
-            }
+            return _instance;
         }
-
-        private static T _instance;
     }
+}
+public class ScriptableSingleton<T> : ScriptableObject where T : ScriptableObject
+{
+    private static T _instance;
 
-    public class ScriptableSingleton<T> : ScriptableObject where T : ScriptableObject
+    public static T instance
     {
-        public static T instance
+        get
         {
-            get
-            {
-                if (_instance == null)
+            if (_instance == null)
+                try
                 {
-                    try
-                    {
-                        var type = typeof(T).ToString();
-                        var guid =AssetDatabase.FindAssets("t:"+ type);
-                        var path = AssetDatabase.GUIDToAssetPath(guid[0]);
-                        _instance = (T)AssetDatabase.LoadAssetAtPath(path,typeof(T));
-                    }
-                    catch (System.Exception e)
-                    {
-                        Debug.LogError(e.StackTrace);
-                        return null;
-                    }
+#if UNITY_EDITOR
+                    var type = typeof(T).ToString();
+                    var guid = AssetDatabase.FindAssets("t:" + type);
+                    var path = AssetDatabase.GUIDToAssetPath(guid[0]);
+                    _instance = (T)AssetDatabase.LoadAssetAtPath(path, typeof(T));
+#else
+                        _instance = (T)Resources.Load<T>("Global LevelObject Setting");
+#endif
+
+                }
+                catch (Exception e)
+                {
+                    UnityEngine.Debug.LogError(e.StackTrace);
+                    return null;
                 }
 
-                return _instance;
-            }
+            return _instance;
         }
-
-        private static T _instance;
     }
 }

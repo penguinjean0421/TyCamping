@@ -39,7 +39,7 @@ public class AudioManager : MonoBehaviour
 
     public enum EnvirBgm
     {
-        Stage11, Stage12, Stage21, Stage22, Stage31, Stage32
+        Stage11, Stage12, Stage21, Stage31, Stage32
     }
 
 
@@ -152,7 +152,7 @@ public class AudioManager : MonoBehaviour
     }
 
 
-    // �과�생
+    // 효과음 재생
     public void PlaySfx(Sfx sfx)
     {
         for (int index = 0; index < sfxPlayers.Length; index++)
