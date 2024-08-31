@@ -41,14 +41,14 @@ namespace Assets.Script.Game
         {
             Debug.Log("두근두근 첫 캠핑 돗자리");
             snodeList[0].spriteGroup.SetActive(true);
-            snodeList[0].spriteGroup.transform.GetChild(1).localScale = new Vector3(0.1f, 0.5f, 0f);
-            snodeList[0].spriteGroup.transform.GetChild(1).DOScale(Vector3.one, 1.5f);
+            snodeList[0].spriteGroup.transform.GetChild(1).localScale = new Vector3(0.1f, 0.3f, 0f);
+            snodeList[0].spriteGroup.transform.GetChild(1).DOScale(Vector3.one, 0.8f);
             //돗자리 펼치기
 
             snodeList[0].spriteGroup.transform.GetChild(0).localScale = new Vector3(0.1f, 0.5f, 0f);
-            snodeList[0].spriteGroup.transform.GetChild(0).DOScale(Vector3.one, 1.5f);
+            snodeList[0].spriteGroup.transform.GetChild(0).DOScale(Vector3.one, 1.0f);
             snodeList[0].spriteGroup.transform.GetChild(0).position = snodeList[0].spriteGroup.transform.GetChild(0).position + Vector3.up * 2;
-            snodeList[0].spriteGroup.transform.GetChild(0).DOMoveY(-2, 1.5f).SetRelative().SetDelay(0.5f);
+            snodeList[0].spriteGroup.transform.GetChild(0).DOMoveY(-2, 1.0f).SetRelative().SetDelay(0.5f);
             //바구니 내려오기
 
             GameManager.PushTarget(snodeList[1]);
@@ -68,7 +68,6 @@ namespace Assets.Script.Game
             snodeList[1].spriteGroup.transform.GetChild(1).DOScale(Vector3.one, 0.5f);
             //나무 생성
 
-            // 이펙트 플레이...
 
             GameManager.PushTarget(snodeList[3]);
         }
