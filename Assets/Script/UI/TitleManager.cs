@@ -24,11 +24,13 @@ public class TitleManager : MonoBehaviour
 
     void OnStartButtonClicked()
     {
+        AudioManager.instance.PlaySfx(AudioManager.Sfx.Button);
         SceneManager.LoadScene("IntroCutScene");
     }
 
     void OnOptionButtonClicked()
     {
+        AudioManager.instance.PlaySfx(AudioManager.Sfx.Button);
         optionMenu.gameObject.SetActive(true);
         titleMenu.gameObject.SetActive(false);
         isOptionMenuEnabled=true;
@@ -47,6 +49,7 @@ public class TitleManager : MonoBehaviour
     // Update is called once per frame
     void OnExitButtonClicked()
     {
+        AudioManager.instance.PlaySfx(AudioManager.Sfx.Button);
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
