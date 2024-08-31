@@ -156,6 +156,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -634,7 +647,28 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "1-1-3 \uB9D1\uC740  \uD55C\uB0AE\uC758    \uD558\uB298_0": -5044242016352759861
+      "1-1-3 \uB9D1\uC740  \uD55C\uB0AE\uC758    \uD558\uB298_1": -3567815828157683856
+      "1-1-3 \uB9D1\uC740  \uD55C\uB0AE\uC758    \uD558\uB298_10": 4397590167536192960
+      "1-1-3 \uB9D1\uC740  \uD55C\uB0AE\uC758    \uD558\uB298_11": -7435716131037408357
+      "1-1-3 \uB9D1\uC740  \uD55C\uB0AE\uC758    \uD558\uB298_12": 8716534899289052658
+      "1-1-3 \uB9D1\uC740  \uD55C\uB0AE\uC758    \uD558\uB298_13": -2489669245549106372
+      "1-1-3 \uB9D1\uC740  \uD55C\uB0AE\uC758    \uD558\uB298_14": -2222275508054005601
+      "1-1-3 \uB9D1\uC740  \uD55C\uB0AE\uC758    \uD558\uB298_15": -1051419019908953262
+      "1-1-3 \uB9D1\uC740  \uD55C\uB0AE\uC758    \uD558\uB298_16": 3340702580438663277
+      "1-1-3 \uB9D1\uC740  \uD55C\uB0AE\uC758    \uD558\uB298_17": -4600994509589574486
+      "1-1-3 \uB9D1\uC740  \uD55C\uB0AE\uC758    \uD558\uB298_18": 1956330932857104098
+      "1-1-3 \uB9D1\uC740  \uD55C\uB0AE\uC758    \uD558\uB298_19": 2988119272913843852
+      "1-1-3 \uB9D1\uC740  \uD55C\uB0AE\uC758    \uD558\uB298_2": 611149719914105861
+      "1-1-3 \uB9D1\uC740  \uD55C\uB0AE\uC758    \uD558\uB298_20": -1450564784039490661
+      "1-1-3 \uB9D1\uC740  \uD55C\uB0AE\uC758    \uD558\uB298_3": -8720015584998023642
+      "1-1-3 \uB9D1\uC740  \uD55C\uB0AE\uC758    \uD558\uB298_4": -3780143107491159685
+      "1-1-3 \uB9D1\uC740  \uD55C\uB0AE\uC758    \uD558\uB298_5": 9189515279538684923
+      "1-1-3 \uB9D1\uC740  \uD55C\uB0AE\uC758    \uD558\uB298_6": -527196709134705826
+      "1-1-3 \uB9D1\uC740  \uD55C\uB0AE\uC758    \uD558\uB298_7": 936274123589696982
+      "1-1-3 \uB9D1\uC740  \uD55C\uB0AE\uC758    \uD558\uB298_8": 5015342550774184597
+      "1-1-3 \uB9D1\uC740  \uD55C\uB0AE\uC758    \uD558\uB298_9": -4721233241309735197
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

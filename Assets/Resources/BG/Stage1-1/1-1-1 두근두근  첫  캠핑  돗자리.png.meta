@@ -156,6 +156,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -634,7 +647,28 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "1-1-1 \uB450\uADFC\uB450\uADFC  \uCCAB  \uCEA0\uD551  \uB3D7\uC790\uB9AC_0": 7101582687109428501
+      "1-1-1 \uB450\uADFC\uB450\uADFC  \uCCAB  \uCEA0\uD551  \uB3D7\uC790\uB9AC_1": 4280594512400000149
+      "1-1-1 \uB450\uADFC\uB450\uADFC  \uCCAB  \uCEA0\uD551  \uB3D7\uC790\uB9AC_10": -7085137877201509369
+      "1-1-1 \uB450\uADFC\uB450\uADFC  \uCCAB  \uCEA0\uD551  \uB3D7\uC790\uB9AC_11": 8549233590716083621
+      "1-1-1 \uB450\uADFC\uB450\uADFC  \uCCAB  \uCEA0\uD551  \uB3D7\uC790\uB9AC_12": 7825943960060165339
+      "1-1-1 \uB450\uADFC\uB450\uADFC  \uCCAB  \uCEA0\uD551  \uB3D7\uC790\uB9AC_13": -5522011919561605705
+      "1-1-1 \uB450\uADFC\uB450\uADFC  \uCCAB  \uCEA0\uD551  \uB3D7\uC790\uB9AC_14": -8317258240337719769
+      "1-1-1 \uB450\uADFC\uB450\uADFC  \uCCAB  \uCEA0\uD551  \uB3D7\uC790\uB9AC_15": -5202657252223348392
+      "1-1-1 \uB450\uADFC\uB450\uADFC  \uCCAB  \uCEA0\uD551  \uB3D7\uC790\uB9AC_16": -2221036147871546034
+      "1-1-1 \uB450\uADFC\uB450\uADFC  \uCCAB  \uCEA0\uD551  \uB3D7\uC790\uB9AC_17": 1332473882439340013
+      "1-1-1 \uB450\uADFC\uB450\uADFC  \uCCAB  \uCEA0\uD551  \uB3D7\uC790\uB9AC_18": 7791850165970250629
+      "1-1-1 \uB450\uADFC\uB450\uADFC  \uCCAB  \uCEA0\uD551  \uB3D7\uC790\uB9AC_19": 1795989518045861104
+      "1-1-1 \uB450\uADFC\uB450\uADFC  \uCCAB  \uCEA0\uD551  \uB3D7\uC790\uB9AC_2": -22011980064091525
+      "1-1-1 \uB450\uADFC\uB450\uADFC  \uCCAB  \uCEA0\uD551  \uB3D7\uC790\uB9AC_20": -2529302175030059204
+      "1-1-1 \uB450\uADFC\uB450\uADFC  \uCCAB  \uCEA0\uD551  \uB3D7\uC790\uB9AC_3": -22951196288525482
+      "1-1-1 \uB450\uADFC\uB450\uADFC  \uCCAB  \uCEA0\uD551  \uB3D7\uC790\uB9AC_4": 466808795437212333
+      "1-1-1 \uB450\uADFC\uB450\uADFC  \uCCAB  \uCEA0\uD551  \uB3D7\uC790\uB9AC_5": -5889149183703286170
+      "1-1-1 \uB450\uADFC\uB450\uADFC  \uCCAB  \uCEA0\uD551  \uB3D7\uC790\uB9AC_6": 585570128177823614
+      "1-1-1 \uB450\uADFC\uB450\uADFC  \uCCAB  \uCEA0\uD551  \uB3D7\uC790\uB9AC_7": -3013077811105966093
+      "1-1-1 \uB450\uADFC\uB450\uADFC  \uCCAB  \uCEA0\uD551  \uB3D7\uC790\uB9AC_8": -2472761566470260716
+      "1-1-1 \uB450\uADFC\uB450\uADFC  \uCCAB  \uCEA0\uD551  \uB3D7\uC790\uB9AC_9": -609603956085483915
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

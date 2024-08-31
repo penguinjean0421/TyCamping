@@ -147,6 +147,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -559,7 +572,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "1-1-5 \uBB49\uAC8C\uBB49\uAC8C  \uBB49\uAC8C\uAD6C\uB984_0": -4977318296861606550
+      "1-1-5 \uBB49\uAC8C\uBB49\uAC8C  \uBB49\uAC8C\uAD6C\uB984_1": 7635297424026869668
+      "1-1-5 \uBB49\uAC8C\uBB49\uAC8C  \uBB49\uAC8C\uAD6C\uB984_10": 1437747515236772766
+      "1-1-5 \uBB49\uAC8C\uBB49\uAC8C  \uBB49\uAC8C\uAD6C\uB984_11": 6393500174997056918
+      "1-1-5 \uBB49\uAC8C\uBB49\uAC8C  \uBB49\uAC8C\uAD6C\uB984_12": -4206315541253076998
+      "1-1-5 \uBB49\uAC8C\uBB49\uAC8C  \uBB49\uAC8C\uAD6C\uB984_13": 4637897711590706353
+      "1-1-5 \uBB49\uAC8C\uBB49\uAC8C  \uBB49\uAC8C\uAD6C\uB984_14": 2765511239809647942
+      "1-1-5 \uBB49\uAC8C\uBB49\uAC8C  \uBB49\uAC8C\uAD6C\uB984_15": 2589144969664089160
+      "1-1-5 \uBB49\uAC8C\uBB49\uAC8C  \uBB49\uAC8C\uAD6C\uB984_16": 2556750525046519137
+      "1-1-5 \uBB49\uAC8C\uBB49\uAC8C  \uBB49\uAC8C\uAD6C\uB984_17": 4490077559684489132
+      "1-1-5 \uBB49\uAC8C\uBB49\uAC8C  \uBB49\uAC8C\uAD6C\uB984_2": -2187373067199277065
+      "1-1-5 \uBB49\uAC8C\uBB49\uAC8C  \uBB49\uAC8C\uAD6C\uB984_3": -5156698712086411125
+      "1-1-5 \uBB49\uAC8C\uBB49\uAC8C  \uBB49\uAC8C\uAD6C\uB984_4": -2907537130281545953
+      "1-1-5 \uBB49\uAC8C\uBB49\uAC8C  \uBB49\uAC8C\uAD6C\uB984_5": -798451345134434435
+      "1-1-5 \uBB49\uAC8C\uBB49\uAC8C  \uBB49\uAC8C\uAD6C\uB984_6": -6996979175970417775
+      "1-1-5 \uBB49\uAC8C\uBB49\uAC8C  \uBB49\uAC8C\uAD6C\uB984_7": 3496805349462294027
+      "1-1-5 \uBB49\uAC8C\uBB49\uAC8C  \uBB49\uAC8C\uAD6C\uB984_8": -7891486529987581132
+      "1-1-5 \uBB49\uAC8C\uBB49\uAC8C  \uBB49\uAC8C\uAD6C\uB984_9": 4702108551001294337
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
