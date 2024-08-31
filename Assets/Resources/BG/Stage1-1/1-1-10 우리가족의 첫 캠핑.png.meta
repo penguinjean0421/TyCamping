@@ -144,6 +144,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -534,7 +547,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "1-1-10 \uC6B0\uB9AC\uAC00\uC871\uC758 \uCCAB \uCEA0\uD551_0": -351747998856918764
+      "1-1-10 \uC6B0\uB9AC\uAC00\uC871\uC758 \uCCAB \uCEA0\uD551_1": -5160083168664965642
+      "1-1-10 \uC6B0\uB9AC\uAC00\uC871\uC758 \uCCAB \uCEA0\uD551_10": 6826182698454171623
+      "1-1-10 \uC6B0\uB9AC\uAC00\uC871\uC758 \uCCAB \uCEA0\uD551_11": 1130597699263208477
+      "1-1-10 \uC6B0\uB9AC\uAC00\uC871\uC758 \uCCAB \uCEA0\uD551_12": 3810655057388552764
+      "1-1-10 \uC6B0\uB9AC\uAC00\uC871\uC758 \uCCAB \uCEA0\uD551_13": -5479697947240377230
+      "1-1-10 \uC6B0\uB9AC\uAC00\uC871\uC758 \uCCAB \uCEA0\uD551_14": -3996805381051461940
+      "1-1-10 \uC6B0\uB9AC\uAC00\uC871\uC758 \uCCAB \uCEA0\uD551_15": 4419085483730990854
+      "1-1-10 \uC6B0\uB9AC\uAC00\uC871\uC758 \uCCAB \uCEA0\uD551_16": -9187414868033022069
+      "1-1-10 \uC6B0\uB9AC\uAC00\uC871\uC758 \uCCAB \uCEA0\uD551_2": -5688758925861390823
+      "1-1-10 \uC6B0\uB9AC\uAC00\uC871\uC758 \uCCAB \uCEA0\uD551_3": 5419074082146268750
+      "1-1-10 \uC6B0\uB9AC\uAC00\uC871\uC758 \uCCAB \uCEA0\uD551_4": 8557666968230481358
+      "1-1-10 \uC6B0\uB9AC\uAC00\uC871\uC758 \uCCAB \uCEA0\uD551_5": 853422658588142988
+      "1-1-10 \uC6B0\uB9AC\uAC00\uC871\uC758 \uCCAB \uCEA0\uD551_6": 116887799850430397
+      "1-1-10 \uC6B0\uB9AC\uAC00\uC871\uC758 \uCCAB \uCEA0\uD551_7": -8483736580475560544
+      "1-1-10 \uC6B0\uB9AC\uAC00\uC871\uC758 \uCCAB \uCEA0\uD551_8": -1022320197825865362
+      "1-1-10 \uC6B0\uB9AC\uAC00\uC871\uC758 \uCCAB \uCEA0\uD551_9": -5677816008318022857
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
