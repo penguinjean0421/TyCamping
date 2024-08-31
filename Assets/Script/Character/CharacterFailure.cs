@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CharacterFailure : MonoBehaviour
+public class CharacterFailure
 {
     private Animator animator;
     private static readonly int ActionIndex = Animator.StringToHash("ActionIndex");
