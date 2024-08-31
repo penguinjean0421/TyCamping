@@ -37,6 +37,14 @@ public class TextAnimationInputFieldHighlighter : MonoBehaviour
         currentParsedText = _inputField.textComponent.GetParsedText();
         if (!currentParsedText.Equals(previousParsedText))
         {
+            if (currentParsedText.Length > previousParsedText.Length)
+            {
+                AudioManager.instance.PlaySfx(AudioManager.Sfx.Typing);
+            }
+            else
+            {
+                AudioManager.instance.PlaySfx(AudioManager.Sfx.BackSpaceHit);
+            }
             Highlight(currentParsedText);
         }
     }
@@ -48,7 +56,7 @@ public class TextAnimationInputFieldHighlighter : MonoBehaviour
         _printer.PrintImmediate();
         if (text.Length > 1)
         {
-            AudioManager.instance.PlaySfx(AudioManager.Sfx.Typing);
+           
             if (scaleHandler != null)
             {
                 scaleHandler.Rewind();

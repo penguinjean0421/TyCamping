@@ -21,11 +21,11 @@ public class TextAnimationStyle : ScriptableObject
 
     private bool alwaysDisable = false;
 
-    [Header("³ªÅ¸³»±â")]
+    [Header("ë‚˜íƒ€ë‚´ê¸°")]
     public bool useAppearAnimation;
+#if UNITY_EDITOR
     [ShowIf(ShowIfAttribute.ActionOnConditionFail.JustDisable, ShowIfAttribute.ConditionOperator.And, nameof(useAppearAnimation))]
     public Unit appearUnit;
-
     [Header("Scale")]
     [ShowIf(ShowIfAttribute.ActionOnConditionFail.JustDisable, ShowIfAttribute.ConditionOperator.And, nameof(useAppearAnimation))]
     public float appearScaleSpeed = 1;
@@ -66,7 +66,7 @@ public class TextAnimationStyle : ScriptableObject
     public Ease appearColorEase;
 
 
-    [Header("¹Ýº¹")]
+    [Header("ë°˜ë³µ")]
     public bool useRepeatAnimation;
     [ShowIf(ShowIfAttribute.ActionOnConditionFail.JustDisable, ShowIfAttribute.ConditionOperator.And, nameof(useRepeatAnimation))]
     public Unit repeatUnit;
@@ -111,4 +111,86 @@ public class TextAnimationStyle : ScriptableObject
     public Color repeatEndColor = Color.black;
     [ShowIf(ShowIfAttribute.ActionOnConditionFail.JustDisable, ShowIfAttribute.ConditionOperator.And, nameof(useRepeatAnimation))]
     public Ease repeatColorEase;
+#else
+    public Unit appearUnit;
+    [Header("Scale")]
+    public float appearScaleSpeed = 1;
+    public Vector3 appearBeginScale = Vector3.one;
+    public Vector3 appearEndScale = Vector3.one;
+    public Ease appearScaleEase;
+    [Header("Position")]
+    public float appearPositionSpeed = 1;
+    
+    public Vector3 appearBeginPosition;
+    public Vector3 appearEndPosition;
+    
+    public Ease appearPositionEase;
+
+    [Header("Rotation")]
+    
+    public float appearRotationSpeed = 1;
+    
+    public Vector3 appearBeginRotation;
+    public Vector3 appearEndRotation;
+    
+    public Ease appearRotationEase;
+
+    [Header("Color")]
+    
+    public float appearColorSpeed = 1;
+    
+    public Color appearBeginColor = Color.black;
+    
+    public Color appearEndColor = Color.black;
+    
+    public Ease appearColorEase;
+
+
+    [Header("ë°˜ë³µ")]
+    public bool useRepeatAnimation;
+    
+    public Unit repeatUnit;
+    
+    public LoopType repeatLoopType;
+
+    [Header("Scale")]
+    
+    public float repeatScaleSpeed = 1;
+    
+    public Vector3 repeatBeginScale = Vector3.one;
+    
+    public Vector3 repeatEndScale = Vector3.one;
+    
+    public Ease repeatScaleEase;
+
+    [Header("Position")]
+    
+    public float repeatPositionSpeed = 1;
+    
+    public Vector3 repeatBeginPosition;
+    
+    public Vector3 repeatEndPosition;
+    
+    public Ease repeatPositionEase;
+
+    [Header("Rotation")]
+    
+    public float repeatRotationSpeed = 1;
+   
+    public Vector3 repeatBeginRotation;
+  
+    public Vector3 repeatEndRotation;
+ 
+    public Ease repeatRotationEase;
+
+    [Header("Color")]
+ 
+    public float repeatColorSpeed = 1;
+    public Color repeatBeginColor = Color.black;
+  
+    public Color repeatEndColor = Color.black;
+    
+    public Ease repeatColorEase;
+
+#endif
 }
