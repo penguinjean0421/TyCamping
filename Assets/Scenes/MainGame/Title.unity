@@ -542,55 +542,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalImage: {fileID: 21300000, guid: 99dbbe8e0b5f53a4fa2a3aa91808f091, type: 3}
   pressedImage: {fileID: 21300000, guid: 7da7cd0462274944d85c7703861a4b47, type: 3}
---- !u!1 &77801637
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 77801638}
-  - component: {fileID: 77801639}
-  m_Layer: 0
-  m_Name: SliderManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &77801638
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 77801637}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &77801639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 77801637}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 165969a3e87b1054696b59acc45935d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sliderTextPairs:
-  - slider: {fileID: 1980655620}
-    text: {fileID: 1305916234}
-  - slider: {fileID: 19702923}
-    text: {fileID: 1375995133}
 --- !u!1 &165422434
 GameObject:
   m_ObjectHideFlags: 0
@@ -3426,7 +3377,6 @@ SceneRoots:
   - {fileID: 1123229639}
   - {fileID: 1102994031}
   - {fileID: 274093390}
-  - {fileID: 77801638}
   - {fileID: 1681338489}
   - {fileID: 165422436}
   - {fileID: 7007978310296760351}
