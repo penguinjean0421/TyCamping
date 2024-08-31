@@ -8,7 +8,7 @@ public class TextAnimationManager : MonoBehaviour
 {
     [SerializeField] private TextAnimationAsset dialogAsset;
     [SerializeField] private SpeechBubble speechBubble;
-    [SerializeField] private Image image;
+    public Dictionary<int,UnityAction> actionDictionary = new Dictionary<int, UnityAction>();
 
     [SerializeField] private int currentIndex;
 
@@ -20,10 +20,18 @@ public class TextAnimationManager : MonoBehaviour
     {
         var data = dialogAsset.speechBubbles[index];
         //speechBubble.SetSprite(data.sprite);
-        image.sprite = data.sprite;
+        if (actionDictionary.TryGetValue(index, out var value))
+        {
+            value.Invoke();
+        }
         speechBubble.SetPosition(transform.position = data.position);
         speechBubble.SetSize(data.size);
         speechBubble.Print(dialogAsset.phrases[index]);
+    }
+
+    public virtual void Initialize()
+    {
+
     }
 
     public void Skip()
@@ -33,6 +41,8 @@ public class TextAnimationManager : MonoBehaviour
 
     void Start()
     {
+        actionDictionary=new Dictionary<int, UnityAction>();
+        Initialize();
         currentIndex = 0;
         ShowDialog(currentIndex);
     }
