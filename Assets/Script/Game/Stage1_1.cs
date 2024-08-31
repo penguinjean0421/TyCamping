@@ -91,7 +91,7 @@ namespace Assets.Script.Game
             snodeList[3].spriteGroup.SetActive(true);
             snodeList[3].spriteGroup.GetComponentInChildren<SpriteRenderer>().color = new Vector4();
             snodeList[3].spriteGroup.GetComponentInChildren<SpriteRenderer>().DOColor(Color.white, 0.5f);
-            snodeList[3].spriteGroup.GetComponentInChildren<SpriteMask>().transform.DOScaleX(0,0.5f);
+            snodeList[3].spriteGroup.GetComponentInChildren<SpriteMask>().transform.DOScaleX(0,1.5f);
         }
         public void OnCutActive4()
         {
