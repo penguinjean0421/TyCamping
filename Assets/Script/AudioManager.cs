@@ -124,7 +124,7 @@ public class AudioManager : MonoBehaviour
     }
 
 
-    // �경�악 �생
+    // 환경음악 재생
     public void PlayEnvirBgm(EnvirBgm envirBgm, bool isPlay)
     {
         for (int index = 0; index < envirBgmPlayers.Length; index++)
