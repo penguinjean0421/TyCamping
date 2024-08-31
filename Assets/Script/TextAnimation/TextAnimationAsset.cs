@@ -45,7 +45,7 @@ public class TextAnimationAsset : ScriptableObject
             size = new Vector2(300,300);
             appearDuration = 0.3f;
         }
-        //public Sprite sprite;
+        public Sprite sprite;
         public Vector3 position;
         public Vector2 size;
         public float appearDuration;
@@ -62,7 +62,6 @@ public class TextAnimationAsset : ScriptableObject
         foreach (var phrase in phrases)
         {
             var instance= new SerializedSpeechBubble();
-            //instance.sprite = GlobalTextAnimationSetting.instance.defaultSpeechBubbleSprite;
             speechBubbles.Add(instance);
         }
     }
