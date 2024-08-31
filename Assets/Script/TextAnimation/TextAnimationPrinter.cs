@@ -100,7 +100,7 @@ public class TextAnimationPrinter : MonoBehaviour
         return sum;
     }
     /// <summary>
-    /// ÅØ½ºÆ® ¸®¼Â
+    /// í…ìŠ¤íŠ¸ ë¦¬ì…‹
     /// </summary>
     public void ResetText()
     {
@@ -289,7 +289,7 @@ public class TextAnimationPrinter : MonoBehaviour
     }
 
     /// <summary>
-    /// Ãâ·Â ÇÔ¼ö
+    /// ì¶œë ¥ í•¨ìˆ˜
     /// </summary>
     public IEnumerator RepeatAnimation()
     {

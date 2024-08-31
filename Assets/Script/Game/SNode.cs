@@ -1,5 +1,6 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.Events;
 
 namespace Assets.Script.Game
@@ -9,5 +10,6 @@ namespace Assets.Script.Game
     {
         public string target;
         public UnityAction action;
+        public GameObject spriteGroup;
     }
 }

@@ -15,12 +15,12 @@ MonoBehaviour:
   name: default
   appearInterval: 0.1
   repeatInterval: 0.1
-  useAppearAnimation: 0
+  useAppearAnimation: 1
   appearUnit: 0
   appearScaleSpeed: 1
-  appearBeginScale: {x: 1, y: 1, z: 1}
+  appearBeginScale: {x: 1.2, y: 1.2, z: 1.2}
   appearEndScale: {x: 1, y: 1, z: 1}
-  appearScaleEase: 0
+  appearScaleEase: 23
   appearPositionSpeed: 1
   appearBeginPosition: {x: 0, y: 0, z: 0}
   appearEndPosition: {x: 0, y: 0, z: 0}
