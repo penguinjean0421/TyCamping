@@ -51,29 +51,6 @@ public class AudioManager : MonoBehaviour
 
     void Init()
     {
-        // 배경�악 초기
-        GameObject bgmObject = new GameObject("BgmPlayer");
-        bgmObject.transform.parent = transform;
-        bgmPlayer = bgmObject.AddComponent<AudioSource>();
-        bgmPlayer.playOnAwake = false;
-        bgmPlayer.loop = true;
-        bgmPlayer.volume = bgmVolume;
-        bgmPlayer.clip = bgmClip;
-
-        //�경�레�어 초기
-        GameObject envirBgmObject = new GameObject("EnvirBgmPlayer");
-        envirBgmObject.transform.parent = transform;
-        envirBgmPlayers = new AudioSource[envirBgmChannels];
-
-        for (int index = 0; index < envirBgmPlayers.Length; index++)
-        {
-            envirBgmPlayers[index] = envirBgmObject.AddComponent<AudioSource>();
-            envirBgmPlayers[index].volume = sfxVolume;
-            envirBgmPlayers[index].playOnAwake = false;
-            envirBgmPlayers[index].loop = true;
-        }
-    
-        //�과�레�어 초기
         GameObject sfxObject = new GameObject("SfxObject");
         sfxObject.transform.parent = transform;
         sfxPlayers = new AudioSource[sfxChannels];
@@ -86,7 +63,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    // 배경�악 �생
+    // 배경�악 �생
     public void PlayBGM(bool isPlay)
     {
         if (isPlay)
@@ -100,7 +77,7 @@ public class AudioManager : MonoBehaviour
     }
 
 
-    // �경�악 �생
+    // �경�악 �생
     public void PlayEnvirBgm(EnvirBgm envirBgm)
     {
         for (int index = 0; index < sfxPlayers.Length; index++)
@@ -121,7 +98,7 @@ public class AudioManager : MonoBehaviour
     }
 
 
-    // �과�생
+    // �과�생
     public void PlaySfx(Sfx sfx)
     {
         for (int index = 0; index < sfxPlayers.Length; index++)
