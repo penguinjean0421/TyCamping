@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Stage2-1_CableCarWindow2_0: 7134221031611867994
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
