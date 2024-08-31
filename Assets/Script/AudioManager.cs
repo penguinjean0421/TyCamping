@@ -13,7 +13,6 @@ public class AudioManager : MonoBehaviour
     [Header("#BGM")]
     public AudioClip bgmClip;
     public float bgmVolume;
-    public int bgmChannels;
     AudioSource bgmPlayer;
 
 
@@ -52,6 +51,28 @@ public class AudioManager : MonoBehaviour
 
     void Init()
     {
+        // 메인 BGM 초기화
+        GameObject bgmObject = new GameObject("BgmObject");
+        bgmObject.transform.parent = transform;
+        bgmPlayer = bgmObject.AddComponent<AudioSource>();
+        bgmPlayer.playOnAwake = false;
+        bgmPlayer.loop = true;
+        bgmPlayer.volume = bgmVolume;
+        bgmPlayer.clip = bgmClip;
+
+        // 환경BGM 초기화
+        GameObject envirBgmObject = new GameObject("EnvirBgmObject");
+        envirBgmObject.transform.parent = transform;
+        envirBgmPlayers = new AudioSource[envirBgmChannels];
+
+        for (int index = 0; index < envirBgmPlayers.Length; index++)
+        {
+            envirBgmPlayers[index] = envirBgmObject.AddComponent<AudioSource>();
+            envirBgmPlayers[index].playOnAwake = false;
+            envirBgmPlayers[index].volume = sfxVolume;
+        }
+
+        // 효과음 초기화
         GameObject sfxObject = new GameObject("SfxObject");
         sfxObject.transform.parent = transform;
         sfxPlayers = new AudioSource[sfxChannels];
@@ -64,7 +85,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    // 배경�악 �생
+    // 배경음악 재생
     public void PlayBGM(bool isPlay)
     {
         if (isPlay)
@@ -79,7 +100,7 @@ public class AudioManager : MonoBehaviour
 
 
     // �경�악 �생
-    public void PlayEnvirBgm(EnvirBgm envirBgm)
+    public void PlayEnvirBgm(EnvirBgm envirBgm, bool isPlay)
     {
         for (int index = 0; index < sfxPlayers.Length; index++)
         {
@@ -94,7 +115,14 @@ public class AudioManager : MonoBehaviour
             envirBgmPlayers[loopindex].clip = envirBgmClips[(int)envirBgm];
             envirBgmPlayers[loopindex].Play();
 
-            break;
+            if (isPlay)
+            {
+                envirBgmPlayers[loopindex].Play();
+            }
+            else
+            {
+                envirBgmPlayers[loopindex].Stop();
+            }
         }
     }
 
