@@ -3371,9 +3371,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2861375037517450459, guid: 26a5a653db98ed4418aee07a0db9a09f, type: 3}
+      propertyPath: bgmChannels
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2861375037517450459, guid: 26a5a653db98ed4418aee07a0db9a09f, type: 3}
       propertyPath: envirBgmVolume
       value: 0.75
       objectReference: {fileID: 0}
+    - target: {fileID: 2861375037517450459, guid: 26a5a653db98ed4418aee07a0db9a09f, type: 3}
+      propertyPath: bgmClips.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2861375037517450459, guid: 26a5a653db98ed4418aee07a0db9a09f, type: 3}
+      propertyPath: 'bgmClips.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 9487abd2487ae97438373f2bc77436d1, type: 3}
     - target: {fileID: 3876374870091848006, guid: 26a5a653db98ed4418aee07a0db9a09f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

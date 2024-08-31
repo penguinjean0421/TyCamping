@@ -31,7 +31,7 @@ namespace Assets.Script.Game
             }
 
             //사운드 BGM
-            AudioManager.instance.PlayBGM(true);
+            AudioManager.instance.PlayBGM(AudioManager.Bgm.Stage, true);
             AudioManager.instance.PlayEnvirBgm(AudioManager.EnvirBgm.Stage11, true);
 
         }

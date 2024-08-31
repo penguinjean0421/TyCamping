@@ -11,9 +11,10 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
 
     [Header("#BGM")]
-    public AudioClip bgmClip;
+    public AudioClip[] bgmClips;
     public float bgmVolume;
-    AudioSource bgmPlayer;
+    public int bgmChannels;
+    AudioSource[] bgmPlayers;
 
 
     [Header("#ENVIRBGM")]
@@ -29,7 +30,13 @@ public class AudioManager : MonoBehaviour
     public int sfxChannels;
     AudioSource[] sfxPlayers;
 
-    
+
+    public enum Bgm
+    {
+        Menu, CutScene, Stage
+    }
+
+
     public enum EnvirBgm
     {
         Stage11, Stage12, Stage21, Stage22, Stage31, Stage32
@@ -54,11 +61,15 @@ public class AudioManager : MonoBehaviour
         // 메인 BGM 초기화
         GameObject bgmObject = new GameObject("BgmObject");
         bgmObject.transform.parent = transform;
-        bgmPlayer = bgmObject.AddComponent<AudioSource>();
-        bgmPlayer.playOnAwake = false;
-        bgmPlayer.loop = true;
-        bgmPlayer.volume = bgmVolume;
-        bgmPlayer.clip = bgmClip;
+        bgmPlayers = new AudioSource[bgmChannels];
+
+        for (int index = 0; index < bgmPlayers.Length; index++)
+        {
+            bgmPlayers[index] = bgmObject.AddComponent<AudioSource>();
+            bgmPlayers[index].playOnAwake = false;
+            bgmPlayers[index].volume = bgmVolume;
+        }
+
 
         // 환경BGM 초기화
         GameObject envirBgmObject = new GameObject("EnvirBgmObject");
@@ -86,15 +97,29 @@ public class AudioManager : MonoBehaviour
     }
 
     // 배경음악 재생
-    public void PlayBGM(bool isPlay)
+    public void PlayBGM(Bgm bgm, bool isPlay)
     {
-        if (isPlay)
+        for (int index = 0; index < bgmPlayers.Length; index++)
         {
-            bgmPlayer.Play();
-        }
-        else
-        {
-            bgmPlayer.Stop();
+            int loopindex = (index + channelIndex) % bgmPlayers.Length;
+
+            if (bgmPlayers[loopindex].isPlaying)
+            {
+                continue;
+            }
+
+            channelIndex = loopindex;
+            bgmPlayers[loopindex].clip = bgmClips[(int)bgm];
+            bgmPlayers[loopindex].Play();
+
+            if (isPlay)
+            {
+                bgmPlayers[loopindex].Play();
+            }
+            else
+            {
+                bgmPlayers[loopindex].Stop();
+            }
         }
     }
 
@@ -102,7 +127,7 @@ public class AudioManager : MonoBehaviour
     // �경�악 �생
     public void PlayEnvirBgm(EnvirBgm envirBgm, bool isPlay)
     {
-        for (int index = 0; index < sfxPlayers.Length; index++)
+        for (int index = 0; index < envirBgmPlayers.Length; index++)
         {
             int loopindex = (index + channelIndex) % envirBgmPlayers.Length;
 
