@@ -1041,6 +1041,7 @@ MonoBehaviour:
     spriteGroup: {fileID: 7603113285948540867}
   index: 0
   baseAsset: {fileID: 4900000, guid: 75de6db45bdd8eb498889ce6ae9dae77, type: 3}
+  nextCutScene: 
 --- !u!1 &4383062297952979003
 GameObject:
   m_ObjectHideFlags: 0
