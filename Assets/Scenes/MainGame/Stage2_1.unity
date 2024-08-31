@@ -1078,8 +1078,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ec1ccc79f3b22840a8e4dc852018a73, type: 2}
+  m_sharedMaterial: {fileID: -1239491535561594291, guid: 3ec1ccc79f3b22840a8e4dc852018a73, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1188,7 +1188,7 @@ MonoBehaviour:
   _printer: {fileID: 1692501664}
   _clearCountText: {fileID: 513819903}
   finishUI: {fileID: 1000913882}
-  _stage: {fileID: 0}
+  _stage: {fileID: 626824217139915931}
   characterManager: {fileID: 210241426}
   clearCount: 0
   onWrongEvent:
@@ -1414,8 +1414,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ec1ccc79f3b22840a8e4dc852018a73, type: 2}
+  m_sharedMaterial: {fileID: -1239491535561594291, guid: 3ec1ccc79f3b22840a8e4dc852018a73, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1795,47 +1795,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6167806029406038958, guid: 376bccb731c0bc44298eeecf6862f4f0, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6170382705186468401, guid: 376bccb731c0bc44298eeecf6862f4f0, type: 3}
-      propertyPath: m_SortingOrder
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6939506131135816544, guid: 376bccb731c0bc44298eeecf6862f4f0, type: 3}
-      propertyPath: snodeList.Array.data[0].spriteGroup
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6939506131135816544, guid: 376bccb731c0bc44298eeecf6862f4f0, type: 3}
-      propertyPath: snodeList.Array.data[1].spriteGroup
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6939506131135816544, guid: 376bccb731c0bc44298eeecf6862f4f0, type: 3}
-      propertyPath: snodeList.Array.data[2].spriteGroup
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6939506131135816544, guid: 376bccb731c0bc44298eeecf6862f4f0, type: 3}
-      propertyPath: snodeList.Array.data[3].spriteGroup
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6939506131135816544, guid: 376bccb731c0bc44298eeecf6862f4f0, type: 3}
-      propertyPath: snodeList.Array.data[4].spriteGroup
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6939506131135816544, guid: 376bccb731c0bc44298eeecf6862f4f0, type: 3}
-      propertyPath: snodeList.Array.data[5].spriteGroup
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8670104946166496572, guid: 376bccb731c0bc44298eeecf6862f4f0, type: 3}
-      propertyPath: m_SortingOrder
-      value: 200
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 376bccb731c0bc44298eeecf6862f4f0, type: 3}
+--- !u!114 &626824217139915931 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6939506131135816544, guid: 376bccb731c0bc44298eeecf6862f4f0, type: 3}
+  m_PrefabInstance: {fileID: 626824217139915930}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab0850bd0edcf94795bd512d93aa6ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1844,6 +1819,6 @@ SceneRoots:
   - {fileID: 1304839238}
   - {fileID: 891324503}
   - {fileID: 220935466}
-  - {fileID: 626824217139915930}
   - {fileID: 210241425}
+  - {fileID: 626824217139915930}
   - {fileID: 1998558931}

@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
         snodeList.Add(snode);
         snode.hint.gameObject.SetActive(true);
         snode.hint.color = new Vector4(0, 0, 0, 0);
-        snode.hint.DOColor(Color.white, 0.2f);
+        snode.hint.DOColor(Color.white, 1.0f).SetDelay(2.5f);   // 다음 텍스트 딜레이
     }
 
     public void CheckInput()
@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour
                     _clearCountText.transform.DOShakeScale(0.1f, Vector3.one * 0.5f);
                     _inputField.transform.DOMoveY(-5, 0.5f).SetRelative().OnComplete(() =>
                     {
-                        _inputField.transform.DOMoveY(5, 1f).SetRelative();
+                        _inputField.transform.DOMoveY(5, 1f).SetDelay(2.2f).SetRelative();  // 딜레이
                     });
                     clearCount++;
                     if (_stage.snodeList.Count == clearCount)

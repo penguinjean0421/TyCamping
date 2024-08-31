@@ -24,7 +24,7 @@ MonoBehaviour:
   appearPositionSpeed: 1
   appearBeginPosition: {x: 0, y: 0, z: 0}
   appearEndPosition: {x: 0, y: 0, z: 0}
-  appearPositionEase: 0
+  appearPositionEase: 1
   appearRotationSpeed: 1
   appearBeginRotation: {x: 0, y: 0, z: 0}
   appearEndRotation: {x: 0, y: 0, z: 0}
@@ -35,10 +35,10 @@ MonoBehaviour:
   appearColorEase: 0
   useRepeatAnimation: 0
   repeatUnit: 0
-  repeatLoopType: 0
-  repeatScaleSpeed: 1
+  repeatLoopType: 1
+  repeatScaleSpeed: 0.5
   repeatBeginScale: {x: 1, y: 1, z: 1}
-  repeatEndScale: {x: 1, y: 1, z: 1}
+  repeatEndScale: {x: 1.5, y: 1.5, z: 1.5}
   repeatScaleEase: 0
   repeatPositionSpeed: 1
   repeatBeginPosition: {x: 0, y: 0, z: 0}
