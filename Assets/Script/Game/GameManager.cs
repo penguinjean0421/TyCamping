@@ -20,7 +20,6 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private TMP_InputField _inputField;
     [SerializeField] private TextAnimationPrinter _printer;
-    [SerializeField] private TMP_Text _preview;
     [SerializeField] private TMP_Text _clearCountText;
     [SerializeField] private RectTransform finishUI;
     [SerializeField] private StageBase _stage;
@@ -46,12 +45,6 @@ public class GameManager : MonoBehaviour
         currentInputText = _inputField.text;
         CheckInput();
         _inputField.ActivateInputField();
-        _preview.text = "";
-        foreach (var snode in snodeList)
-        {
-            _preview.text += snode.target + "\n";
-        }
-
         if (_stage.snodeList.Count == clearCount)
         {
             if (Input.GetMouseButtonDown(0))
@@ -75,6 +68,9 @@ public class GameManager : MonoBehaviour
     public static void PushTarget(SNode snode)
     {
         snodeList.Add(snode);
+        snode.hint.gameObject.SetActive(true);
+        snode.hint.color = new Vector4(0, 0, 0, 0);
+        snode.hint.DOColor(Color.white, 0.2f);
     }
 
     public void CheckInput()
@@ -92,6 +88,11 @@ public class GameManager : MonoBehaviour
                 if (ValidationExtension.IsCorrect(snode.target, currentInputText))
                 {
                     snodeList.Remove(snode);
+                    snode.hint.DOColor(new Vector4(1, 1, 1, 0), 1.0f).OnComplete(() =>
+                    {
+                        snode.hint.gameObject.SetActive(false);
+                    });
+                   
                     snode.action.Invoke();
                     OnCorrect();
                     isCorrect = true;
