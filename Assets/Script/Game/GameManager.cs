@@ -3,12 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using Assets.Script.Game;
+using DG.Tweening;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Util;
 using static UnityEngine.GraphicsBuffer;
@@ -19,19 +21,20 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TMP_InputField _inputField;
     [SerializeField] private TextAnimationPrinter _printer;
     [SerializeField] private TMP_Text _preview;
-
-    public static List<SNode> snodeList;
-
+    [SerializeField] private TMP_Text _clearCountText;
+    [SerializeField] private RectTransform finishUI;
     [SerializeField] private StageBase _stage;
 
-    [SerializeField] private int _cutNum = 3;
+    public static List<SNode> snodeList;
+    public int clearCount=0;
+
 
     private string currentInputText;
 
     public UnityEvent onWrongEvent;
     public UnityEvent onCorrectEvent;
 
-    private void Start()
+    private void Awake()
     {
         Initialize();
     }
@@ -46,10 +49,22 @@ public class GameManager : MonoBehaviour
         {
             _preview.text += snode.target + "\n";
         }
+
+        if (_stage.snodeList.Count == clearCount)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                SceneManager.LoadScene(_stage.nextCutScene);
+            }
+        }
+
+        _clearCountText.text = clearCount + "/" +_stage.snodeList.Count;
+
     }
     public void Initialize()
     {
         snodeList = new List<SNode>();
+        finishUI.gameObject.SetActive(false);
     }
 
 
@@ -70,17 +85,23 @@ public class GameManager : MonoBehaviour
             bool isCorrect = false;
             foreach (var snode in snodeList)
             {
-                if (ValidationExtension.IsCorrect(snode.target, currentInputText))
+                if (!ValidationExtension.IsCorrect(snode.target, currentInputText))
                 {
                     snodeList.Remove(snode);
                     snode.action.Invoke();
                     OnCorrect();
                     isCorrect = true;
-                    break;
-                }
+                    _clearCountText.transform.DOShakeScale(0.1f, Vector3.one * 0.5f);
+                    _inputField.transform.DOMoveY(-5, 0.5f).SetRelative().OnComplete(() =>
+                    {
+                        _inputField.transform.DOMoveY(5, 1f).SetRelative();
+                    });
+                    clearCount++;
+                    if (_stage.snodeList.Count == clearCount)
+                    {
+                        finishUI.gameObject.SetActive(true);
+                    }
 
-                if (isCorrect)
-                {
                     break;
                 }
             }

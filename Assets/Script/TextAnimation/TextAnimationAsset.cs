@@ -45,14 +45,14 @@ public class TextAnimationAsset : ScriptableObject
             size = new Vector2(300,300);
             appearDuration = 0.3f;
         }
-        public Sprite sprite;
+        //public Sprite sprite;
         public Vector3 position;
         public Vector2 size;
         public float appearDuration;
         public Ease appearEase;
     }
 
-    public TextAsset resourceFile; //ÇÑ±Û ±úÁú½Ã UTF-8·Î
+    public TextAsset resourceFile; //í•œê¸€ ê¹¨ì§ˆì‹œ UTF-8ë¡œ
     public List<SerializedSpeechBubble> speechBubbles = new List<SerializedSpeechBubble>();
     public List<string> phrases;
 
@@ -62,7 +62,7 @@ public class TextAnimationAsset : ScriptableObject
         foreach (var phrase in phrases)
         {
             var instance= new SerializedSpeechBubble();
-            instance.sprite = GlobalTextAnimationSetting.instance.defaultSpeechBubbleSprite;
+            //instance.sprite = GlobalTextAnimationSetting.instance.defaultSpeechBubbleSprite;
             speechBubbles.Add(instance);
         }
     }

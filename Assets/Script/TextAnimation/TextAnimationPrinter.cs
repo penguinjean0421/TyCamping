@@ -100,7 +100,7 @@ public class TextAnimationPrinter : MonoBehaviour
         return sum;
     }
     /// <summary>
-    /// ÅØ½ºÆ® ¸®¼Â
+    /// í…ìŠ¤íŠ¸ ë¦¬ì…‹
     /// </summary>
     public void ResetText()
     {
@@ -276,7 +276,7 @@ public class TextAnimationPrinter : MonoBehaviour
     }
     public void Skip()
     {
-
+        StopPrinting();
         int letterCount = 0;
         while (_usableTextIndex < _usableText.Count)
         {
@@ -284,12 +284,14 @@ public class TextAnimationPrinter : MonoBehaviour
             {
                 AppearTween(GlobalTextAnimationSetting.instance.skipTextAnimationStyle, _usableText[_usableTextIndex][i], letterCount);
             }
+
+            _usableTextIndex++;
         }
         StartCoroutine(RepeatAnimation());
     }
 
     /// <summary>
-    /// Ãâ·Â ÇÔ¼ö
+    /// ì¶œë ¥ í•¨ìˆ˜
     /// </summary>
     public IEnumerator RepeatAnimation()
     {
