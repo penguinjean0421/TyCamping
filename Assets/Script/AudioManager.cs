@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
+using static AudioManager;
 
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
 
     [Header("#BGM")]
-    public AudioClip bgmClip;
+    public AudioClip[] bgmClips;
     public float bgmVolume;
-    AudioSource bgmPlayer;
+    public int bgmChannels;
+    AudioSource[] bgmPlayers;
 
     [Header("#SFX")]
     public AudioClip[] sfxClips;
@@ -19,7 +21,7 @@ public class AudioManager : MonoBehaviour
     public int sfxChannels;
     AudioSource[] sfxPlayers;
     int channelIndex;
-
+        
     public enum Bgm
     {
         Stage11, Stage12, Stage13, Stage14, Stage15
@@ -43,11 +45,19 @@ public class AudioManager : MonoBehaviour
         //배경음 플레이어 초기화
         GameObject bgmObject = new GameObject("BgmPlayer");
         bgmObject.transform.parent = transform;
-        bgmPlayer = bgmObject.AddComponent<AudioSource>();
-        bgmPlayer.playOnAwake = false;
-        bgmPlayer.loop = true;
-        bgmPlayer.volume = bgmVolume;
-        bgmPlayer.clip = bgmClip;
+        bgmPlayers = new AudioSource[bgmChannels];
+
+        for (int index = 0; index < bgmPlayers.Length; index++)
+        {
+            bgmPlayers[index] = bgmObject.AddComponent<AudioSource>();
+            bgmPlayers[index].volume = sfxVolume;
+            bgmPlayers[index].loop = true;
+        }
+        //bgmPlayer = bgmObject.AddComponent<AudioSource>();
+        //bgmPlayer.playOnAwake = false;
+        //bgmPlayer.loop = true;
+        //bgmPlayer.volume = bgmVolume;
+        //bgmPlayer.clip = bgmClip;
 
         //효과음 플레이어 초기화
         GameObject sfxObject = new GameObject("SfxObject");
@@ -63,15 +73,22 @@ public class AudioManager : MonoBehaviour
     }
 
     // 배경음악 재생
-    public void PlayBGM(bool isPlay)
+    public void PlayBgm(Bgm bgm, bool isPlay)
     {
-        if(isPlay)
+        for (int index = 0; index < sfxPlayers.Length; index++)
         {
-            bgmPlayer.Play();
-        }
-        else
-        {
-            bgmPlayer.Stop();
+            int loopindex = (index + channelIndex) % bgmPlayers.Length;
+
+            if (sfxPlayers[loopindex].isPlaying)
+            {
+                continue;
+            }
+
+            channelIndex = loopindex;
+            bgmPlayers[loopindex].clip = bgmClips[(int)bgm];
+            bgmPlayers[loopindex].Play();
+
+            break;
         }
     }
 
