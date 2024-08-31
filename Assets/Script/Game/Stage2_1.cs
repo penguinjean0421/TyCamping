@@ -118,6 +118,6 @@ namespace Assets.Script.Game
             snodeList[5].spriteGroup.transform.GetChild(2).DOMoveY(15f, 0.5f).SetRelative().SetDelay(0.5f);
             GameManager.PushTarget(snodeList[6]);
             GameManager.PushTarget(snodeList[7]);
-        }
+        }   
     }
 }
