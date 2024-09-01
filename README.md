@@ -22,4 +22,5 @@ https://www.epidemicsound.com/sound-effects/tracks/f8b244d0-2a84-4913-bf86-d904c
 - [Keyboard, Razer, Typing, Moderate](https://www.epidemicsound.com/sound-effects/tracks/11e80013-c1ae-4705-b557-8d8ff294d1ba/) - 타이핑 효과음
 - [Keyboard, Razer, Enter, Hits 01](https://www.epidemicsound.com/sound-effects/tracks/39cdae5a-2651-41c4-bd1f-2f3c5117a523/) - 엔터 소리 효과음
 - [Keyboard, Razer, Backspace, Hits 01](https://www.epidemicsound.com/sound-effects/tracks/40ce9f2c-a11c-4f75-9f07-200405186484/) - 백스페이스 효과음
-- [Table Tennis, Ball, On Table Bounces](https://www.epidemicsound.com/sound-effects/tracks/6b84e5a4-1ff7-43c7-85da-a9cd94e03934/) - 버튼 효과음
+- [パパッ](https://soundeffect-lab.info/sound/anime/) - 버튼 효과음
+- [魔法のステッキ](https://soundeffect-lab.info/sound/anime/)  - 애니메이션 효과음
