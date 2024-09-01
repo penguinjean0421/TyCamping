@@ -54,7 +54,10 @@ public class GameManager : MonoBehaviour
         snodeList.Add(snode);
         snode.hint.gameObject.SetActive(true);
         snode.hint.color = new Vector4(0, 0, 0, 0);
-        snode.hint.DOColor(Color.white, 0.8f).SetDelay(2.5f);   // €´í•‘ìŠ¤˜í
+        snode.hint.DOColor(Color.white, 0.8f).SetDelay(2.5f).OnComplete(() =>
+        {
+            snode.hint.transform.DOShakeScale(2.0f, Vector3.one * 0.1f,1).SetLoops(-1, LoopType.Yoyo);
+        });   // €´í•‘ìŠ¤˜í
     }
 
     public void CheckInput()
