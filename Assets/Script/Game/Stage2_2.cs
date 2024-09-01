@@ -75,6 +75,8 @@ namespace Assets.Script.Game
             snodeList[3].spriteGroup.GetComponentInChildren<SpriteRenderer>().color = new Vector4();
             snodeList[3].spriteGroup.GetComponentInChildren<SpriteRenderer>().DOColor(Color.white, 1f);
         }
+
+
         public void OnCutActive4()
         {
             Debug.Log("수줍은 꽃잎의 코스모스밭");
@@ -104,8 +106,6 @@ namespace Assets.Script.Game
             group.GetChild(1).GetComponent<SpriteRenderer>().color = new Vector4();
             group.GetChild(1).GetComponent<SpriteRenderer>().DOColor(Color.white, 1f);
 
-            GameManager.PushTarget(snodeList[6]);
-            GameManager.PushTarget(snodeList[7]);
             cut7flag2 = true;
             if (cut7flag1)
             {
