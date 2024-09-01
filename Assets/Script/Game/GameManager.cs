@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
         snodeList.Add(snode);
         snode.hint.gameObject.SetActive(true);
         snode.hint.color = new Vector4(0, 0, 0, 0);
-        snode.hint.DOColor(Color.white, 0.8f).SetDelay(2.5f);   // 타이핑할 텍스트 나타냄
+        snode.hint.DOColor(Color.white, 0.8f).SetDelay(2.5f);   // ��핑�스��
     }
 
     public void CheckInput()
@@ -92,7 +92,7 @@ public class GameManager : MonoBehaviour
                         StartCoroutine(Finish());
                     }
 
-                    // 캐릭터 성공 액션
+                    // 캐릭�공 �션
                     characterManager.SuccessAction();
 
                     break;
@@ -102,7 +102,7 @@ public class GameManager : MonoBehaviour
             {
                 OnWrong();
 
-                // 캐릭터 실패 액션
+                // 캐릭�패 �션
                 characterManager.FailureAction();
 
             }
