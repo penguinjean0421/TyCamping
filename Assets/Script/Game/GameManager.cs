@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
         snode.hint.DOColor(Color.white, 0.8f).SetDelay(2.5f).OnComplete(() =>
         {
             snode.hint.transform.DOShakeScale(2.0f, Vector3.one * 0.1f,1).SetLoops(-1, LoopType.Yoyo);
-        });   // ��핑�스��
+        });   // 댄븨띿뒪섑
     }
 
     public void CheckInput()
@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour
             bool isCorrect = false;
             foreach (var snode in snodeList)
             {
-                if (!ValidationExtension.IsCorrect(snode.target, currentInputText))
+                if (ValidationExtension.IsCorrect(snode.target, currentInputText))
                 {
                     snodeList.Remove(snode);
                     snode.hint.DOColor(new Vector4(1, 1, 1, 0), 1.0f).OnComplete(() =>
@@ -95,7 +95,7 @@ public class GameManager : MonoBehaviour
                         StartCoroutine(Finish());
                     }
 
-                    // 캐릭�공 �션
+                    // 罹먮┃깃났 ≪뀡
                     characterManager.SuccessAction();
 
                     break;
@@ -105,7 +105,7 @@ public class GameManager : MonoBehaviour
             {
                 OnWrong();
 
-                // 캐릭�패 �션
+                // 罹먮┃ㅽ뙣 ≪뀡
                 characterManager.FailureAction();
 
             }

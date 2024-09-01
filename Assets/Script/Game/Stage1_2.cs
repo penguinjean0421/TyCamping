@@ -28,9 +28,6 @@ namespace Assets.Script.Game
                 snode.hint.gameObject.SetActive(false);
             }
 
-            //사운드 BGM
-            AudioManager.instance.PlayBGM(AudioManager.Bgm.Stage, true);
-            AudioManager.instance.PlayEnvirBgm(AudioManager.EnvirBgm.Stage11, true);
 
         }
 

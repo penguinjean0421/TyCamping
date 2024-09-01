@@ -3,6 +3,7 @@ using DG.Tweening.Core.Easing;
 using UnityEngine;
 using UnityEngine.Events;
 using static UnityEngine.GraphicsBuffer;
+using Vector3 = UnityEngine.Vector3;
 
 namespace Assets.Script.Game
 {
@@ -31,9 +32,6 @@ namespace Assets.Script.Game
                 snode.hint.gameObject.SetActive(false);
             }
 
-            //사운드 BGM
-            AudioManager.instance.PlayBGM(AudioManager.Bgm.Stage, true);
-            AudioManager.instance.PlayEnvirBgm(AudioManager.EnvirBgm.Stage11, true);
 
         }
 
@@ -135,6 +133,7 @@ namespace Assets.Script.Game
             snodeList[6].spriteGroup.transform.GetChild(2).DOScale(Vector3.one, 0.5f).SetRelative().SetEase(Ease.InOutBounce).SetDelay(0.5f);
             snodeList[6].spriteGroup.transform.GetChild(3).localScale = Vector3.zero;
             snodeList[6].spriteGroup.transform.GetChild(3).DOScale(Vector3.one, 0.5f).SetRelative().SetDelay(0.7f).SetEase(Ease.InOutBounce);
+
             cut8flag1 = true;
             if (cut8flag2)
             {

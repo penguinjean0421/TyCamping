@@ -28,10 +28,6 @@ namespace Assets.Script.Game
                 snode.spriteGroup.SetActive(false);
                 snode.hint.gameObject.SetActive(false);
             }
-
-            //사운드 BGM
-            AudioManager.instance.PlayBGM(AudioManager.Bgm.Stage, true);
-
         }
 
         public void OnCutActive0()

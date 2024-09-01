@@ -66,7 +66,7 @@ public class TextAnimationInputFieldHighlighter : MonoBehaviour
                 rotationHandler.Rewind();
             }
             scaleHandler = _printer.RepeatScaleTween(text.Length - 2, Vector3.one, Vector3.one * 2f, 0.1f, Ease.InBounce, LoopType.Yoyo, 2);
-            rotationHandler = _printer.RepeatRotationTween(text.Length - 2, Vector3.zero, Vector3.forward * 45, 0.1f, Ease.InBounce, LoopType.Yoyo, 2);
+            rotationHandler = _printer.RepeatRotationTween(text.Length - 2, Vector3.zero, Vector3.forward * 25, 0.1f, Ease.InOutBounce, LoopType.Yoyo, 2);
         }
     }
     public void RematchText()
