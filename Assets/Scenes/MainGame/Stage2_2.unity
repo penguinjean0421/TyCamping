@@ -429,6 +429,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &455978111 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5774787164877752349, guid: 39e5d90368b7c104a8928d9c412d1fb4, type: 3}
+  m_PrefabInstance: {fileID: 3893038864476675454}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd90f36d399b2f43af9bdfb10ba9b4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &513819901
 GameObject:
   m_ObjectHideFlags: 0
@@ -975,7 +986,7 @@ MonoBehaviour:
   _printer: {fileID: 1692501664}
   _clearCountText: {fileID: 513819903}
   finishUI: {fileID: 237661421935289747}
-  _stage: {fileID: 0}
+  _stage: {fileID: 455978111}
   characterManager: {fileID: 210241426}
   clearCount: 0
   onWrongEvent:
