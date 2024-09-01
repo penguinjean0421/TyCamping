@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
         snodeList.Add(snode);
         snode.hint.gameObject.SetActive(true);
         snode.hint.color = new Vector4(0, 0, 0, 0);
-        snode.hint.DOColor(Color.white, 0.2f);
+        snode.hint.DOColor(Color.white, 0.8f).SetDelay(2.5f);   // ��핑�스��
     }
 
     public void CheckInput()
@@ -84,7 +84,7 @@ public class GameManager : MonoBehaviour
                     checkable = false;
                     _inputField.transform.DOMoveY(-5, 0.5f).SetRelative().OnComplete(() =>
                     {
-                        _inputField.transform.DOMoveY(5, 1f).SetRelative().OnComplete(() => { checkable = true; });
+                        _inputField.transform.DOMoveY(5, 1f).SetDelay(2.2f).SetRelative().OnComplete(() => { checkable = true; });
                     });
                     clearCount++;
                     if (_stage.snodeList.Count == clearCount)
@@ -92,7 +92,7 @@ public class GameManager : MonoBehaviour
                         StartCoroutine(Finish());
                     }
 
-                    // 캐릭터 성공 액션
+                    // 캐릭�공 �션
                     characterManager.SuccessAction();
 
                     break;
@@ -102,7 +102,7 @@ public class GameManager : MonoBehaviour
             {
                 OnWrong();
 
-                // 캐릭터 실패 액션
+                // 캐릭�패 �션
                 characterManager.FailureAction();
 
             }
