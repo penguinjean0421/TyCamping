@@ -84,7 +84,7 @@ public class GameManager : MonoBehaviour
                     checkable = false;
                     _inputField.transform.DOMoveY(-5, 0.5f).SetRelative().OnComplete(() =>
                     {
-                        _inputField.transform.DOMoveY(5, 1f).SetRelative().OnComplete(() => { checkable = true; });
+                        _inputField.transform.DOMoveY(5, 1f).SetDelay(2.2f).SetRelative().OnComplete(() => { checkable = true; });
                     });
                     clearCount++;
                     if (_stage.snodeList.Count == clearCount)
