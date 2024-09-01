@@ -8,6 +8,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class GameManager : MonoBehaviour
 
     public UnityEvent onWrongEvent;
     public UnityEvent onCorrectEvent;
+    private bool checkable = true;
 
     private void Awake()
     {
@@ -52,12 +54,12 @@ public class GameManager : MonoBehaviour
         snodeList.Add(snode);
         snode.hint.gameObject.SetActive(true);
         snode.hint.color = new Vector4(0, 0, 0, 0);
-        snode.hint.DOColor(Color.white, 1.0f).SetDelay(2.5f);   // 다음 텍스트 딜레이
+        snode.hint.DOColor(Color.white, 0.2f);
     }
 
     public void CheckInput()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (checkable && Input.GetKeyDown(KeyCode.Return))
         {
             AudioManager.instance.PlaySfx(AudioManager.Sfx.EnterHit);
 
@@ -79,9 +81,10 @@ public class GameManager : MonoBehaviour
                     OnCorrect();
                     isCorrect = true;
                     _clearCountText.transform.DOShakeScale(0.1f, Vector3.one * 0.5f);
+                    checkable = false;
                     _inputField.transform.DOMoveY(-5, 0.5f).SetRelative().OnComplete(() =>
                     {
-                        _inputField.transform.DOMoveY(5, 1f).SetDelay(2.2f).SetRelative();  // 딜레이
+                        _inputField.transform.DOMoveY(5, 1f).SetRelative().OnComplete(() => { checkable = true; });
                     });
                     clearCount++;
                     if (_stage.snodeList.Count == clearCount)
@@ -89,7 +92,7 @@ public class GameManager : MonoBehaviour
                         StartCoroutine(Finish());
                     }
 
-                    // 캐릭터 성공 액션
+                    // 캐릭�공 �션
                     characterManager.SuccessAction();
 
                     break;
@@ -99,7 +102,7 @@ public class GameManager : MonoBehaviour
             {
                 OnWrong();
 
-                // 캐릭터 실패 액션
+                // 캐릭�패 �션
                 characterManager.FailureAction();
 
             }
