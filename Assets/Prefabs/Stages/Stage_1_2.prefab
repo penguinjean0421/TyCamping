@@ -1186,7 +1186,6 @@ MonoBehaviour:
     hint: {fileID: 7994796585918556027}
   index: 0
   baseAsset: {fileID: 0}
-  nextCutScene: 
 --- !u!1 &3048037317260513018
 GameObject:
   m_ObjectHideFlags: 0
