@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
         snodeList.Add(snode);
         snode.hint.gameObject.SetActive(true);
         snode.hint.color = new Vector4(0, 0, 0, 0);
-        snode.hint.DOColor(Color.white, 0.8f).SetDelay(2.5f);   // 타이핑할 텍스트 나타냄
+        snode.hint.DOColor(Color.white, 1.0f).SetDelay(2.5f);   // 다음 텍스트 딜레이
     }
 
     public void CheckInput()
@@ -84,7 +84,11 @@ public class GameManager : MonoBehaviour
                     checkable = false;
                     _inputField.transform.DOMoveY(-5, 0.5f).SetRelative().OnComplete(() =>
                     {
-                        _inputField.transform.DOMoveY(5, 1f).SetDelay(2.2f).SetRelative().OnComplete(() => { checkable = true; });
+<<<<<<< HEAD
+                        _inputField.transform.DOMoveY(5, 1f).SetDelay(2.2f).SetRelative();  // 딜레이
+=======
+                        _inputField.transform.DOMoveY(5, 1f).SetRelative().OnComplete(() => { checkable = true; });
+>>>>>>> origin/KHJ_Branch
                     });
                     clearCount++;
                     if (_stage.snodeList.Count == clearCount)
