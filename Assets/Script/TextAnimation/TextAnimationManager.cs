@@ -8,7 +8,7 @@ public class TextAnimationManager : MonoBehaviour
 {
     [SerializeField] private TextAnimationAsset dialogAsset;
     [SerializeField] private SpeechBubble speechBubble;
-    public Dictionary<int,UnityAction> actionDictionary = new Dictionary<int, UnityAction>();
+    public Dictionary<int, UnityAction> actionDictionary = new Dictionary<int, UnityAction>();
 
     [SerializeField] private int currentIndex;
 
@@ -41,7 +41,7 @@ public class TextAnimationManager : MonoBehaviour
 
     void Start()
     {
-        actionDictionary=new Dictionary<int, UnityAction>();
+        actionDictionary = new Dictionary<int, UnityAction>();
         Initialize();
         currentIndex = 0;
         ShowDialog(currentIndex);
@@ -49,17 +49,14 @@ public class TextAnimationManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(key) && !speechBubble.IsPrinting() && currentIndex < dialogAsset.phrases.Count - 1)
+        if (Input.GetKeyDown(key) && !speechBubble.IsPrinting() && currentIndex < dialogAsset.phrases.Count-1)
         {
             currentIndex++;
-            if (currentIndex < dialogAsset.phrases.Count)
-            {
-                ShowDialog(currentIndex);
-            }
-            else
-            {
-                endEvent.Invoke();
-            }
+            ShowDialog(currentIndex);
+        }
+        else if (Input.GetKeyDown(key) && !speechBubble.IsPrinting() && currentIndex == dialogAsset.phrases.Count-1)
+        {
+            endEvent.Invoke();
         }
     }
 }
