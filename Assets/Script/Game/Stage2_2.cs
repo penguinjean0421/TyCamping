@@ -82,7 +82,7 @@ namespace Assets.Script.Game
             GameManager.PushTarget(snodeList[6]);
             GameManager.PushTarget(snodeList[7]);
             cut7flag2 = true;
-            if (cut9flag1)
+            if (cut7flag1)
             {
                 GameManager.PushTarget(snodeList[6]); // 캠핑
                 Debug.Log("우리가족의 첫 캠핑");
