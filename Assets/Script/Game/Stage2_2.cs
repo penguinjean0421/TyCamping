@@ -50,8 +50,8 @@ namespace Assets.Script.Game
             Debug.Log("한걸음 한걸음 오솔길");
             snodeList[1].spriteGroup.SetActive(true);
             var group = snodeList[1].spriteGroup.transform;
-            group.GetChild(0).position = group.GetChild(0).position + Vector3.down * 15;
-            group.GetChild(0).DOMoveY(15, 0.5f).SetRelative().SetEase(Ease.OutBounce);
+            group.GetChild(0).position = group.GetChild(0).position + Vector3.down * 10;
+            group.GetChild(0).DOMoveY(10, 0.7f).SetRelative().SetEase(Ease.OutBounce);
             GameManager.PushTarget(snodeList[2]);
             GameManager.PushTarget(snodeList[3]);
         }
