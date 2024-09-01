@@ -19,6 +19,7 @@ public class TitleManager : MonoBehaviour
         startButton.onClick.AddListener(OnStartButtonClicked);
         optionButton.onClick.AddListener(OnOptionButtonClicked);
         exitButton.onClick.AddListener(OnExitButtonClicked);
+        //AudioManager.instance.PlayBGM(AudioManager.Bgm.Menu,true);
     }
 
 

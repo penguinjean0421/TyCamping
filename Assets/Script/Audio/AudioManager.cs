@@ -110,7 +110,6 @@ public class AudioManager : MonoBehaviour
 
             channelIndex = loopindex;
             bgmPlayers[loopindex].clip = bgmClips[(int)bgm];
-            bgmPlayers[loopindex].Play();
 
             if (isPlay)
             {
