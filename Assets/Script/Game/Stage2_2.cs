@@ -28,10 +28,6 @@ namespace Assets.Script.Game
                 snode.spriteGroup.SetActive(false);
                 snode.hint.gameObject.SetActive(false);
             }
-
-            //사운드 BGM
-            AudioManager.instance.PlayBGM(AudioManager.Bgm.Stage, true);
-
         }
 
         public void OnCutActive0()
@@ -50,8 +46,8 @@ namespace Assets.Script.Game
             Debug.Log("한걸음 한걸음 오솔길");
             snodeList[1].spriteGroup.SetActive(true);
             var group = snodeList[1].spriteGroup.transform;
-            group.GetChild(0).position = group.GetChild(0).position + Vector3.down * 15;
-            group.GetChild(0).DOMoveY(15, 0.5f).SetRelative().SetEase(Ease.OutBounce);
+            group.GetChild(0).position = group.GetChild(0).position + Vector3.down * 10;
+            group.GetChild(0).DOMoveY(10, 0.7f).SetRelative().SetEase(Ease.OutBounce);
             GameManager.PushTarget(snodeList[2]);
             GameManager.PushTarget(snodeList[3]);
         }
@@ -79,6 +75,8 @@ namespace Assets.Script.Game
             snodeList[3].spriteGroup.GetComponentInChildren<SpriteRenderer>().color = new Vector4();
             snodeList[3].spriteGroup.GetComponentInChildren<SpriteRenderer>().DOColor(Color.white, 1f);
         }
+
+
         public void OnCutActive4()
         {
             Debug.Log("수줍은 꽃잎의 코스모스밭");
@@ -108,8 +106,6 @@ namespace Assets.Script.Game
             group.GetChild(1).GetComponent<SpriteRenderer>().color = new Vector4();
             group.GetChild(1).GetComponent<SpriteRenderer>().DOColor(Color.white, 1f);
 
-            GameManager.PushTarget(snodeList[6]);
-            GameManager.PushTarget(snodeList[7]);
             cut7flag2 = true;
             if (cut7flag1)
             {
