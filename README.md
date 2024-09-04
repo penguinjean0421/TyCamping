@@ -1,11 +1,8 @@
-
-
-# TyCamping : 충북이의 그림일기 
-
-- 2024 충북 글로벌 게임잼 참여한 "5히려 좋아"조 입니다. CBGC Game Jam Group 5
+# TyCamping : 충북이의 그림일기
+![Game Title]()
+- 2024 충북 게임잼 참여한 "5히려 좋아"조 입니다.
   - [2024 충북 게임잼 아카이브]() 
-- [게임 다운로드](https://drive.google.com/file/d/1j7QjgWwzWjba4z8RLEAdEv3B_aDXzADr/view?usp=drive_link)
-
+- [게임 다운로드]()
 ## Sound Credit
 ### 배경음악
 - [Birdies - Thursday Noon in Memphis](https://www.epidemicsound.com/track/VGiKzdwoQE/) - 메뉴화면 배경음
