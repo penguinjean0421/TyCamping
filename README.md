@@ -1,4 +1,4 @@
-# TyCamping : 충북이의 그림일기
+# TyCamping : 충북이의 일기
 
 ![Title_TyCamping](https://github.com/user-attachments/assets/27b57a39-a167-4a57-971b-3dc5f33d80f3)
 
