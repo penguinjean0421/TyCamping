@@ -3,6 +3,7 @@
 # TyCamping : 충북이의 그림일기 
 
 - 2024 충북 글로벌 게임잼 참여한 "5히려 좋아"조 입니다. CBGC Game Jam Group 5
+  - [2024 충북 게임잼 아카이브]() 
 - [게임 다운로드](https://drive.google.com/file/d/1j7QjgWwzWjba4z8RLEAdEv3B_aDXzADr/view?usp=drive_link)
 
 ## Sound Credit
