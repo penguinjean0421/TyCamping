@@ -558,12 +558,8 @@ PrefabInstance:
       value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3723845338818926585, guid: 4d9ac7d2f9485e5458466f499b8b6c63, type: 3}
-      propertyPath: InitialModule.maxNumParticles
-      value: 1200
-      objectReference: {fileID: 0}
-    - target: {fileID: 3723845338818926585, guid: 4d9ac7d2f9485e5458466f499b8b6c63, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 1000
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 5248752294218725367, guid: 4d9ac7d2f9485e5458466f499b8b6c63, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1221,7 +1217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3723845338818926585, guid: 088b43764675e1e489f347d070bd702e, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 800
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 5248752294218725367, guid: 088b43764675e1e489f347d070bd702e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1832,7 +1828,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3723845338818926585, guid: d22f32d3ae6f73241802ab492013e48b, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 800
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 5248752294218725367, guid: d22f32d3ae6f73241802ab492013e48b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2471,23 +2467,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3723845338818926585, guid: a7720d1f103e4414c8277559c9a96446, type: 3}
       propertyPath: ShapeModule.m_Scale.x
-      value: 0.73
+      value: 0.98
       objectReference: {fileID: 0}
     - target: {fileID: 3723845338818926585, guid: a7720d1f103e4414c8277559c9a96446, type: 3}
       propertyPath: ShapeModule.m_Scale.y
-      value: 0.54
+      value: 0.61
       objectReference: {fileID: 0}
     - target: {fileID: 3723845338818926585, guid: a7720d1f103e4414c8277559c9a96446, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 300
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 5248752294218725367, guid: a7720d1f103e4414c8277559c9a96446, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.17
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 5248752294218725367, guid: a7720d1f103e4414c8277559c9a96446, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.09
       objectReference: {fileID: 0}
     - target: {fileID: 5248752294218725367, guid: a7720d1f103e4414c8277559c9a96446, type: 3}
       propertyPath: m_LocalPosition.z

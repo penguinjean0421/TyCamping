@@ -183,7 +183,7 @@ public class TextAnimationPrinter : MonoBehaviour
         return DOTween.To(() => _textMeshColor[index], x => _textMeshColor[index] = x, endColor, duration).SetEase(ease).SetLoops(loopTime, loopType);
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         if (textComponent.text.Length > 0)
         {

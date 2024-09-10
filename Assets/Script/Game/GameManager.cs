@@ -57,18 +57,13 @@ public class GameManager : MonoBehaviour
         snode.hint.DOColor(Color.white, 0.8f).SetDelay(2.5f).OnComplete(() =>
         {
             snode.hint.transform.DOShakeScale(2.0f, Vector3.one * 0.1f,1).SetLoops(-1, LoopType.Yoyo);
-        });   // 
+        });   // 댄븨띿뒪섑
     }
 
     public void CheckInput()
     {
         if (checkable && Input.GetKeyDown(KeyCode.Return))
         {
-            AudioManager.instance.PlaySfx(AudioManager.Sfx.EnterHit);
-
-            Debug.Log(">" + _inputField.text);
-            Debug.Log(">>" + _inputField.textComponent.text);
-            Debug.Log(">>>" + _inputField.textComponent.GetParsedText());
             bool isCorrect = false;
             foreach (var snode in snodeList)
             {
@@ -95,7 +90,7 @@ public class GameManager : MonoBehaviour
                         StartCoroutine(Finish());
                     }
 
-                    // 캐릭터 성공 액션
+                    // 罹먮┃깃났 ≪뀡
                     characterManager.SuccessAction();
 
                     break;
@@ -105,7 +100,7 @@ public class GameManager : MonoBehaviour
             {
                 OnWrong();
 
-                // 캐릭터 실패 액션
+                // 罹먮┃ㅽ뙣 ≪뀡
                 characterManager.FailureAction();
 
             }
