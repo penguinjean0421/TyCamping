@@ -19,6 +19,11 @@ namespace Default.Scripts.Sound
 
     public class SoundManager : Singleton<SoundManager>
     {
+        public void Awake()
+        {
+            DontDestroyOnLoad(gameObject);
+        }
+        
         public SoundListAsset asset;
         [HideInInspector]
         public Channel[] channels;
