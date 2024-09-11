@@ -1,5 +1,6 @@
 using DG.Tweening;
 using DG.Tweening.Core.Easing;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using static UnityEngine.GraphicsBuffer;
@@ -31,161 +32,196 @@ namespace Assets.Script.Game
                 snode.spriteGroup.SetActive(false);
                 snode.targetTextImage.gameObject.SetActive(false);
             }
-
-
         }
 
-        public void OnCutActive0()
+        public void OnCutActive0(Transform spriteGroup)
         {
-            Debug.Log("두근두근 첫 캠핑 돗자리");
-            snodeList[0].spriteGroup.SetActive(true);
-            snodeList[0].spriteGroup.transform.GetChild(1).localScale = new Vector3(0.1f, 0.3f, 0f);
-            snodeList[0].spriteGroup.transform.GetChild(1).DOScale(Vector3.one, 0.8f);
-            //돗자리 펼치기
+            //돗자리
+            var sequence = DOTween.Sequence();
 
-            snodeList[0].spriteGroup.transform.GetChild(0).localScale = new Vector3(0.1f, 0.5f, 0f);
-            snodeList[0].spriteGroup.transform.GetChild(0).DOScale(Vector3.one, 1.0f);
-            snodeList[0].spriteGroup.transform.GetChild(0).position = snodeList[0].spriteGroup.transform.GetChild(0).position + Vector3.up * 2;
-            snodeList[0].spriteGroup.transform.GetChild(0).DOMoveY(-2, 1.0f).SetRelative().SetDelay(0.5f);
-            //바구니 내려오기
+            spriteGroup.GetChild(0).localScale = Vector3.zero;
+            spriteGroup.GetChild(1).localScale = Vector3.zero;
+            spriteGroup.GetChild(1).position = spriteGroup.GetChild(1).position + Vector3.up * 2;
 
-            GameManager.PushTarget(snodeList[1]);
+            sequence.Append(spriteGroup.GetChild(0).DOScale(Vector3.one, 0.8f).SetEase(Ease.OutBack));
+            sequence.Append(spriteGroup.GetChild(1).DOScale(Vector3.one, 1.0f).SetEase(Ease.OutElastic));
+            sequence.Join(spriteGroup.GetChild(1).DOMoveY(-2, 1.0f).SetEase(Ease.OutBounce).SetRelative().SetDelay(0.5f));
+
+            GameManager.PushTarget(sequence, snodeList[1]);
+            sequence.Play();
         }
-        public void OnCutActive1()
+        public void OnCutActive1(Transform spriteGroup)
         {
-            Debug.Log("화르륵 모닥불");
-            snodeList[1].spriteGroup.SetActive(true);
-            snodeList[1].spriteGroup.transform.GetChild(0).localScale = new Vector3(0.5f, 0.1f, 0f);
-            snodeList[1].spriteGroup.transform.GetChild(0).DOScale(Vector3.one, 0.5f).SetDelay(0.5f);
-            snodeList[1].spriteGroup.transform.GetChild(0).position = snodeList[1].spriteGroup.transform.GetChild(0).position - Vector3.up * 0.5f;
-            snodeList[1].spriteGroup.transform.GetChild(0).DOMoveY(0.5f, 0.5f).SetRelative().SetDelay(0.5f);
-            //불꽃 올라오기
+            //모닥불
+            var sequence = DOTween.Sequence();
 
+            spriteGroup.GetChild(0).localScale = Vector3.zero;
+            spriteGroup.GetChild(0).position = spriteGroup.GetChild(0).position + Vector3.up * 0.5f;
+            spriteGroup.GetChild(1).localScale = Vector3.zero;
 
-            snodeList[1].spriteGroup.transform.GetChild(1).localScale = new Vector3(0.1f, 0.1f, 0f);
-            snodeList[1].spriteGroup.transform.GetChild(1).DOScale(Vector3.one, 0.5f);
-            //나무 생성
+            sequence.Append(spriteGroup.GetChild(0).DOScale(Vector3.one, 1f).SetEase(Ease.OutExpo));
+            sequence.Join(spriteGroup.GetChild(0).DOMoveY(-0.5f, 1f).SetRelative().SetEase(Ease.InBack));
 
-
-            GameManager.PushTarget(snodeList[3]);
+            sequence.Append(spriteGroup.GetChild(1).DOScale(Vector3.one, 1f).SetEase(Ease.InQuint));
+            sequence.AppendCallback(() =>
+            {
+                spriteGroup.GetChild(1).DOShakeRotation(0.5f, 10, 1).SetLoops(int.MaxValue, LoopType.Yoyo)
+                    .SetEase(Ease.InBack);
+                spriteGroup.GetChild(1).DOShakeScale(1f, 0.1f, 1).SetLoops(int.MaxValue, LoopType.Yoyo)
+                    .SetEase(Ease.InBack);
+            });
+            GameManager.PushTarget(sequence, snodeList[3]);
+            sequence.Play();
         }
-        public void OnCutActive2()
+        public void OnCutActive2(Transform spriteGroup)
         {
-            Debug.Log("맑은 한낮의 하늘");
-            GameManager.PushTarget(snodeList[4]);
-            snodeList[2].spriteGroup.SetActive(true);
-            snodeList[2].spriteGroup.transform.position = snodeList[2].spriteGroup.transform.position + Vector3.up * 15f;
-            snodeList[2].spriteGroup.transform.DOMoveY(-15f, 0.5f).SetRelative();
-            snodeList[2].spriteGroup.GetComponentInChildren<SpriteRenderer>().color = new Vector4();
-            snodeList[2].spriteGroup.GetComponentInChildren<SpriteRenderer>().DOColor(Color.white, 0.5f);
-            //불꽃 올라오기
+            //Debug.Log("맑은 한낮의 하늘");
+            var sequence = DOTween.Sequence();
+            spriteGroup.position = spriteGroup.position + Vector3.up * 15f;
+            spriteGroup.GetComponentInChildren<SpriteRenderer>().color = new Vector4();
+
+            sequence.Append(spriteGroup.DOMoveY(-15f, 1f).SetRelative());
+            sequence.Join(spriteGroup.GetComponentInChildren<SpriteRenderer>().DOColor(Color.white, 0.5f));
+
+            GameManager.PushTarget(sequence, snodeList[4]);
+            sequence.Play();
         }
-        public void OnCutActive3()
+        public void OnCutActive3(Transform spriteGroup)
         {
-            Debug.Log("푸르른 새싹의 들판");
-            GameManager.PushTarget(snodeList[2]);
-            GameManager.PushTarget(snodeList[5]);
-            snodeList[3].spriteGroup.SetActive(true);
-            snodeList[3].spriteGroup.GetComponentInChildren<SpriteRenderer>().color = new Vector4();
-            snodeList[3].spriteGroup.GetComponentInChildren<SpriteRenderer>().DOColor(Color.white, 1.5f);
-            snodeList[3].spriteGroup.GetComponentInChildren<SpriteMask>().transform.DOScaleX(0,1.5f);
+            //Debug.Log("푸르른 새싹의 들판");
+            var sequence = DOTween.Sequence();
+            sequence.Append(spriteGroup.GetChild(1).DOMoveX(15f, 1f).SetRelative());
+            GameManager.PushTarget(sequence, snodeList[2]);
+            GameManager.PushTarget(sequence, snodeList[5]);
+            sequence.Play();
         }
-        public void OnCutActive4()
+        public void OnCutActive4(Transform spriteGroup)
         {
-            Debug.Log("뭉게 뭉게 구름");
-            snodeList[4].spriteGroup.SetActive(true);
-            snodeList[4].spriteGroup.transform.GetChild(0).localScale=Vector3.one*0.1f;
-            snodeList[4].spriteGroup.transform.GetChild(0).DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBounce);
-            snodeList[4].spriteGroup.transform.GetChild(1).localScale = Vector3.one * 0.1f;
-            snodeList[4].spriteGroup.transform.GetChild(1).DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBounce).SetDelay(0.3f);
-     
+            //Debug.Log("뭉게 뭉게 구름");
+            var sequence = DOTween.Sequence();
+            spriteGroup.GetChild(0).localScale = Vector3.zero;
+            spriteGroup.GetChild(1).localScale = Vector3.zero;
+            sequence.Append(spriteGroup.GetChild(0).DOScale(Vector3.one, 1).SetEase(Ease.OutElastic));
+            sequence.AppendCallback(() =>
+            {
+                spriteGroup.GetChild(0).DOShakePosition(2f, 0.3f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
+                spriteGroup.GetChild(0).DOShakeScale(1.2f, 0.1f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
+            });
+            sequence.Append(spriteGroup.GetChild(1).DOScale(Vector3.one, 1).SetEase(Ease.OutElastic));
+            sequence.AppendCallback(() =>
+            {
+                spriteGroup.GetChild(1).DOShakePosition(2f, 0.3f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
+                spriteGroup.GetChild(1).DOShakeScale(1.2f, 0.1f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
+            });
             cut9flag2 = true;
             if (cut9flag1)
             {
-                GameManager.PushTarget(snodeList[9]); // 캠핑
+                GameManager.PushTarget(sequence, snodeList[9]); // 캠핑
                 Debug.Log("우리가족의 첫 캠핑");
             }
+            sequence.Play();
         }
 
-        public void OnCutActive5()
+        public void OnCutActive5(Transform spriteGroup)
         {
-            Debug.Log("높디높은 속리산 봉우리");
-            snodeList[5].spriteGroup.SetActive(true);
-            snodeList[5].spriteGroup.transform.GetChild(0).position = snodeList[5].spriteGroup.transform.GetChild(0).position - Vector3.up * 15f;
-            snodeList[5].spriteGroup.transform.GetChild(0).DOMoveY(15f, 0.5f).SetRelative();
-            snodeList[5].spriteGroup.transform.GetChild(1).position = snodeList[5].spriteGroup.transform.GetChild(1).position - Vector3.up * 15f;
-            snodeList[5].spriteGroup.transform.GetChild(1).DOMoveY(15f, 0.5f).SetRelative().SetDelay(0.3f);
-            snodeList[5].spriteGroup.transform.GetChild(2).position = snodeList[5].spriteGroup.transform.GetChild(2).position - Vector3.up * 15f;
-            snodeList[5].spriteGroup.transform.GetChild(2).DOMoveY(15f, 0.5f).SetRelative().SetDelay(0.5f);
-            GameManager.PushTarget(snodeList[6]);
-            GameManager.PushTarget(snodeList[7]);
+            //Debug.Log("높디높은 속리산 봉우리");
+            var sequence = DOTween.Sequence();
+
+            spriteGroup.GetChild(0).position = spriteGroup.GetChild(0).position - Vector3.up * 15f;
+            spriteGroup.GetChild(1).position = spriteGroup.GetChild(1).position - Vector3.up * 15f;
+            spriteGroup.GetChild(2).position = spriteGroup.GetChild(2).position - Vector3.up * 15f;
+
+            sequence.Append(spriteGroup.GetChild(0).DOMoveY(15f, 1).SetRelative());
+            sequence.Join(spriteGroup.GetChild(0).DOShakeScale(1.2f));
+            sequence.Append(spriteGroup.GetChild(1).DOMoveY(15f, 1).SetRelative());
+            sequence.Join(spriteGroup.GetChild(1).DOShakeScale(1.2f));
+            sequence.Append(spriteGroup.GetChild(2).DOMoveY(15f, 1).SetRelative());
+            sequence.Join(spriteGroup.GetChild(2).DOShakeScale(1.2f));
+            GameManager.PushTarget(sequence, snodeList[6]);
+            GameManager.PushTarget(sequence, snodeList[7]);
+            sequence.Play();
         }
 
-        public void OnCutActive6()
+        public void OnCutActive6(Transform spriteGroup)
         {
-            Debug.Log("울창한 푸른 소나무");
-            snodeList[6].spriteGroup.SetActive(true);
-            snodeList[6].spriteGroup.transform.GetChild(0).position = snodeList[6].spriteGroup.transform.GetChild(0).position - Vector3.up * 15f;
-            snodeList[6].spriteGroup.transform.GetChild(0).DOMoveY(15f, 0.5f).SetRelative();
-            snodeList[6].spriteGroup.transform.GetChild(1).position = snodeList[6].spriteGroup.transform.GetChild(1).position - Vector3.up * 15f;
-            snodeList[6].spriteGroup.transform.GetChild(1).DOMoveY(15f, 0.5f).SetRelative().SetDelay(0.3f);
-            snodeList[6].spriteGroup.transform.GetChild(2).localScale = Vector3.zero;
-            snodeList[6].spriteGroup.transform.GetChild(2).DOScale(Vector3.one, 0.5f).SetRelative().SetEase(Ease.InOutBounce).SetDelay(0.5f);
-            snodeList[6].spriteGroup.transform.GetChild(3).localScale = Vector3.zero;
-            snodeList[6].spriteGroup.transform.GetChild(3).DOScale(Vector3.one, 0.5f).SetRelative().SetDelay(0.7f).SetEase(Ease.InOutBounce);
+            //Debug.Log("울창한 푸른 소나무");
+            var sequence = DOTween.Sequence();
+            spriteGroup.GetChild(0).position = spriteGroup.GetChild(0).position - Vector3.up * 15f;
+            spriteGroup.GetChild(1).position = spriteGroup.GetChild(1).position - Vector3.up * 15f;
+            spriteGroup.GetChild(2).localScale = Vector3.zero;
+            spriteGroup.GetChild(3).localScale = Vector3.zero;
 
+            sequence.Append(spriteGroup.GetChild(0).DOMoveY(15f, 1).SetRelative());
+            sequence.Join(spriteGroup.GetChild(0).DOShakeScale(1.0f));
+            sequence.Append(spriteGroup.GetChild(1).DOMoveY(15f, 1).SetRelative());
+            sequence.Join(spriteGroup.GetChild(1).DOShakeScale(1.0f));
+
+            sequence.Append(spriteGroup.GetChild(2).DOScale(Vector3.one, 1).SetRelative().SetEase(Ease.OutBack));
+            sequence.AppendCallback(() =>
+            {
+                spriteGroup.GetChild(2).DOShakePosition(3f, 0.1f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
+                spriteGroup.GetChild(2).DOShakeScale(3.5f, 0.05f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
+            });
+            sequence.Append(spriteGroup.GetChild(3).DOScale(Vector3.one, 1).SetRelative().SetEase(Ease.OutBack));
+            sequence.AppendCallback(() =>
+            {
+                spriteGroup.GetChild(3).DOShakePosition(3f, 0.1f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
+                spriteGroup.GetChild(3).DOShakeScale(3.5f, 0.05f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
+            });
             cut8flag1 = true;
             if (cut8flag2)
             {
-                GameManager.PushTarget(snodeList[8]);
+                GameManager.PushTarget(sequence, snodeList[8]);
             }
+            sequence.Play();
 
         }
-        public void OnCutActive7()
+        public void OnCutActive7(Transform spriteGroup)
         {
-            Debug.Log("앙증맞은 낮은 덤불");
-            snodeList[7].spriteGroup.SetActive(true);
-            snodeList[7].spriteGroup.transform.GetChild(0).position = snodeList[7].spriteGroup.transform.GetChild(0).position - Vector3.up * 15f;
-            snodeList[7].spriteGroup.transform.GetChild(0).DOMoveY(15f, 0.5f).SetRelative();
-            snodeList[7].spriteGroup.transform.GetChild(1).position = snodeList[7].spriteGroup.transform.GetChild(1).position - Vector3.up * 15f;
-            snodeList[7].spriteGroup.transform.GetChild(1).DOMoveY(15f, 0.5f).SetRelative().SetDelay(0.3f);
-            snodeList[7].spriteGroup.transform.GetChild(0).localScale = Vector3.zero;
-            snodeList[7].spriteGroup.transform.GetChild(0).DOScale(Vector3.one, 0.5f).SetRelative().SetEase(Ease.InOutBounce);
-            snodeList[7].spriteGroup.transform.GetChild(1).localScale = Vector3.zero;
-            snodeList[7].spriteGroup.transform.GetChild(1).DOScale(Vector3.one, 0.5f).SetRelative().SetDelay(0.3f).SetEase(Ease.InOutBounce);
+            var sequence = DOTween.Sequence();
+            spriteGroup.GetChild(0).position = spriteGroup.GetChild(0).position - Vector3.up * 15f;
+            spriteGroup.GetChild(1).position = spriteGroup.GetChild(1).position - Vector3.up * 15f;
+       
+
+            sequence.Append(spriteGroup.GetChild(0).DOMoveY(15f, 1).SetRelative());
+            sequence.Join(spriteGroup.GetChild(0).DOShakeScale(1.2f));
+            sequence.Append(spriteGroup.GetChild(1).DOMoveY(15f, 1).SetRelative());
+            sequence.Join(spriteGroup.GetChild(1).DOShakeScale(1.2f));
             cut8flag2 = true;
             if (cut8flag1)
             {
-
-                GameManager.PushTarget(snodeList[8]);
+                GameManager.PushTarget(sequence, snodeList[8]);
             }
-
+            sequence.Play();
         }
 
-        public void OnCutActive8()
+        public void OnCutActive8(Transform spriteGroup)
         {
-            Debug.Log("깜찍하고 귀여운 흰토끼");
-            snodeList[8].spriteGroup.SetActive(true);
-            snodeList[8].spriteGroup.transform.position = snodeList[8].spriteGroup.transform.position + Vector3.up;
-            snodeList[8].spriteGroup.transform.DOMoveY(-1f, 0.1f).SetRelative().SetLoops(7,LoopType.Yoyo);
-            snodeList[8].spriteGroup.transform.position = snodeList[8].spriteGroup.transform.position + Vector3.right *3;
-            snodeList[8].spriteGroup.transform.DOMoveX(-3f, 0.5f).SetRelative();
+            //Debug.Log("깜찍하고 귀여운 흰토끼");
+            var sequence = DOTween.Sequence();
+            spriteGroup.position = spriteGroup.position + Vector3.right * 3;
+
+
+            sequence.Append(spriteGroup.DOJump(spriteGroup.position-Vector3.right*3,1,4,1.0f));
+            
+
             cut9flag1 = true;
             if (cut9flag2)
             {
-                GameManager.PushTarget(snodeList[9]);
+                GameManager.PushTarget(sequence, snodeList[9]);
             }
-
+            sequence.Play();
         }
 
-        public void OnCutActive9()
+        public void OnCutActive9(Transform spriteGroup)
         {
-            snodeList[9].spriteGroup.SetActive(true);
-            snodeList[9].spriteGroup.transform.GetChild(0).localScale = new Vector3(0.5f, 0.1f, 0f);
-            snodeList[9].spriteGroup.transform.GetChild(0).DOScale(Vector3.one, 0.5f);
-            snodeList[9].spriteGroup.transform.GetChild(0).position = snodeList[9].spriteGroup.transform.GetChild(0).position - Vector3.up * 0.5f;
-            snodeList[9].spriteGroup.transform.GetChild(0).DOMoveY(0.5f, 0.5f).SetRelative();
-            Debug.Log("우리가족의 첫 캠핑");
+            //Debug.Log("우리가족의 첫 캠핑");
+            var sequence = DOTween.Sequence();
+            spriteGroup.transform.GetChild(0).localScale = new Vector3(0.5f, 0.1f, 0f);
+            spriteGroup.transform.GetChild(0).position = spriteGroup.GetChild(0).position - Vector3.up * 0.5f;
+            sequence.Append(spriteGroup.transform.GetChild(0).DOScale(Vector3.one, 0.5f));
+            sequence.Join(spriteGroup.transform.GetChild(0).DOMoveY(0.5f, 0.5f).SetRelative());
+            sequence.Play();
         }
     }
 }

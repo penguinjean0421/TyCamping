@@ -19,6 +19,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private StageBase _stage;
     [SerializeField] private CharacterManager characterManager;
 
+#if UNITY_EDITOR
+    public bool testMode = true;
+#endif
+
     public static List<StepNode> stepNodeList;
     public int clearCount = 0;
 
@@ -49,25 +53,36 @@ public class GameManager : MonoBehaviour
         stepNodeList = new List<StepNode>();
     }
 
-    public static void PushTarget(StepNode stepNode)
+    public static void PushTarget(Sequence sequence, StepNode stepNode)
     {
         stepNodeList.Add(stepNode);
         stepNode.targetTextImage.gameObject.SetActive(true);
         stepNode.targetTextImage.color = new Vector4(0, 0, 0, 0);
-        var seqeunce = DOTween.Sequence();
-        seqeunce.Append(stepNode.targetTextImage.DOColor(Color.white, 0.8f).SetDelay(2.5f));
-        seqeunce.Append(stepNode.targetTextImage.transform.DOShakeScale(2.0f, Vector3.one * 0.1f, 1)
-            .SetLoops(-1, LoopType.Yoyo));
-        seqeunce.Play();
+        sequence.Append(stepNode.targetTextImage.DOColor(Color.white, 0.8f));
+        sequence.AppendCallback(()=>
+        {
+            stepNode.targetTextImage.transform.DOShakeScale(2.0f, Vector3.one * 0.1f, 1)
+                .SetLoops(int.MaxValue, LoopType.Yoyo);
+        });
     }
 
     public void CheckInput()
     {
         if (checkable && Input.GetKeyDown(KeyCode.Return))
         {
+
             bool isCorrect = false;
+
             foreach (var stepNode in stepNodeList)
             {
+#if UNITY_EDITOR
+                if (testMode)
+                {
+                    OnCorrect(stepNode);
+                    isCorrect = true;
+                    break;
+                }
+#endif
                 if (ValidationExtension.IsCorrect(stepNode.target, _inputField.text))
                 {
                     OnCorrect(stepNode);
@@ -119,7 +134,9 @@ public class GameManager : MonoBehaviour
         {
             stepNode.targetTextImage.gameObject.SetActive(false);
         });
-        stepNode.action.Invoke();
+
+        stepNode.spriteGroup.SetActive(true);
+        stepNode.action.Invoke(stepNode.spriteGroup.transform);
         
         AnimateCorrect();
         clearCount++;

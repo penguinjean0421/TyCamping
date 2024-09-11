@@ -9,7 +9,7 @@ namespace Assets.Script.Game
     public class StepNode
     {
         public string target;
-        public UnityAction action;
+        public UnityAction<Transform> action;
         public GameObject spriteGroup;
         public SpriteRenderer targetTextImage;
     }
