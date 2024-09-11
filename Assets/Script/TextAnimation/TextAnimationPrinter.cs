@@ -68,7 +68,6 @@ public class TextAnimationPrinter : MonoBehaviour
             {
                 string sytleName = match.Groups["tag"].Value;
                 string value = match.Groups["value"].Value;
-                Debug.Log(sytleName);
                 TextAnimationStyle style = GlobalTextAnimationSetting.instance.FindDialogStyle(sytleName);
                 _usableText.Add(value);
                 if (style != null)
@@ -183,7 +182,7 @@ public class TextAnimationPrinter : MonoBehaviour
         return DOTween.To(() => _textMeshColor[index], x => _textMeshColor[index] = x, endColor, duration).SetEase(ease).SetLoops(loopTime, loopType);
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         if (textComponent.text.Length > 0)
         {

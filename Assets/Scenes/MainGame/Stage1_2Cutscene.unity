@@ -789,7 +789,7 @@ GameObject:
   - component: {fileID: 1383478576}
   - component: {fileID: 1383478577}
   m_Layer: 0
-  m_Name: Manager (1)
+  m_Name: Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -825,7 +825,7 @@ MonoBehaviour:
   dialogAsset: {fileID: 11400000, guid: b77a328166370bb4ea2fd687b390eeb7, type: 2}
   speechBubble: {fileID: 1669541985}
   currentIndex: 0
-  key: 323
+  keyList: 4301000020000000
   endEvent:
     m_PersistentCalls:
       m_Calls:

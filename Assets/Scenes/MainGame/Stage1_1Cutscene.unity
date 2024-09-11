@@ -346,7 +346,7 @@ MonoBehaviour:
   dialogAsset: {fileID: 11400000, guid: 4a839a6ed72d8254caba1f05686371b7, type: 2}
   speechBubble: {fileID: 1669541985}
   currentIndex: 0
-  key: 323
+  keyList: 4301000020000000
   endEvent:
     m_PersistentCalls:
       m_Calls:
