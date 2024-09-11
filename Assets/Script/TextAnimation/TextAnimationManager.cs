@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,7 +13,8 @@ public class TextAnimationManager : MonoBehaviour
 
     [SerializeField] private int currentIndex;
 
-    [SerializeField] private KeyCode key;
+    [SerializeField] private List<KeyCode> keyList;
+  
 
     public UnityEvent endEvent;
 
@@ -49,14 +51,27 @@ public class TextAnimationManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(key) && !speechBubble.IsPrinting() && currentIndex < dialogAsset.phrases.Count-1)
+        if (CheckKeyDown() && !speechBubble.IsPrinting() && currentIndex < dialogAsset.phrases.Count-1)
         {
             currentIndex++;
             ShowDialog(currentIndex);
         }
-        else if (Input.GetKeyDown(key) && !speechBubble.IsPrinting() && currentIndex == dialogAsset.phrases.Count-1)
+        else if (CheckKeyDown() && !speechBubble.IsPrinting() && currentIndex == dialogAsset.phrases.Count-1)
         {
             endEvent.Invoke();
         }
+    }
+
+    private bool CheckKeyDown()
+    {
+        foreach (var key in keyList)
+        {
+            if (Input.GetKeyDown(key))
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

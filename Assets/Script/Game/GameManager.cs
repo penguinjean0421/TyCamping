@@ -19,11 +19,15 @@ public class GameManager : MonoBehaviour
     [SerializeField] private StageBase _stage;
     [SerializeField] private CharacterManager characterManager;
 
-    public static List<SNode> snodeList;
+#if UNITY_EDITOR
+    public bool testMode = true;
+#endif
+
+    public static List<StepNode> stepNodeList;
     public int clearCount = 0;
 
 
-    private string currentInputText;
+    
 
     public UnityEvent onWrongEvent;
     public UnityEvent onCorrectEvent;
@@ -33,86 +37,75 @@ public class GameManager : MonoBehaviour
     {
         Initialize();
     }
-
-
     private void LateUpdate()
     {
-        currentInputText = _inputField.text;
         CheckInput();
-        _inputField.ActivateInputField();
-        _clearCountText.text = clearCount + "/" + _stage.snodeList.Count;
-
+        UpdateClearCount();
     }
+
+    private void UpdateClearCount()
+    {
+        _clearCountText.text = clearCount + "/" + _stage.snodeList.Count;
+    }
+
     public void Initialize()
     {
-        snodeList = new List<SNode>();
+        stepNodeList = new List<StepNode>();
     }
 
-
-    public static void PushTarget(SNode snode)
+    public static void PushTarget(Sequence sequence, StepNode stepNode)
     {
-        snodeList.Add(snode);
-        snode.hint.gameObject.SetActive(true);
-        snode.hint.color = new Vector4(0, 0, 0, 0);
-        snode.hint.DOColor(Color.white, 0.8f).SetDelay(2.5f).OnComplete(() =>
+        stepNodeList.Add(stepNode);
+        stepNode.targetTextImage.gameObject.SetActive(true);
+        stepNode.targetTextImage.color = new Vector4(0, 0, 0, 0);
+        sequence.Append(stepNode.targetTextImage.DOColor(Color.white, 0.8f));
+        sequence.AppendCallback(()=>
         {
-            snode.hint.transform.DOShakeScale(2.0f, Vector3.one * 0.1f,1).SetLoops(-1, LoopType.Yoyo);
-        });   // 
+            stepNode.targetTextImage.transform.DOShakeScale(2.0f, Vector3.one * 0.1f, 1)
+                .SetLoops(int.MaxValue, LoopType.Yoyo);
+        });
     }
 
     public void CheckInput()
     {
         if (checkable && Input.GetKeyDown(KeyCode.Return))
         {
-            AudioManager.instance.PlaySfx(AudioManager.Sfx.EnterHit);
 
-            Debug.Log(">" + _inputField.text);
-            Debug.Log(">>" + _inputField.textComponent.text);
-            Debug.Log(">>>" + _inputField.textComponent.GetParsedText());
             bool isCorrect = false;
-            foreach (var snode in snodeList)
+
+            foreach (var stepNode in stepNodeList)
             {
-                if (ValidationExtension.IsCorrect(snode.target, currentInputText))
+#if UNITY_EDITOR
+                if (testMode)
                 {
-                    snodeList.Remove(snode);
-                    snode.hint.DOColor(new Vector4(1, 1, 1, 0), 1.0f).OnComplete(() =>
-                    {
-                        snode.hint.gameObject.SetActive(false);
-                    });
-
-                    snode.action.Invoke();
-                    OnCorrect();
+                    OnCorrect(stepNode);
                     isCorrect = true;
-                    _clearCountText.transform.DOShakeScale(0.1f, Vector3.one * 0.5f);
-                    checkable = false;
-                    _inputField.transform.DOMoveY(-5, 0.5f).SetRelative().OnComplete(() =>
-                    {
-                        _inputField.transform.DOMoveY(5, 1f).SetDelay(2.2f).SetRelative().OnComplete(() => { checkable = true; });
-                    });
-                    clearCount++;
-                    if (_stage.snodeList.Count == clearCount)
-                    {
-                        StartCoroutine(Finish());
-                    }
-
-                    // 캐릭터 성공 액션
-                    characterManager.SuccessAction();
-
+                    break;
+                }
+#endif
+                if (ValidationExtension.IsCorrect(stepNode.target, _inputField.text))
+                {
+                    OnCorrect(stepNode);
+                    isCorrect = true;
                     break;
                 }
             }
             if (!isCorrect)
             {
                 OnWrong();
-
-                // 캐릭터 실패 액션
-                characterManager.FailureAction();
-
             }
-
             ClearInputField();
         }
 
+        if (checkable)
+        {
+            _inputField.ActivateInputField();
+        }
+        else
+        {
+            _inputField.DeactivateInputField();
+        }
+       
     }
 
     private IEnumerator Finish()
@@ -129,15 +122,37 @@ public class GameManager : MonoBehaviour
     private void OnWrong()
     {
         onWrongEvent.Invoke();
+        characterManager.FailureAction();
 #if UNITY_EDITOR
         //Debug.Log("part worng");
 #endif
     }
-    private void OnCorrect()
+    private void OnCorrect(StepNode stepNode)
     {
-        onCorrectEvent.Invoke();
-#if UNITY_EDITOR
-        //Debug.Log("correct");
-#endif
+        stepNodeList.Remove(stepNode);
+        stepNode.targetTextImage.DOColor(new Vector4(1, 1, 1, 0), 1.0f).OnComplete(() =>
+        {
+            stepNode.targetTextImage.gameObject.SetActive(false);
+        });
+
+        stepNode.spriteGroup.SetActive(true);
+        stepNode.action.Invoke(stepNode.spriteGroup.transform);
+        
+        AnimateCorrect();
+        clearCount++;
+        if (_stage.snodeList.Count == clearCount)
+        {
+            StartCoroutine(Finish());
+        }
+        characterManager.SuccessAction();
+    }
+
+    private void AnimateCorrect()
+    {
+        checkable = false;
+        var sequence = DOTween.Sequence();
+        sequence.Append(_clearCountText.transform.DOShakeScale(0.1f, Vector3.one * 0.5f));
+        sequence.Join(_inputField.transform.DOMoveY(-5, 0.5f).SetRelative());
+        sequence.Append(_inputField.transform.DOMoveY(5, 1f).SetDelay(2.2f).SetRelative().OnComplete(() => { checkable = true; }));
     }
 }

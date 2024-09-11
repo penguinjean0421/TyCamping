@@ -24,7 +24,6 @@ public class TextAnimationInputFieldHighlighter : MonoBehaviour
     private Tween rotationHandler;
     public void Start()
     {
-        DOTween.Init();
         _inputField = GetComponent<TMP_InputField>();
         _printer = GetComponentInChildren<TextAnimationPrinter>();
         //_inputField.onValueChanged.AddListener(Highlight);
@@ -40,11 +39,11 @@ public class TextAnimationInputFieldHighlighter : MonoBehaviour
         {
             if (currentParsedText.Length > previousParsedText.Length)
             {
-                AudioManager.instance.PlaySfx(AudioManager.Sfx.Typing);
+                
             }
             else
             {
-                AudioManager.instance.PlaySfx(AudioManager.Sfx.BackSpaceHit);
+               
             }
             Highlight(currentParsedText);
         }
@@ -66,13 +65,8 @@ public class TextAnimationInputFieldHighlighter : MonoBehaviour
             {
                 rotationHandler.Rewind();
             }
-
-            int index = Mathf.Max(0, text.Length - 2); // 음수 인덱스를 방지
-            scaleHandler = _printer.RepeatScaleTween(index, Vector3.one, Vector3.one * 2f, 0.1f, Ease.InBounce, LoopType.Yoyo, 2);
-            rotationHandler = _printer.RepeatRotationTween(index, Vector3.zero, Vector3.forward * 25, 0.1f, Ease.InOutBounce, LoopType.Yoyo, 2);
-
-            // scaleHandler = _printer.RepeatScaleTween(text.Length - 2, Vector3.one, Vector3.one * 2f, 0.1f, Ease.InBounce, LoopType.Yoyo, 2);
-            // rotationHandler = _printer.RepeatRotationTween(text.Length - 2, Vector3.zero, Vector3.forward * 25, 0.1f, Ease.InOutBounce, LoopType.Yoyo, 2);
+            scaleHandler = _printer.RepeatScaleTween(text.Length - 2, Vector3.one, Vector3.one * 2f, 0.1f, Ease.InBounce, LoopType.Yoyo, 2);
+            rotationHandler = _printer.RepeatRotationTween(text.Length - 2, Vector3.zero, Vector3.forward * 25, 0.1f, Ease.InOutBounce, LoopType.Yoyo, 2);
         }
     }
     public void RematchText()

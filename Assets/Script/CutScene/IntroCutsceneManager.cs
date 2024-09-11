@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using NUnit.Framework;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class IntroCutsceneManager : TextAnimationManager
@@ -64,5 +65,9 @@ public class IntroCutsceneManager : TextAnimationManager
         charaters[1].transform.position = charaters[1].transform.position + Vector3.down * 300;
         charaters[1].transform.DOMoveY(300, 0.5f).SetDelay(0.3f).SetRelative().SetEase(Ease.OutBack);
         charaters[0].transform.DOMoveX(-500, 0.5f).SetRelative();
+    }
+    public void StartGame()
+    {
+        SceneManager.LoadScene("Stage1_1");
     }
 }
