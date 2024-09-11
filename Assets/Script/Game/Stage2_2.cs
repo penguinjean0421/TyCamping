@@ -26,7 +26,7 @@ namespace Assets.Script.Game
             foreach (var snode in snodeList)
             {
                 snode.spriteGroup.SetActive(false);
-                snode.hint.gameObject.SetActive(false);
+                snode.targetTextImage.gameObject.SetActive(false);
             }
         }
 

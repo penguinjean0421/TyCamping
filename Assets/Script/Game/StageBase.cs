@@ -8,7 +8,7 @@ namespace Assets.Script.Game
     public class StageBase : MonoBehaviour
     {
 
-        public List<SNode> snodeList = new List<SNode>();
+        public List<StepNode> snodeList = new List<StepNode>();
 
         public int index = 0;
         public TextAsset baseAsset;

@@ -68,7 +68,6 @@ public class TextAnimationPrinter : MonoBehaviour
             {
                 string sytleName = match.Groups["tag"].Value;
                 string value = match.Groups["value"].Value;
-                Debug.Log(sytleName);
                 TextAnimationStyle style = GlobalTextAnimationSetting.instance.FindDialogStyle(sytleName);
                 _usableText.Add(value);
                 if (style != null)
