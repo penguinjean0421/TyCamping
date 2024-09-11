@@ -36,12 +36,12 @@ namespace Assets.Script.Game
             spriteGroup.GetChild(0).localScale = Vector3.right;
 
             sequence.Append(spriteGroup.GetChild(0).DOMoveX(-15, 0.5f).SetRelative());
-            sequence.Append(spriteGroup.GetChild(0).DOScale(Vector3.one, 0.7f));
+            sequence.Join(spriteGroup.GetChild(0).DOScale(Vector3.one, 0.7f));
 
             GameManager.PushTarget(sequence, snodeList[1]);
             sequence.Play();
         }
-        public void OnCutActive1(Transform spriteGroup) // n번 문장 치고 엔터
+        public void OnCutActive1(Transform spriteGroup)
         {
             //Debug.Log("옥화9경 옥화대에 있대요");
             var sequence = DOTween.Sequence();
@@ -51,6 +51,7 @@ namespace Assets.Script.Game
             sequence.Append(spriteGroup.GetChild(1).DOScaleX(1, 0.5f).SetEase(Ease.OutBounce));
             sequence.Append(spriteGroup.GetChild(1).DOScaleY(1, 0.3f).SetEase(Ease.OutBounce));
             
+            sequence.Append(spriteGroup.GetChild(2).DOMoveX(15, 1f));
             //레이어마스크
             GameManager.PushTarget(sequence, snodeList[2]);
             GameManager.PushTarget(sequence,snodeList[3]);
@@ -60,8 +61,9 @@ namespace Assets.Script.Game
         {
             //Debug.Log("찾았따 졸졸졸 미원천");
             var sequence = DOTween.Sequence();
-            spriteGroup.GetChild(0).GetComponent<SpriteRenderer>().maskInteraction = SpriteMaskInteraction.None;
+            //spriteGroup.GetChild(0).GetComponent<SpriteRenderer>().maskInteraction = SpriteMaskInteraction.None;
             //레이어마스크
+            sequence.Append(spriteGroup.GetChild(1).DOMoveX(15, 1f));
             cut3flag = true;
             if (cut4flag)
             {
@@ -78,9 +80,9 @@ namespace Assets.Script.Game
             spriteGroup.GetChild(0).GetComponent<SpriteRenderer>().color = new Vector4();
             spriteGroup.GetChild(1).GetComponent<SpriteRenderer>().color = new Vector4();
             spriteGroup.GetChild(2).GetComponent<SpriteRenderer>().color = new Vector4();
-            sequence.Append(spriteGroup.GetChild(0).GetComponent<SpriteRenderer>().DOColor(Color.white, 0.5f));
-            sequence.Append(spriteGroup.GetChild(1).GetComponent<SpriteRenderer>().DOColor(Color.white, 0.5f).SetDelay(0.25f));
-            sequence.Append(spriteGroup.GetChild(2).GetComponent<SpriteRenderer>().DOColor(Color.white, 0.5f).SetDelay(0.5f));
+            sequence.Append(spriteGroup.GetChild(0).GetComponent<SpriteRenderer>().DOColor(Color.white, 1));
+            sequence.Append(spriteGroup.GetChild(1).GetComponent<SpriteRenderer>().DOColor(Color.white, 1));
+            sequence.Append(spriteGroup.GetChild(2).GetComponent<SpriteRenderer>().DOColor(Color.white, 1));
 
             cut4flag = true;
             if (cut3flag)
@@ -106,10 +108,13 @@ namespace Assets.Script.Game
 
         public void OnCutActive5(Transform spriteGroup)
         {
-            //Debug.Log("높디높은 속리산 봉우리");
             var sequence = DOTween.Sequence();
             spriteGroup.GetChild(0).localScale = Vector3.zero;
-            sequence.Append(spriteGroup.GetChild(0).DOScale(Vector3.one, 0.7f).SetEase(Ease.InOutBounce));
+            spriteGroup.GetChild(1).localScale = Vector3.zero;
+            spriteGroup.GetChild(2).localScale = Vector3.zero;
+            sequence.Append(spriteGroup.GetChild(0).DOScale(Vector3.one, 0.7f).SetEase(Ease.OutElastic));
+            sequence.Append(spriteGroup.GetChild(1).DOScale(Vector3.one, 0.7f).SetEase(Ease.OutElastic));
+            sequence.Append(spriteGroup.GetChild(2).DOScale(Vector3.one, 0.7f).SetEase(Ease.OutElastic));
             sequence.Play();
         }
     }

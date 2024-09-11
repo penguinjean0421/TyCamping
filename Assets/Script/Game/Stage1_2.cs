@@ -3,7 +3,6 @@ using DG.Tweening.Core.Easing;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
-using static UnityEngine.GraphicsBuffer;
 
 namespace Assets.Script.Game
 {
@@ -40,9 +39,11 @@ namespace Assets.Script.Game
             spriteGroup.GetChild(3).position = spriteGroup.GetChild(3).position + Vector3.down * 15;
 
             sequence.Append(spriteGroup.GetChild(0).DOMoveY(15, 0.5f).SetRelative());
-            sequence.Append(spriteGroup.GetChild(1).DOMoveY(15, 0.5f).SetRelative().SetDelay(0.2f));
-            sequence.Append(spriteGroup.GetChild(2).DOMoveY(15, 0.5f).SetRelative().SetDelay(0.4f));
-            sequence.Append(spriteGroup.GetChild(3).DOMoveY(15, 0.5f).SetRelative().SetDelay(0.6f));
+            sequence.Append(spriteGroup.GetChild(1).DOMoveY(15, 0.5f).SetRelative());
+            sequence.Append(spriteGroup.GetChild(2).DOMoveY(15, 0.5f).SetRelative());
+            sequence.Append(spriteGroup.GetChild(3).DOMoveY(15, 0.5f).SetRelative());
+          
+
 
             GameManager.PushTarget(sequence, snodeList[1]);
             sequence.Play();
@@ -71,9 +72,20 @@ namespace Assets.Script.Game
             spriteGroup.GetChild(1).localScale = Vector3.zero;
 
             sequence.Append(spriteGroup.GetChild(0).DOMoveY(5, 0.5f).SetRelative());
+            sequence.Join(spriteGroup.GetChild(0).DOScale(1, 0.5f).SetRelative());
+            sequence.AppendCallback(() =>
+            {
+                spriteGroup.GetChild(0).DOShakePosition(2f, 0.3f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
+                spriteGroup.GetChild(0).DOShakeScale(3, 0.1f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
+            });
+
             sequence.Append(spriteGroup.GetChild(1).DOMoveY(5, 0.5f).SetRelative().SetDelay(0.2f));
-            sequence.Append(spriteGroup.GetChild(0).DOScale(1, 0.5f).SetRelative());
-            sequence.Append(spriteGroup.GetChild(1).DOScale(1, 0.5f).SetRelative().SetDelay(0.2f));
+            sequence.Join(spriteGroup.GetChild(1).DOScale(1, 0.5f).SetRelative().SetDelay(0.2f));
+            sequence.AppendCallback(() =>
+            {
+                spriteGroup.GetChild(1).DOShakePosition(2f, 0.3f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
+                spriteGroup.GetChild(1).DOShakeScale(3, 0.1f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
+            });
             GameManager.PushTarget(sequence, snodeList[4]);
             sequence.Play();
         }
@@ -82,7 +94,8 @@ namespace Assets.Script.Game
             var sequence = DOTween.Sequence();
 
             spriteGroup.GetChild(0).position = spriteGroup.GetChild(0).position + Vector3.down * 15;
-            sequence.Append(spriteGroup.GetChild(0).DOMoveY(15, 0.5f).SetRelative());
+            sequence.Append(spriteGroup.GetChild(0).DOMoveY(15, 1f).SetRelative().SetEase(Ease.InOutCirc));
+            sequence.Join(spriteGroup.GetChild(0).DOShakeScale(1.2f));
             GameManager.PushTarget(sequence, snodeList[5]);
             sequence.Play();
         }
@@ -91,7 +104,9 @@ namespace Assets.Script.Game
             var sequence = DOTween.Sequence();
 
             spriteGroup.GetChild(0).position = spriteGroup.GetChild(0).position + Vector3.left * 15;
-            sequence.Append(spriteGroup.GetChild(0).DOMoveX(15, 0.5f).SetRelative());
+            spriteGroup.GetChild(1).position = spriteGroup.GetChild(1).position + Vector3.left * 15;
+            sequence.Append(spriteGroup.GetChild(0).DOMoveX(15, 1).SetRelative());
+            sequence.Append(spriteGroup.GetChild(1).DOMoveX(15, 1).SetRelative());
             cut6flag1 = true;
             if (cut6flag2)
             {
@@ -109,9 +124,9 @@ namespace Assets.Script.Game
             spriteGroup.GetChild(2).GetComponent<SpriteRenderer>().color = new Vector4();
             spriteGroup.GetChild(3).GetComponent<SpriteRenderer>().color = new Vector4();
             sequence.Append(spriteGroup.GetChild(0).GetComponent<SpriteRenderer>().DOColor(Color.white, 0.5f));
-            sequence.Append(spriteGroup.GetChild(1).GetComponent<SpriteRenderer>().DOColor(Color.white, 0.5f).SetDelay(0.2f));
-            sequence.Append(spriteGroup.GetChild(2).GetComponent<SpriteRenderer>().DOColor(Color.white, 0.5f).SetDelay(0.4f));
-            sequence.Append(spriteGroup.GetChild(3).GetComponent<SpriteRenderer>().DOColor(Color.white, 0.5f).SetDelay(0.6f));
+            sequence.Append(spriteGroup.GetChild(1).GetComponent<SpriteRenderer>().DOColor(Color.white, 0.5f));
+            sequence.Append(spriteGroup.GetChild(2).GetComponent<SpriteRenderer>().DOColor(Color.white, 0.5f));
+            sequence.Append(spriteGroup.GetChild(3).GetComponent<SpriteRenderer>().DOColor(Color.white, 0.5f));
             cut6flag2 = true;
             if (cut6flag1)
             {
@@ -126,7 +141,7 @@ namespace Assets.Script.Game
 
             spriteGroup.GetChild(0).localScale = Vector3.zero;
 
-            sequence.Append(spriteGroup.GetChild(0).DOScale(1, 0.5f).SetRelative().SetEase(Ease.OutBounce));
+            sequence.Append(spriteGroup.GetChild(0).DOScale(1, 0.5f).SetRelative().SetEase(Ease.OutElastic));
             GameManager.PushTarget(sequence, snodeList[7]);
             sequence.Play();
         }
@@ -134,7 +149,7 @@ namespace Assets.Script.Game
         {
             var sequence = DOTween.Sequence();
             spriteGroup.GetChild(0).position = spriteGroup.GetChild(0).position + Vector3.left * 15;
-            sequence.Append(spriteGroup.GetChild(0).DOMoveX(15, 0.5f).SetRelative());
+            sequence.Append(spriteGroup.GetChild(0).DOMoveX(15, 0.5f).SetRelative().SetEase(Ease.OutBack));
             sequence.Play();
         }
     }
