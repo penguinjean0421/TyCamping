@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
         snode.hint.DOColor(Color.white, 0.8f).SetDelay(2.5f).OnComplete(() =>
         {
             snode.hint.transform.DOShakeScale(2.0f, Vector3.one * 0.1f,1).SetLoops(-1, LoopType.Yoyo);
-        });   // 댄븨띿뒪섑
+        });   // 
     }
 
     public void CheckInput()
@@ -95,7 +95,7 @@ public class GameManager : MonoBehaviour
                         StartCoroutine(Finish());
                     }
 
-                    // 罹먮┃깃났 ≪뀡
+                    // 캐릭터 성공 액션
                     characterManager.SuccessAction();
 
                     break;
@@ -105,7 +105,7 @@ public class GameManager : MonoBehaviour
             {
                 OnWrong();
 
-                // 罹먮┃ㅽ뙣 ≪뀡
+                // 캐릭터 실패 액션
                 characterManager.FailureAction();
 
             }
