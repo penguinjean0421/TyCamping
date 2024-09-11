@@ -11,15 +11,19 @@ namespace Util
         public UnityEvent onActiveEvent;
         public UnityEvent onInactiveEvent;
 
+        public void Awake()
+        {
+            gameObject.SetActive(false);
+        }
         public virtual void OnActive()
         {
+            gameObject.SetActive(true);
             onActiveEvent.Invoke();
-
-
         }
 
         public virtual void OnInactive()
         {
+            gameObject.SetActive(false);
             onInactiveEvent.Invoke();
         }
     }

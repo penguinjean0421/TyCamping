@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eab59a364630b749a619b2064b7f4e0, type: 3}
+  m_Name: Stage2_2CutScdne
+  m_EditorClassIdentifier: 
+  resourceFile: {fileID: 4900000, guid: 5bbae80f67cf21c438919468b387380d, type: 3}
+  speechBubbles:
+  - sprite: {fileID: 0}
+    position: {x: 0, y: -540, z: 0}
+    size: {x: 1719, y: 385}
+    appearDuration: 0
+    appearEase: 0
+  - sprite: {fileID: 0}
+    position: {x: 0, y: -540, z: 0}
+    size: {x: 1719, y: 385}
+    appearDuration: 0
+    appearEase: 0
+  - sprite: {fileID: 0}
+    position: {x: 0, y: -540, z: 0}
+    size: {x: 1719, y: 385}
+    appearDuration: 0
+    appearEase: 0
+  - sprite: {fileID: 0}
+    position: {x: 0, y: -540, z: 0}
+    size: {x: 1719, y: 385}
+    appearDuration: 0
+    appearEase: 0
+  - sprite: {fileID: 0}
+    position: {x: 0, y: -540, z: 0}
+    size: {x: 1719, y: 385}
+    appearDuration: 0
+    appearEase: 0
+  - sprite: {fileID: 0}
+    position: {x: 0, y: -540, z: 0}
+    size: {x: 1719, y: 385}
+    appearDuration: 0
+    appearEase: 0
+  - sprite: {fileID: 0}
+    position: {x: 0, y: -540, z: 0}
+    size: {x: 1719, y: 385}
+    appearDuration: 0
+    appearEase: 0
+  - sprite: {fileID: 0}
+    position: {x: 0, y: -540, z: 0}
+    size: {x: 1719, y: 385}
+    appearDuration: 0
+    appearEase: 0
+  - sprite: {fileID: 0}
+    position: {x: 0, y: -540, z: 0}
+    size: {x: 1719, y: 385}
+    appearDuration: 0
+    appearEase: 0
+  - sprite: {fileID: 0}
+    position: {x: 0, y: -540, z: 0}
+    size: {x: 1719, y: 385}
+    appearDuration: 0
+    appearEase: 0
+  - sprite: {fileID: 0}
+    position: {x: 0, y: -540, z: 0}
+    size: {x: 1719, y: 385}
+    appearDuration: 0
+    appearEase: 0
+  phrases:
+  - "\uADF8\uB798! \uB098\uB294 <loc>\u2018\uCCAD\uC8FC \uAC00\uB355\uBA74\u2019</loc>\uC5D0
+    \uB2E4\uB140\uC654\uC5C8\uB5A0. \r"
+  - "\uCDA9\uBD81\uC774\uB294 \uAF43\uC744 \uC815\uB9D0 \uC870\uC544\uD574!\r"
+  - "\uAE38\uC5D0 \uC788\uB294 \uCF54\uC2A4\uBAA8\uC2A4 \uAF43\uC774 \uCC38 \uC608\uBEE4\uC5B4.\r"
+  - "\uADFC\uB370... \uACE0\uCD94\uC7A0\uC790\uB9AC\uB3C4 \uAF43\uC774 \uC88B\uC558\uB098\uBD10!\r"
+  - "\uB098\uB791 \uAC00\uCE58 \uAF43\uB178\uB9AC \uAC00\uB5A0.\r"
+  - "\uB0B4 \uD48D\uC120\uB3C4 \uACE0\uCD94\uC7A0\uC790\uB9AC\uB791 \uB611\uAC00\uD2BC
+    \uC0C9\uC774\uC57C!\r"
+  - "\uB0B4\uB144\uC5D0\uB3C4 <loc>\u2018\uAC00\uB355\uBA74\u2019 </loc>\uCF54\uC2A4\uBAA8\uC2A4
+    \uBCF4\uACE0\uC2DC\uD37C~ \r"
+  - "\uB610 \uACE0\uCD94\uC7A0\uC790\uB9AC, \uD48D\uC120\uCE5C\uAD6C\uB97C \uB9CC\uB0A0
+    \uC218 \uC788\uAC8C\uCC0C?"
