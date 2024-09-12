@@ -8,7 +8,8 @@
 ## Sound Credit
 ### 배경음악
 - [Birdies - Thursday Noon in Memphis](https://www.epidemicsound.com/track/VGiKzdwoQE/) - 메뉴화면 배경음
-- [Leimoti - Sweet Nina](https://www.epidemicsound.com/track/gfY8TUpLnO/) - 스테이지 메인 배경음
+- [Leimoti - Sweet Nina](https://www.epidemicsound.com/track/gfY8TUpLnO/) - 스테이지1 메인 배경음
+- [Tomorrow It Is Christmas (Instrumental Version)](https://www.epidemicsound.com/track/0mOVg0Clat/)] - 스테이지2 메인 배경음
 - [Clarence Reed - From Tree to Paper](https://www.epidemicsound.com/track/qLRYUCjNEt/) - 컷씬 배경음
 
 ### 스테이지별 환경소리
