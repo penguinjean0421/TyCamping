@@ -8,6 +8,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
@@ -18,25 +19,23 @@ public class GameManager : MonoBehaviour
     [SerializeField] private RectTransform finishUI;
     [SerializeField] private StageBase _stage;
     [SerializeField] private CharacterManager characterManager;
-
 #if UNITY_EDITOR
     public bool testMode = true;
 #endif
 
     public static List<StepNode> stepNodeList;
     public int clearCount = 0;
-
-
-    
-
-    public UnityEvent onWrongEvent;
-    public UnityEvent onCorrectEvent;
     private bool checkable = true;
 
     private void Awake()
     {
         Initialize();
+    }   
+    private void Start()
+    {
+
     }
+
     private void LateUpdate()
     {
         CheckInput();
@@ -100,6 +99,8 @@ public class GameManager : MonoBehaviour
         if (checkable)
         {
             _inputField.ActivateInputField();
+            _inputField.MoveTextEnd(false);
+           
         }
         else
         {
@@ -121,7 +122,6 @@ public class GameManager : MonoBehaviour
     }
     private void OnWrong()
     {
-        onWrongEvent.Invoke();
         characterManager.FailureAction();
 #if UNITY_EDITOR
         //Debug.Log("part worng");
