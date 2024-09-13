@@ -25,12 +25,6 @@ public class GameManager : MonoBehaviour
 
     public static List<StepNode> stepNodeList;
     public int clearCount = 0;
-
-
-    
-
-    public UnityEvent onWrongEvent;
-    public UnityEvent onCorrectEvent;
     private bool checkable = true;
 
     private void Awake()
@@ -121,7 +115,6 @@ public class GameManager : MonoBehaviour
     }
     private void OnWrong()
     {
-        onWrongEvent.Invoke();
         characterManager.FailureAction();
 #if UNITY_EDITOR
         //Debug.Log("part worng");
