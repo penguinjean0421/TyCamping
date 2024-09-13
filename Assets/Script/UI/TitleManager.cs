@@ -9,6 +9,7 @@ public class TitleManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public Button startButton;
     public Button optionButton;
+    public Button optionBackButton;
     public Button exitButton;
     public RectTransform titleMenu;
     public RectTransform optionMenu;
@@ -60,6 +61,7 @@ public class TitleManager : MonoBehaviour
         optionMenu.gameObject.SetActive(false);
         startButton.onClick.AddListener(OnStartButtonClicked);
         optionButton.onClick.AddListener(OnOptionButtonClicked);
+        optionBackButton.onClick.AddListener(OnOptionBackButtonClicked);
         exitButton.onClick.AddListener(OnExitButtonClicked);
     }
 
@@ -75,6 +77,13 @@ public class TitleManager : MonoBehaviour
         titleMenu.gameObject.SetActive(false);
         isOptionMenuEnabled=true;
         StartCoroutine(OptionMenuRoutine());
+    }
+
+    void OnOptionBackButtonClicked()
+    {
+        optionMenu.gameObject.SetActive(false);
+        titleMenu.gameObject.SetActive(true);
+        isOptionMenuEnabled = false;
     }
 
     private IEnumerator OptionMenuRoutine()
