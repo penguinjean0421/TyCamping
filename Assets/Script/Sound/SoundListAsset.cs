@@ -1,4 +1,4 @@
-﻿using Default.Scripts.Extension;
+using Default.Scripts.Extension;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
@@ -32,7 +32,11 @@ namespace Default.Scripts.Sound
     public class SoundListAsset : ScriptableObject
     {
         public List<Sound> sounds;
+
+#if UNITY_EDITOR
         public DefaultAsset floder;
+#endif
+
         public Sound GetSoundByName(string name)
         {
             var soundsQuery = from sound in sounds
