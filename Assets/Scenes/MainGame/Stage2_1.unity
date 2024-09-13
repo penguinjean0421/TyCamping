@@ -446,14 +446,9 @@ MonoBehaviour:
   finishUI: {fileID: 1473789982}
   _stage: {fileID: 626824217139915931}
   characterManager: {fileID: 210241426}
+  caretColor: {r: 0.1764706, g: 0.12156863, b: 0.11372549, a: 0}
   testMode: 1
   clearCount: 0
-  onWrongEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  onCorrectEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!4 &1304839238
 Transform:
   m_ObjectHideFlags: 0
@@ -755,6 +750,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IngameUI
       objectReference: {fileID: 0}
+    - target: {fileID: 8085186322934247466, guid: 88087b27558a583459ed2e96ba458154, type: 3}
+      propertyPath: nextScene
+      value: Stage2_1Cutscene
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -849,6 +848,22 @@ PrefabInstance:
     - target: {fileID: 4556360084567446106, guid: 376bccb731c0bc44298eeecf6862f4f0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6939506131135816544, guid: 376bccb731c0bc44298eeecf6862f4f0, type: 3}
+      propertyPath: riverGradient.key0.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6939506131135816544, guid: 376bccb731c0bc44298eeecf6862f4f0, type: 3}
+      propertyPath: riverGradient.key0.g
+      value: 0.9981636
+      objectReference: {fileID: 0}
+    - target: {fileID: 6939506131135816544, guid: 376bccb731c0bc44298eeecf6862f4f0, type: 3}
+      propertyPath: riverGradient.key0.r
+      value: 0.759434
+      objectReference: {fileID: 0}
+    - target: {fileID: 6939506131135816544, guid: 376bccb731c0bc44298eeecf6862f4f0, type: 3}
+      propertyPath: riverGradient.key1.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

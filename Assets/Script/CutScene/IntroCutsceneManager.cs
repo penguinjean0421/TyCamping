@@ -38,8 +38,7 @@ public class IntroCutsceneManager : TextAnimationManager
     public void Act1()
     {
         charaters[0].gameObject.SetActive(true);
-        charaters[0].transform.position = charaters[0].transform.position + Vector3.left*150;
-        charaters[0].transform.DOMoveX(150,0.5f).SetRelative();
+        charaters[0].rectTransform.DOAnchorPosX(100, 0.5f);
     }
     public void Act2()
     {
@@ -62,9 +61,8 @@ public class IntroCutsceneManager : TextAnimationManager
     public void Act10()
     {
         charaters[1].gameObject.SetActive(true);
-        charaters[1].transform.position = charaters[1].transform.position + Vector3.down * 300;
-        charaters[1].transform.DOMoveY(300, 0.5f).SetDelay(0.3f).SetRelative().SetEase(Ease.OutBack);
-        charaters[0].transform.DOMoveX(-500, 0.5f).SetRelative();
+        charaters[1].rectTransform.DOAnchorPosY(180, 0.5f).SetDelay(1f).SetEase(Ease.OutBack);
+        charaters[0].rectTransform.DOAnchorPosX(-200, 0.5f);
     }
     public void StartGame()
     {
