@@ -17,8 +17,10 @@ MonoBehaviour:
     name: CutScene
   - clip: {fileID: 8300000, guid: 92de8643f9ea3504f9010b828ec0afbe, type: 3}
     name: Menu
-  - clip: {fileID: 8300000, guid: 9487abd2487ae97438373f2bc77436d1, type: 3}
-    name: Stage
+  - clip: {fileID: 8300000, guid: e6ae8583e7889ba43a55453439d53d61, type: 3}
+    name: Stage1
+  - clip: {fileID: 8300000, guid: e059dc50cb17dd14392f2184c5aef57a, type: 3}
+    name: Stage2
   - clip: {fileID: 8300000, guid: 744da0aafd95d8f4092c7462182b692d, type: 3}
     name: Stage11
   - clip: {fileID: 8300000, guid: 4757e57666b921041a7fe525e97d877d, type: 3}
@@ -37,6 +39,8 @@ MonoBehaviour:
     name: Button
   - clip: {fileID: 8300000, guid: b26ad321656478443b72aaf2a0b83446, type: 3}
     name: EnterHit
+  - clip: {fileID: 8300000, guid: 20ec3a9e50f61bb459d98c1befe862e7, type: 3}
+    name: Failure
   - clip: {fileID: 8300000, guid: f4869179537b298479c75b9421cf068f, type: 3}
     name: Typing
-  floder: {fileID: 102900000, guid: a22280a69cb8fc54d8c26d29d7de9567, type: 3}
+  floder: {fileID: 102900000, guid: f9fcf42de120bf94391942ee77a3b508, type: 3}
