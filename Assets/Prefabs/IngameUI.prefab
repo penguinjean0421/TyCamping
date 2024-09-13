@@ -393,7 +393,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: "\uB0B4\uC6A9\uC744 \uC785\uB825\uD574\uC8FC\uC138\uC694..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3ec1ccc79f3b22840a8e4dc852018a73, type: 2}
   m_sharedMaterial: {fileID: -1239491535561594291, guid: 3ec1ccc79f3b22840a8e4dc852018a73, type: 2}

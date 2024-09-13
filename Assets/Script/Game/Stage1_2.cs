@@ -75,16 +75,18 @@ namespace Assets.Script.Game
             sequence.Join(spriteGroup.GetChild(0).DOScale(1, 0.5f).SetRelative());
             sequence.AppendCallback(() =>
             {
-                spriteGroup.GetChild(0).DOShakePosition(2f, 0.3f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
-                spriteGroup.GetChild(0).DOShakeScale(3, 0.1f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
+                spriteGroup.GetChild(0).DOSpiral(3, Vector3.forward, SpiralMode.ExpandThenContract, 0.05f)
+                    .SetLoops(int.MaxValue);
+                spriteGroup.GetChild(0).DOShakeScale(3.5f, 0.01f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
             });
 
             sequence.Append(spriteGroup.GetChild(1).DOMoveY(5, 0.5f).SetRelative().SetDelay(0.2f));
             sequence.Join(spriteGroup.GetChild(1).DOScale(1, 0.5f).SetRelative().SetDelay(0.2f));
             sequence.AppendCallback(() =>
             {
-                spriteGroup.GetChild(1).DOShakePosition(2f, 0.3f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
-                spriteGroup.GetChild(1).DOShakeScale(3, 0.1f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
+                spriteGroup.GetChild(1).DOSpiral(3, Vector3.forward, SpiralMode.ExpandThenContract, 0.05f)
+                    .SetLoops(int.MaxValue);
+                spriteGroup.GetChild(1).DOShakeScale(3.5f, 0.01f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
             });
             GameManager.PushTarget(sequence, snodeList[4]);
             sequence.Play();
@@ -106,7 +108,18 @@ namespace Assets.Script.Game
             spriteGroup.GetChild(0).position = spriteGroup.GetChild(0).position + Vector3.left * 15;
             spriteGroup.GetChild(1).position = spriteGroup.GetChild(1).position + Vector3.left * 15;
             sequence.Append(spriteGroup.GetChild(0).DOMoveX(15, 1).SetRelative());
+            sequence.AppendCallback(() =>
+            {
+                spriteGroup.GetChild(0).DOSpiral(3, Vector3.forward, SpiralMode.ExpandThenContract, 0.02f)
+                    .SetLoops(int.MaxValue);
+            });
             sequence.Append(spriteGroup.GetChild(1).DOMoveX(15, 1).SetRelative());
+            sequence.AppendCallback(() =>
+            {
+                spriteGroup.GetChild(1).DOSpiral(4.2f, Vector3.forward, SpiralMode.ExpandThenContract, 0.03f)
+                    .SetLoops(int.MaxValue);
+            });
+
             cut6flag1 = true;
             if (cut6flag2)
             {
