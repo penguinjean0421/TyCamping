@@ -104,14 +104,16 @@ namespace Assets.Script.Game
             sequence.Append(spriteGroup.GetChild(0).DOScale(Vector3.one, 1).SetEase(Ease.OutElastic));
             sequence.AppendCallback(() =>
             {
-                spriteGroup.GetChild(0).DOShakePosition(2f, 0.3f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
-                spriteGroup.GetChild(0).DOShakeScale(1.2f, 0.1f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
+                spriteGroup.GetChild(0).DOSpiral(3, Vector3.forward, SpiralMode.ExpandThenContract, 0.05f)
+                    .SetLoops(int.MaxValue);
+                spriteGroup.GetChild(0).DOShakeScale(3, 0.05f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
             });
             sequence.Append(spriteGroup.GetChild(1).DOScale(Vector3.one, 1).SetEase(Ease.OutElastic));
             sequence.AppendCallback(() =>
             {
-                spriteGroup.GetChild(1).DOShakePosition(2f, 0.3f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
-                spriteGroup.GetChild(1).DOShakeScale(1.2f, 0.1f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
+                spriteGroup.GetChild(1).DOSpiral(3, Vector3.forward, SpiralMode.ExpandThenContract, 0.05f)
+                    .SetLoops(int.MaxValue);
+                spriteGroup.GetChild(1).DOShakeScale(3, 0.05f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
             });
             cut9flag2 = true;
             if (cut9flag1)
@@ -159,14 +161,18 @@ namespace Assets.Script.Game
             sequence.Append(spriteGroup.GetChild(2).DOScale(Vector3.one, 1).SetRelative().SetEase(Ease.OutBack));
             sequence.AppendCallback(() =>
             {
-                spriteGroup.GetChild(2).DOShakePosition(3f, 0.1f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
-                spriteGroup.GetChild(2).DOShakeScale(3.5f, 0.05f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
+                spriteGroup.GetChild(2).DOSpiral(3, Vector3.forward, SpiralMode.ExpandThenContract, 0.01f)
+                    .SetLoops(int.MaxValue);
+                spriteGroup.GetChild(2).DOShakeScale(3.5f, 0.01f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
+                spriteGroup.GetChild(0).DOShakeRotation(3.5f, 1, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
             });
             sequence.Append(spriteGroup.GetChild(3).DOScale(Vector3.one, 1).SetRelative().SetEase(Ease.OutBack));
             sequence.AppendCallback(() =>
             {
-                spriteGroup.GetChild(3).DOShakePosition(3f, 0.1f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
-                spriteGroup.GetChild(3).DOShakeScale(3.5f, 0.05f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
+                spriteGroup.GetChild(3).DOSpiral(3, Vector3.forward, SpiralMode.ExpandThenContract, 0.01f)
+                    .SetLoops(int.MaxValue);
+                spriteGroup.GetChild(3).DOShakeScale(3.5f, 0.01f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
+                spriteGroup.GetChild(1).DOShakeRotation(3.5f, 1, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
             });
             cut8flag1 = true;
             if (cut8flag2)
@@ -185,8 +191,22 @@ namespace Assets.Script.Game
 
             sequence.Append(spriteGroup.GetChild(0).DOMoveY(15f, 1).SetRelative());
             sequence.Join(spriteGroup.GetChild(0).DOShakeScale(1.2f));
+            sequence.AppendCallback(() =>
+            {
+                spriteGroup.GetChild(0).DOSpiral(3, Vector3.forward, SpiralMode.ExpandThenContract, 0.01f)
+                    .SetLoops(int.MaxValue);
+                spriteGroup.GetChild(0).DOShakeScale(3.5f, 0.01f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
+            });
             sequence.Append(spriteGroup.GetChild(1).DOMoveY(15f, 1).SetRelative());
             sequence.Join(spriteGroup.GetChild(1).DOShakeScale(1.2f));
+            sequence.AppendCallback(() =>
+            {
+                spriteGroup.GetChild(1).DOSpiral(3, Vector3.forward, SpiralMode.ExpandThenContract, 0.01f)
+                    .SetLoops(int.MaxValue);
+                spriteGroup.GetChild(1).DOShakeScale(3.5f, 0.01f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
+            });
+
+
             cut8flag2 = true;
             if (cut8flag1)
             {
@@ -203,7 +223,12 @@ namespace Assets.Script.Game
 
 
             sequence.Append(spriteGroup.DOJump(spriteGroup.position-Vector3.right*3,1,4,1.0f));
-            
+            sequence.AppendCallback(() =>
+            {
+                spriteGroup.DOSpiral(3, Vector3.forward, SpiralMode.ExpandThenContract, 0.01f)
+                    .SetLoops(int.MaxValue);
+                spriteGroup.DOShakeScale(3.5f, 0.01f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
+            });
 
             cut9flag1 = true;
             if (cut9flag2)

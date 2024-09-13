@@ -101,7 +101,12 @@ namespace Assets.Script.Game
 
             sequence.Append(spriteGroup.GetChild(0).DOMove(-Vector3.one * 15, 0.5f).SetRelative());
             sequence.Append(spriteGroup.GetChild(1).DOMove(-Vector3.one * 15, 1f).SetRelative().SetDelay(0.5f));
-            sequence.Append(spriteGroup.GetChild(1).DORotate(new Vector3(0,0,5), 3f).SetLoops(int.MaxValue, LoopType.Yoyo).SetEase(Ease.Linear));
+            sequence.AppendCallback(() =>
+            {
+                spriteGroup.GetChild(1).DOSpiral(3, Vector3.forward, SpiralMode.ExpandThenContract, 0.05f)
+                    .SetLoops(int.MaxValue);
+                spriteGroup.GetChild(1).DOShakeScale(3.5f, 0.01f, 1).SetLoops(int.MaxValue, LoopType.Yoyo);
+            });
             GameManager.PushTarget(sequence, snodeList[5]);
             sequence.Play();
         }
