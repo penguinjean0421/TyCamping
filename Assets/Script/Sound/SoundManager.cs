@@ -1,11 +1,14 @@
 // using Default.Scripts.Util;
 // using Default.Scripts.Util.StatePattern;
-using UnityEditor;
-using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
+
+using UnityEngine;
+using UnityEditor;
 
 namespace Default.Scripts.Sound
 {
+
+#if UNITY_EDITOR
     [CustomEditor(typeof(SoundManager))]
     public class SoundManagerInspector : Editor
     {
@@ -16,6 +19,7 @@ namespace Default.Scripts.Sound
             sm.channels = sm.GetComponentsInChildren<Channel>();
         }
     }
+#endif
 
     public class SoundManager : Singleton<SoundManager>
     {
