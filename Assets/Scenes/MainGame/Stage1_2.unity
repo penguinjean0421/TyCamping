@@ -711,6 +711,7 @@ MonoBehaviour:
   characterManager: {fileID: 210241426}
   testMode: 1
   clearCount: 0
+  finishDelay: 5
 --- !u!4 &1304839238
 Transform:
   m_ObjectHideFlags: 0

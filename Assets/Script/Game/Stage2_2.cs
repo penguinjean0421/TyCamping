@@ -140,12 +140,12 @@ namespace Assets.Script.Game
             spriteGroup.GetChild(0).position = spriteGroup.GetChild(0).position + Vector3.down * 5;
             spriteGroup.GetChild(1).position = spriteGroup.GetChild(1).position + Vector3.down * 5;
             sequence.Append(spriteGroup.GetChild(2).DOMoveX(15, 1.0f).SetRelative());
-            sequence.Append(spriteGroup.GetChild(0).DOMoveY(5, 0.5f).SetRelative().SetEase(Ease.OutElastic));
+            sequence.Append(spriteGroup.GetChild(0).DOMoveY(5, 1).SetRelative().SetEase(Ease.OutBack));
             sequence.JoinCallback(() =>
             {
                 spriteGroup.GetChild(0).DOShakeRotation(2.0f, 10, 1).SetLoops(Int32.MaxValue, LoopType.Yoyo);
             });
-            sequence.Append(spriteGroup.GetChild(1).DOMoveY(5, 0.5f).SetRelative().SetEase(Ease.OutElastic));
+            sequence.Append(spriteGroup.GetChild(1).DOMoveY(5, 1).SetRelative().SetEase(Ease.OutBack));
             sequence.JoinCallback(() =>
             {
                 spriteGroup.GetChild(1).DOShakeRotation(2.0f, 10, 1).SetLoops(Int32.MaxValue, LoopType.Yoyo);
@@ -176,8 +176,8 @@ namespace Assets.Script.Game
                 path2[i] = dragonFly2Path[i].position;
             }
 
-            sequence.Append(spriteGroup.GetChild(0).DOPath(path1, 5, PathType.CatmullRom));
-            sequence.Join(spriteGroup.GetChild(1).DOPath(path2, 5, PathType.CatmullRom));
+            sequence.Append(spriteGroup.GetChild(0).DOPath(path1, 3.5f, PathType.CatmullRom));
+            sequence.Join(spriteGroup.GetChild(1).DOPath(path2, 3.5f, PathType.CatmullRom));
 
 
             sequence.AppendCallback(() =>
