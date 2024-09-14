@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 24628d27da24a794cbb96b1941285f44
+guid: eab39f7e822da134ab0d3c3b1ddafc41
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3709952354475872715
-    second: Map_ChungBuk1_0
+      213: -696947699471908492
+    second: "Title_\uD150\uD2B8_0"
+  - first:
+      213: -7008780502921386656
+    second: "Title_\uD150\uD2B8_1"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,11 +49,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -96,40 +99,49 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Map_ChungBuk1_0
+      name: "Title_\uD150\uD2B8_0"
       rect:
         serializedVersion: 2
-        x: 246
-        y: 571
-        width: 260
-        height: 344
+        x: 0
+        y: 84
+        width: 224
+        height: 142
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc1982e92066c7330800000000000000
-      internalID: 3709952354475872715
+      spriteID: 47183f982c1f356f0800000000000000
+      internalID: -696947699471908492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Title_\uD150\uD2B8_1"
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 0
+        width: 464
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065efa6444fcbbe90800000000000000
+      internalID: -7008780502921386656
       vertices: []
       indices: 
       edges: []
@@ -139,7 +151,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -148,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Map_ChungBuk1_0: 3709952354475872715
+      "Title_\uD150\uD2B8_0": -696947699471908492
+      "Title_\uD150\uD2B8_1": -7008780502921386656
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
