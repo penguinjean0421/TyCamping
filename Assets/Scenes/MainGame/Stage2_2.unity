@@ -449,9 +449,9 @@ MonoBehaviour:
   finishUI: {fileID: 1461366318}
   _stage: {fileID: 1679049137}
   characterManager: {fileID: 210241426}
-  caretColor: {r: 0.1764706, g: 0.12156863, b: 0.11372549, a: 0}
   testMode: 1
   clearCount: 0
+  finishDelay: 5
 --- !u!4 &1304839238
 Transform:
   m_ObjectHideFlags: 0

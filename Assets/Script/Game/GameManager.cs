@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour
     public static List<StepNode> stepNodeList;
     public int clearCount = 0;
     private bool checkable = true;
+    [SerializeField]
+    private float finishDelay = 3.0f;
 
     private void Awake()
     {
@@ -111,7 +113,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator Finish()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(finishDelay);
         finishUI.gameObject.SetActive(true);
         yield return null;
     }
@@ -138,8 +140,8 @@ public class GameManager : MonoBehaviour
         stepNode.spriteGroup.SetActive(true);
         stepNode.action.Invoke(stepNode.spriteGroup.transform);
         
-        AnimateCorrect();
         clearCount++;
+        AnimateCorrect();
         if (_stage.snodeList.Count == clearCount)
         {
             StartCoroutine(Finish());
@@ -152,7 +154,11 @@ public class GameManager : MonoBehaviour
         checkable = false;
         var sequence = DOTween.Sequence();
         sequence.Append(_clearCountText.transform.DOShakeScale(0.1f, Vector3.one * 0.5f));
-        sequence.Join(_inputField.transform.DOMoveY(-5, 0.5f).SetRelative());
-        sequence.Append(_inputField.transform.DOMoveY(5, 1f).SetDelay(2.2f).SetRelative().OnComplete(() => { checkable = true; }));
+        sequence.Join(_inputField.GetComponent<RectTransform>().DOAnchorPosY(-500, 0.5f).SetRelative());
+        if (_stage.snodeList.Count > clearCount)
+        {
+            sequence.Append(_inputField.GetComponent<RectTransform>().DOAnchorPosY(500, 1f).SetDelay(2.2f).SetRelative()
+                .OnComplete(() => { checkable = true; }));
+        }
     }
 }
