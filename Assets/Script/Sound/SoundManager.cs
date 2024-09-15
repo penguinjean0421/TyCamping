@@ -27,13 +27,18 @@ namespace Default.Scripts.Sound
         {
             DontDestroyOnLoad(gameObject);
         }
-        
+
         public SoundListAsset asset;
-        [HideInInspector]
-        public Channel[] channels;
-        public static void Play(string name,int channel)
+        [HideInInspector] public Channel[] channels;
+
+        public static void Play(string name, int channel)
         {
             Instance.channels[channel].Play(Instance.asset.GetSoundByName(name).clip);
+        }
+
+        public static void SetLoop(bool loop, int channel)
+        {
+            Instance.channels[channel].SetLoop(loop);
         }
 
         public static void Play(string name)
