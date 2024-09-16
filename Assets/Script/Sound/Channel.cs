@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 namespace Default.Scripts.Sound
 {
@@ -7,11 +7,15 @@ namespace Default.Scripts.Sound
     {
         [Range(0.0f, 1.0f)]
         public float volume = 0.5f;
+        [SerializeField]
+        private bool loop = false;
         private AudioSource _audioSource;
 
         public void Start()
         {
             _audioSource = GetComponent<AudioSource>();
+            _audioSource.loop= loop;
+            _audioSource.volume = volume;
         }
 
         public void Play(AudioClip clip)
@@ -40,6 +44,12 @@ namespace Default.Scripts.Sound
         {
             volume = v;
             _audioSource.volume = volume;
+        }
+
+        public void SetLoop(bool l)
+        {
+            loop=l;
+            _audioSource.loop = loop;
         }
     }
 }

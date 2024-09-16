@@ -1,11 +1,14 @@
 // using Default.Scripts.Util;
 // using Default.Scripts.Util.StatePattern;
-using UnityEditor;
-using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
+
+using UnityEngine;
+using UnityEditor;
 
 namespace Default.Scripts.Sound
 {
+
+#if UNITY_EDITOR
     [CustomEditor(typeof(SoundManager))]
     public class SoundManagerInspector : Editor
     {
@@ -16,6 +19,7 @@ namespace Default.Scripts.Sound
             sm.channels = sm.GetComponentsInChildren<Channel>();
         }
     }
+#endif
 
     public class SoundManager : Singleton<SoundManager>
     {
@@ -23,13 +27,18 @@ namespace Default.Scripts.Sound
         {
             DontDestroyOnLoad(gameObject);
         }
-        
+
         public SoundListAsset asset;
-        [HideInInspector]
-        public Channel[] channels;
-        public static void Play(string name,int channel)
+        [HideInInspector] public Channel[] channels;
+
+        public static void Play(string name, int channel)
         {
             Instance.channels[channel].Play(Instance.asset.GetSoundByName(name).clip);
+        }
+
+        public static void SetLoop(bool loop, int channel)
+        {
+            Instance.channels[channel].SetLoop(loop);
         }
 
         public static void Play(string name)
