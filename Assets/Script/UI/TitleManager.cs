@@ -1,4 +1,5 @@
 using System.Collections;
+using Default.Scripts.Sound;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -88,12 +89,14 @@ public class TitleManager : MonoBehaviour
         optionButton.onClick.AddListener(OnOptionButtonClicked);
         optionBackButton.onClick.AddListener(OnOptionBackButtonClicked);
         exitButton.onClick.AddListener(OnExitButtonClicked);
+        SoundManager.Play("Menu",1);
     }
 
 
     void OnStartButtonClicked()
     {
         SceneManager.LoadScene("IntroCutScene");
+        SoundManager.PlayOneShot("Button");
     }
 
     void OnOptionButtonClicked()
@@ -102,6 +105,7 @@ public class TitleManager : MonoBehaviour
         titleMenu.gameObject.SetActive(false);
         isOptionMenuEnabled=true;
         StartCoroutine(OptionMenuRoutine());
+        SoundManager.PlayOneShot("Button");
     }
 
     void OnOptionBackButtonClicked()
@@ -109,13 +113,13 @@ public class TitleManager : MonoBehaviour
         optionMenu.gameObject.SetActive(false);
         titleMenu.gameObject.SetActive(true);
         isOptionMenuEnabled = false;
+        SoundManager.PlayOneShot("Button");
     }
 
     private IEnumerator OptionMenuRoutine()
     {
         while (isOptionMenuEnabled)
         {
-
             yield return new WaitForSeconds(0.1f);
         }
     }

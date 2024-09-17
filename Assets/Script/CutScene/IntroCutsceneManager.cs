@@ -1,6 +1,7 @@
 
 using System.Collections.Generic;
 using Assets.Script.UI;
+using Default.Scripts.Sound;
 using DG.Tweening;
 using NUnit.Framework;
 using UnityEngine;
@@ -30,6 +31,7 @@ public class IntroCutsceneManager : TextAnimationManager
         {
             image.gameObject.SetActive(false);
         }
+        SoundManager.Play("CutScene", 1);
     }
 
     public void Act0()

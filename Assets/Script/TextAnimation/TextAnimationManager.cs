@@ -14,8 +14,8 @@ public class TextAnimationManager : MonoBehaviour
     [SerializeField] private int currentIndex;
 
     [SerializeField] private List<KeyCode> keyList;
-  
 
+    private bool isEnd = false;
     public UnityEvent endEvent;
 
     public void ShowDialog(int index)
@@ -58,7 +58,11 @@ public class TextAnimationManager : MonoBehaviour
         }
         else if (CheckKeyDown() && !speechBubble.IsPrinting() && currentIndex == dialogAsset.phrases.Count-1)
         {
-            endEvent.Invoke();
+            if (!isEnd)
+            {
+                endEvent.Invoke();
+                isEnd = true;
+            }
         }
     }
 
