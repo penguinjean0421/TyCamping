@@ -4,6 +4,7 @@ using static UnityEngine.GraphicsBuffer;
 
 using UnityEngine;
 using UnityEditor;
+using UnityEngine.Rendering;
 
 namespace Default.Scripts.Sound
 {
@@ -28,6 +29,22 @@ namespace Default.Scripts.Sound
             DontDestroyOnLoad(gameObject);
         }
 
+        public void Start()
+        {
+            if (PlayerPrefs.HasKey("SFX"))
+            {
+                var sfxValue = PlayerPrefs.GetFloat("SFX");
+                SetVolume(sfxValue, 0);
+            }
+
+            if (PlayerPrefs.HasKey("BGM"))
+            {
+                var bgmValue = PlayerPrefs.GetFloat("BGM");
+                SetVolume(bgmValue, 1);
+                SetVolume(bgmValue, 2);
+            }
+        }
+
         public SoundListAsset asset;
         [HideInInspector] public Channel[] channels;
 
@@ -35,15 +52,13 @@ namespace Default.Scripts.Sound
         {
             Instance.channels[channel].Play(Instance.asset.GetSoundByName(name).clip);
         }
-
+        public static void PlayOneShot(string name)
+        {
+            Instance.channels[0].PlayOneShot(Instance.asset.GetSoundByName(name).clip);
+        }
         public static void SetLoop(bool loop, int channel)
         {
             Instance.channels[channel].SetLoop(loop);
-        }
-
-        public static void Play(string name)
-        {
-            Instance.channels[0].Play(Instance.asset.GetSoundByName(name).clip);
         }
 
         public static void Stop(int channel)

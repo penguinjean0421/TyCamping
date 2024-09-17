@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Assets.Script.Game;
+using Default.Scripts.Sound;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
@@ -71,7 +72,7 @@ public class GameManager : MonoBehaviour
     {
         if (checkable && Input.GetKeyDown(KeyCode.Return))
         {
-
+            SoundManager.PlayOneShot("EnterHit");
             bool isCorrect = false;
 
             foreach (var stepNode in stepNodeList)
@@ -94,6 +95,7 @@ public class GameManager : MonoBehaviour
             if (!isCorrect)
             {
                 OnWrong();
+                SoundManager.PlayOneShot("Failure");
             }
             ClearInputField();
         }
