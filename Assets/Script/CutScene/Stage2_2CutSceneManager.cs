@@ -1,5 +1,6 @@
 
 using System.Collections.Generic;
+using Default.Scripts.Sound;
 using DG.Tweening;
 using NUnit.Framework;
 using UnityEngine;
@@ -20,6 +21,7 @@ public class Stage2_2CutSceneManager : TextAnimationManager
         {
             image.gameObject.SetActive(false);
         }
+        SoundManager.Play("CutScene", 1);
     }
 
     public void Act0()

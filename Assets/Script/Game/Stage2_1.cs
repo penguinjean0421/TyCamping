@@ -1,3 +1,4 @@
+using Default.Scripts.Sound;
 using DG.Tweening;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -23,8 +24,8 @@ namespace Assets.Script.Game
                 snode.spriteGroup.SetActive(false);
                 snode.targetTextImage.gameObject.SetActive(false);
             }
-
-
+            SoundManager.Play("Stage2", 1);
+            SoundManager.Play("Stage21", 2);
         }
 
         public void OnCutActive0(Transform spriteGroup)

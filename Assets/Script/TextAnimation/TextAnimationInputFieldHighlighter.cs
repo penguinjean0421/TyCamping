@@ -8,6 +8,7 @@ using UnityEngine.Rendering;
 using System.Text;
 using UnityEngine.UI;
 using static UnityEngine.Rendering.DebugUI;
+using Default.Scripts.Sound;
 
 [RequireComponent(typeof(TMP_InputField))]
 public class TextAnimationInputFieldHighlighter : MonoBehaviour
@@ -27,6 +28,15 @@ public class TextAnimationInputFieldHighlighter : MonoBehaviour
         _inputField = GetComponent<TMP_InputField>();
         _printer = GetComponentInChildren<TextAnimationPrinter>();
         //_inputField.onValueChanged.AddListener(Highlight);
+        if (PlayerPrefs.HasKey("TypingEffect"))
+        {
+            if (PlayerPrefs.GetInt("TypingEffect") == 0)
+            {
+                _inputField.gameObject.SetActive(true);
+                _inputField.textComponent.color = Color.black;
+                _printer.gameObject.SetActive(false);
+            }
+        }
     }
 
     public void LateUpdate()
@@ -39,11 +49,11 @@ public class TextAnimationInputFieldHighlighter : MonoBehaviour
         {
             if (currentParsedText.Length > previousParsedText.Length)
             {
-                
+                SoundManager.PlayOneShot("Typing");
             }
             else
             {
-               
+                SoundManager.PlayOneShot("BackspaceHit");
             }
             Highlight(currentParsedText);
         }

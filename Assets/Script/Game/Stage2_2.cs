@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Default.Scripts.Sound;
 using DG.Tweening;
 using DG.Tweening.Core.Easing;
 using DG.Tweening.Plugins.Core.PathCore;
@@ -75,6 +76,8 @@ namespace Assets.Script.Game
                 snode.spriteGroup.SetActive(false);
                 snode.targetTextImage.gameObject.SetActive(false);
             }
+            SoundManager.Play("Stage2", 1);
+            SoundManager.Play("Stage22", 2);
         }
 
         public void OnCutActive0(Transform spriteGroup)
