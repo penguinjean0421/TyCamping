@@ -1,5 +1,6 @@
 
 using System.Collections.Generic;
+using Assets.Script.UI;
 using DG.Tweening;
 using NUnit.Framework;
 using UnityEngine;

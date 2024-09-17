@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7959347593704335036}
   - component: {fileID: 4758406092560082036}
   m_Layer: 0
-  m_Name: Character_Map
+  m_Name: MileStoneCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

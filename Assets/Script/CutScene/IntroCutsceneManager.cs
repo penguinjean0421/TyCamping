@@ -1,5 +1,6 @@
 
 using System.Collections.Generic;
+using Assets.Script.UI;
 using DG.Tweening;
 using NUnit.Framework;
 using UnityEngine;
@@ -10,6 +11,7 @@ public class IntroCutsceneManager : TextAnimationManager
 {
     public List<Image> cartoonCuts = new List<Image>();
     public List<Image> charaters = new List<Image>();
+    public MileStone mileStone;
     public override void Initialize()
     {
         base.Initialize();
@@ -66,6 +68,15 @@ public class IntroCutsceneManager : TextAnimationManager
     }
     public void StartGame()
     {
-        SceneManager.LoadScene("Stage1_1");
+        mileStone.Initialize();
+        Sequence sequence = DOTween.Sequence();
+        sequence.Append(mileStone.Stamp());
+        sequence.Append(mileStone.Animate());
+        sequence.AppendInterval(3.0f);
+        sequence.AppendCallback(() =>
+        {
+            SceneManager.LoadScene("Stage1_1");
+        });
+        sequence.Play();
     }
 }
