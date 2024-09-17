@@ -27,6 +27,7 @@ namespace Default.Scripts.Sound
         public void Awake()
         {
             DontDestroyOnLoad(gameObject);
+            channels = GetComponentsInChildren<Channel>();
         }
 
         public void Start()
