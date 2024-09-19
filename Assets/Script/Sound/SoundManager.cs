@@ -53,10 +53,12 @@ namespace Default.Scripts.Sound
         {
             Instance.channels[channel].Play(Instance.asset.GetSoundByName(name).clip);
         }
+
         public static void PlayOneShot(string name)
         {
             Instance.channels[0].PlayOneShot(Instance.asset.GetSoundByName(name).clip);
         }
+
         public static void SetLoop(bool loop, int channel)
         {
             Instance.channels[channel].SetLoop(loop);
