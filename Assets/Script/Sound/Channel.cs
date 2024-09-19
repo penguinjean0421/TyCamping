@@ -11,9 +11,15 @@ namespace Default.Scripts.Sound
         private bool loop = false;
         private AudioSource _audioSource;
 
-        public void Start()
+        private void Awake()
         {
             _audioSource = GetComponent<AudioSource>();
+        }
+
+
+        public void Start()
+        {
+            // _audioSource = GetComponent<AudioSource>();
             _audioSource.loop= loop;
             _audioSource.volume = volume;
         }

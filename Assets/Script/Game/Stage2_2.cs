@@ -77,7 +77,7 @@ namespace Assets.Script.Game
                 snode.targetTextImage.gameObject.SetActive(false);
             }
             SoundManager.Play("Stage2", 1);
-            SoundManager.Play("Stage22", 2);
+            SoundManager.Play("Stage21", 2);
         }
 
         public void OnCutActive0(Transform spriteGroup)

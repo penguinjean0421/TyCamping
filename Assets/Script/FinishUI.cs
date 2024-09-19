@@ -17,15 +17,22 @@ public class FinishUI : MonoBehaviour
     // Update is called once per frame
     void OnNextButtonClicked()
     {
-        mileStone.Initialize();
-        Sequence sequence = DOTween.Sequence();
-        sequence.Append(mileStone.Stamp());
-        sequence.Append(mileStone.Animate());
-        sequence.AppendInterval(3.0f);
-        sequence.AppendCallback(() =>
+        if (mileStone)
+        {
+            mileStone.Initialize();
+            Sequence sequence = DOTween.Sequence();
+            sequence.Append(mileStone.Stamp());
+            sequence.Append(mileStone.Animate());
+            sequence.AppendInterval(3.0f);
+            sequence.AppendCallback(() =>
+            {
+                SceneManager.LoadScene(nextScene);
+            });
+            sequence.Play();
+        }
+        else
         {
             SceneManager.LoadScene(nextScene);
-        });
-        sequence.Play();
+        }
     }
 }
