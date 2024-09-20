@@ -39,7 +39,7 @@ public class TextAnimationInputFieldHighlighter : MonoBehaviour
         }
     }
 
-    public void LateUpdate()
+    public void Update()
     {
         previousText = currentText;
         currentText = _inputField.textComponent.text;

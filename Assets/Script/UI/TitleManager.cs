@@ -54,17 +54,17 @@ public class TitleManager : MonoBehaviour
         exitButton.transform.localScale = Vector3.zero;
         character.rectTransform.anchoredPosition = characterInitialPoint.anchoredPosition;
 
-        animateSequence.Append(map.transform.DOScale(Vector3.one, 1f).SetEase(Ease.OutBack));
-        animateSequence.Append(mapContentsMask.rectTransform.DOSizeDelta(map.rectTransform.sizeDelta*2, 2.0f).SetEase(Ease.InOutCubic));
+        animateSequence.Append(map.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack));
+        animateSequence.Append(mapContentsMask.rectTransform.DOSizeDelta(map.rectTransform.sizeDelta*2, 1.0f).SetEase(Ease.InOutCubic));
         
-        animateSequence.Append(character.transform.DOLocalJump(characterTargetPosition, 50,5,2));
+        animateSequence.Append(character.transform.DOLocalJump(characterTargetPosition, 50,5,1));
         animateSequence.Append(title[0].transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutElastic));
-        animateSequence.Join(title[1].transform.DOScale(Vector3.one, 1).SetDelay(0.1f).SetEase(Ease.OutElastic));
-        animateSequence.Join(title[2].transform.DOScale(Vector3.one, 1).SetDelay(0.2f).SetEase(Ease.OutElastic));
-        animateSequence.Join(title[3].transform.DOScale(Vector3.one, 1).SetDelay(0.3f).SetEase(Ease.OutElastic));
+        animateSequence.Join(title[1].transform.DOScale(Vector3.one, 0.5f).SetDelay(0.1f).SetEase(Ease.OutElastic));
+        animateSequence.Join(title[2].transform.DOScale(Vector3.one, 0.5f).SetDelay(0.2f).SetEase(Ease.OutElastic));
+        animateSequence.Join(title[3].transform.DOScale(Vector3.one, 0.5f).SetDelay(0.3f).SetEase(Ease.OutElastic));
         animateSequence.Append(tent.transform.DOScaleY(1, 0.5f).SetEase(Ease.OutBack));
         animateSequence.Join(tent.transform.DOScaleX(1, 0.7f).SetEase(Ease.OutBack));
-        animateSequence.Append(title[4].transform.DOScale(Vector3.one, 1f).SetEase(Ease.OutBack));
+        animateSequence.Append(title[4].transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack));
         animateSequence.AppendCallback(() =>
         {
             title[0].transform.DOShakeRotation(3, 3, 1).SetLoops(int.MaxValue,LoopType.Yoyo);
@@ -76,9 +76,9 @@ public class TitleManager : MonoBehaviour
 
 
         //Button
-        animateSequence.Append(startButton.transform.DOScale(Vector3.one, 1f).SetEase(Ease.OutElastic));
-        animateSequence.Join(optionButton.transform.DOScale(Vector3.one, 1f).SetDelay(0.1f).SetEase(Ease.OutElastic));
-        animateSequence.Join(exitButton.transform.DOScale(Vector3.one, 1f).SetDelay(0.2f).SetEase(Ease.OutElastic));
+        animateSequence.Append(startButton.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutElastic));
+        animateSequence.Join(optionButton.transform.DOScale(Vector3.one, 0.5f).SetDelay(0.1f).SetEase(Ease.OutElastic));
+        animateSequence.Join(exitButton.transform.DOScale(Vector3.one, 0.5f).SetDelay(0.2f).SetEase(Ease.OutElastic));
     }
 
     private void Initialize()
