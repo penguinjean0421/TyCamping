@@ -41,6 +41,7 @@ namespace Assets.Script.Game
 
             GameManager.PushTarget(sequence, snodeList[1]);
             sequence.Play();
+            SoundManager.Play("Animation", 0);
         }
         public void OnCutActive1(Transform spriteGroup)
         {
@@ -57,6 +58,7 @@ namespace Assets.Script.Game
             GameManager.PushTarget(sequence, snodeList[2]);
             GameManager.PushTarget(sequence,snodeList[3]);
             sequence.Play();
+            SoundManager.Play("Animation", 0);
         }
         public void OnCutActive2(Transform spriteGroup)
         {
@@ -72,6 +74,7 @@ namespace Assets.Script.Game
                 Debug.Log("en");
             }
             sequence.Play();
+            SoundManager.Play("Animation", 0);
         }
         public void OnCutActive3(Transform spriteGroup)
         {
@@ -92,6 +95,7 @@ namespace Assets.Script.Game
                 Debug.Log("우리가족의 첫 캠핑");
             }
             sequence.Play();
+            SoundManager.Play("Animation", 0);
         }
         public void OnCutActive4(Transform spriteGroup)
         {
@@ -110,6 +114,7 @@ namespace Assets.Script.Game
             });
             GameManager.PushTarget(sequence, snodeList[5]);
             sequence.Play();
+            SoundManager.Play("Animation", 0);
         }
 
         public void OnCutActive5(Transform spriteGroup)
@@ -122,6 +127,7 @@ namespace Assets.Script.Game
             sequence.Append(spriteGroup.GetChild(1).DOScale(Vector3.one, 0.7f).SetEase(Ease.OutElastic));
             sequence.Append(spriteGroup.GetChild(2).DOScale(Vector3.one, 0.7f).SetEase(Ease.OutElastic));
             sequence.Play();
+            SoundManager.Play("Animation", 0);
         }
     }
 }

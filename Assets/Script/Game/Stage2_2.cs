@@ -120,6 +120,7 @@ namespace Assets.Script.Game
             GameManager.PushTarget(sequence, snodeList[4]);
             //불꽃 올라오기
             sequence.Play();
+            SoundManager.Play("Animation", 0);
         }
 
         public void OnCutActive3(Transform spriteGroup)
@@ -133,6 +134,7 @@ namespace Assets.Script.Game
             sequence.Append(snodeList[3].spriteGroup.GetComponentInChildren<SpriteRenderer>().DOColor(Color.white, 1f));
             GameManager.PushTarget(sequence, snodeList[5]); // 캠핑
             sequence.Play();
+            SoundManager.Play("Animation", 0);
         }
 
 
@@ -161,6 +163,7 @@ namespace Assets.Script.Game
             }
 
             sequence.Play();
+            SoundManager.Play("Animation", 0);
         }
 
         public void OnCutActive5(Transform spriteGroup)
@@ -200,6 +203,7 @@ namespace Assets.Script.Game
             }
 
             sequence.Play();
+            SoundManager.Play("Animation", 0);
         }
 
         public void OnCutActive6(Transform spriteGroup)
@@ -239,6 +243,7 @@ namespace Assets.Script.Game
             });
             GameManager.PushTarget(sequence, snodeList[7]);
             sequence.Play();
+            SoundManager.Play("Animation", 0);
 
         }
 
@@ -256,6 +261,7 @@ namespace Assets.Script.Game
             sequence.Append(spriteGroup.GetChild(1).GetComponent<SpriteRenderer>().DOColor(Color.white, 2));
             sequence.Join(spriteGroup.GetChild(1).DOScale(1, 2).SetEase(Ease.OutElastic));
             sequence.Play();
+            SoundManager.Play("Animation", 0);
         }
 
         public void OnDrawGizmos()

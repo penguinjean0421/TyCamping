@@ -50,6 +50,7 @@ namespace Assets.Script.Game
 
             GameManager.PushTarget(sequence, snodeList[1]);
             sequence.Play();
+            SoundManager.Play("Animation", 0);
         }
         public void OnCutActive1(Transform spriteGroup)
         {
@@ -64,6 +65,7 @@ namespace Assets.Script.Game
             GameManager.PushTarget(sequence, snodeList[2]);
             GameManager.PushTarget(sequence, snodeList[3]);
             sequence.Play();
+            SoundManager.Play("Animation", 0);
         }
         public void OnCutActive2(Transform spriteGroup)
         {
@@ -93,6 +95,7 @@ namespace Assets.Script.Game
             });
             GameManager.PushTarget(sequence, snodeList[4]);
             sequence.Play();
+            SoundManager.Play("Animation", 0);
         }
         public void OnCutActive3(Transform spriteGroup)
         {
@@ -103,6 +106,7 @@ namespace Assets.Script.Game
             sequence.Join(spriteGroup.GetChild(0).DOShakeScale(1.2f));
             GameManager.PushTarget(sequence, snodeList[5]);
             sequence.Play();
+            SoundManager.Play("Animation", 0);
         }
         public void OnCutActive4(Transform spriteGroup)
         {
@@ -129,6 +133,7 @@ namespace Assets.Script.Game
                 GameManager.PushTarget(sequence, snodeList[6]);
             }
             sequence.Play();
+            SoundManager.Play("Animation", 0);
         }
 
         public void OnCutActive5(Transform spriteGroup)
@@ -149,6 +154,7 @@ namespace Assets.Script.Game
                 GameManager.PushTarget(sequence, snodeList[6]);
             }
             sequence.Play();
+            SoundManager.Play("Animation", 0);
         }
 
         public void OnCutActive6(Transform spriteGroup)
@@ -160,6 +166,7 @@ namespace Assets.Script.Game
             sequence.Append(spriteGroup.GetChild(0).DOScale(1, 0.5f).SetRelative().SetEase(Ease.OutElastic));
             GameManager.PushTarget(sequence, snodeList[7]);
             sequence.Play();
+            SoundManager.Play("Animation", 0);
         }
         public void OnCutActive7(Transform spriteGroup)
         {
@@ -167,6 +174,7 @@ namespace Assets.Script.Game
             spriteGroup.GetChild(0).position = spriteGroup.GetChild(0).position + Vector3.left * 15;
             sequence.Append(spriteGroup.GetChild(0).DOMoveX(15, 0.5f).SetRelative().SetEase(Ease.OutBack));
             sequence.Play();
+            SoundManager.Play("Animation", 0);
         }
     }
 }
