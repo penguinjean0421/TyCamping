@@ -26,4 +26,4 @@ https://www.epidemicsound.com/sound-effects/tracks/f8b244d0-2a84-4913-bf86-d904c
 - [Failure, Access Denied 02](https://www.epidemicsound.com/sound-effects/tracks/a6e6dcc1-51e8-4511-b048-6d84c503fd30/) - 실패 효과음
 - [Keyboard, Razer, Backspace, Hits 01](https://www.epidemicsound.com/sound-effects/tracks/40ce9f2c-a11c-4f75-9f07-200405186484/) - 백스페이스 효과음
 - [パパッ](https://soundeffect-lab.info/sound/anime/) - 버튼 효과음
-- [魔法のステッキ](https://soundeffect-lab.info/sound/anime/)  - 애니메이션 효과음
+- [きらきら輝く1](https://soundeffect-lab.info/sound/anime/)  - 애니메이션 효과음
