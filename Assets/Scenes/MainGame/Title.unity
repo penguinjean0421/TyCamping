@@ -126,6 +126,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2235345099025792540, guid: 73b604f8905032e4da46c2ad88424814, type: 3}
+      propertyPath: asset
+      value: 
+      objectReference: {fileID: 11400000, guid: 9821fcb409feccd4395c9634504c9d92, type: 2}
     - target: {fileID: 5094314257458185634, guid: 73b604f8905032e4da46c2ad88424814, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2871,7 +2875,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100%
+  m_text: 50%
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2ca7710bced602d4b800dc2c916b7929, type: 2}
   m_sharedMaterial: {fileID: -3592057840104194827, guid: 2ca7710bced602d4b800dc2c916b7929, type: 2}
@@ -3007,7 +3011,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100%
+  m_text: 50%
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2ca7710bced602d4b800dc2c916b7929, type: 2}
   m_sharedMaterial: {fileID: -3592057840104194827, guid: 2ca7710bced602d4b800dc2c916b7929, type: 2}
