@@ -29,12 +29,13 @@ namespace Assets.Script.UI
         }
         public Tween Stamp()
         {
+
             if (nodes[beginIndex].stamp)
             {
                 nodes[beginIndex].stamp.gameObject.SetActive(true);
                 nodes[beginIndex].stamp.rectTransform.localScale = Vector3.zero;
-                return nodes[beginIndex].stamp.rectTransform.DOScale(1, 1).SetEase(Ease.InOutBack);
                 SoundManager.Play("Stamp", 0);
+                return nodes[beginIndex].stamp.rectTransform.DOScale(1, 1).SetEase(Ease.InOutBack);
             }
 
             return null;
