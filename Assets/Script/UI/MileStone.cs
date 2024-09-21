@@ -1,3 +1,4 @@
+using Default.Scripts.Sound;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
@@ -28,10 +29,12 @@ namespace Assets.Script.UI
         }
         public Tween Stamp()
         {
+
             if (nodes[beginIndex].stamp)
             {
                 nodes[beginIndex].stamp.gameObject.SetActive(true);
                 nodes[beginIndex].stamp.rectTransform.localScale = Vector3.zero;
+                SoundManager.Play("Stamp", 0);
                 return nodes[beginIndex].stamp.rectTransform.DOScale(1, 1).SetEase(Ease.InOutBack);
             }
 
