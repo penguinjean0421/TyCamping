@@ -601,7 +601,7 @@ GameObject:
   - component: {fileID: 6850597922970208194}
   - component: {fileID: 9132164721285900306}
   m_Layer: 5
-  m_Name: Button_TitleMenu
+  m_Name: Button_MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -654,7 +654,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0f21e7bb2934e464f9fc8f6c784264ac, type: 3}
+  m_Sprite: {fileID: 5579516475873008278, guid: f8cb7dcec01d04a448fe601489851c05, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -720,5 +720,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb173243b658d474e8a6d52bea20282d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalImage: {fileID: 21300000, guid: 0f21e7bb2934e464f9fc8f6c784264ac, type: 3}
-  pressedImage: {fileID: 21300000, guid: a4ba29c8782fe2e4fab1e477bce18764, type: 3}
+  normalImage: {fileID: 5579516475873008278, guid: f8cb7dcec01d04a448fe601489851c05, type: 3}
+  pressedImage: {fileID: -5282121733463456732, guid: bb5123747f30f294bba2b7d684c59dd6, type: 3}
