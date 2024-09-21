@@ -345,6 +345,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MapUI_Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1088934079971972759, guid: 953d11616d3a7574c9750e0b3e3d0388, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1899069184072457198, guid: 953d11616d3a7574c9750e0b3e3d0388, type: 3}
       propertyPath: m_Camera
       value: 
