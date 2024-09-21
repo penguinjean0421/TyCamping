@@ -11,6 +11,13 @@ public class OptionMenu : MonoBehaviour
     public Toggle typingEffect;
     public Slider bgm;
     public Slider sfx;
+
+    private void Awake()
+    {
+        sfx.value = 1f;
+        bgm.value = 1f;
+        typingEffect.isOn = true;
+    }
     public void Start()
     {
         if (PlayerPrefs.HasKey("SFX"))

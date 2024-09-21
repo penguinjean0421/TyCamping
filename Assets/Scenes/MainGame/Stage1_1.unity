@@ -1408,7 +1408,7 @@ MonoBehaviour:
   finishUI: {fileID: 291647654}
   _stage: {fileID: 1952538581}
   characterManager: {fileID: 210241426}
-  testMode: 1
+  testMode: 0
   clearCount: 0
   finishDelay: 5
 --- !u!4 &1304839238
