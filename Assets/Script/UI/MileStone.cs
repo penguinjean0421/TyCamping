@@ -1,3 +1,4 @@
+using Default.Scripts.Sound;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
@@ -33,6 +34,7 @@ namespace Assets.Script.UI
                 nodes[beginIndex].stamp.gameObject.SetActive(true);
                 nodes[beginIndex].stamp.rectTransform.localScale = Vector3.zero;
                 return nodes[beginIndex].stamp.rectTransform.DOScale(1, 1).SetEase(Ease.InOutBack);
+                SoundManager.Play("Stamp", 0);
             }
 
             return null;

@@ -47,7 +47,7 @@ namespace Assets.Script.Game
         {
             //Debug.Log("옥화9경 옥화대에 있대요");
             var sequence = DOTween.Sequence();
-         
+
             spriteGroup.GetChild(1).localScale=Vector3.zero;
 
             sequence.Append(spriteGroup.GetChild(1).DOScaleX(1, 0.5f).SetEase(Ease.OutBounce));
