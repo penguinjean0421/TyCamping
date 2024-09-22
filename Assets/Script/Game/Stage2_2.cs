@@ -91,6 +91,7 @@ namespace Assets.Script.Game
             sequence.Append(spriteGroup.GetChild(0).DOMoveY(15, 1).SetRelative().SetEase(Ease.OutQuart));
             sequence.Append(spriteGroup.GetChild(1).DOMoveY(15, 1).SetRelative().SetEase(Ease.OutQuart));
             GameManager.PushTarget(sequence, snodeList[1]);
+            SoundManager.Play("Animation", 0);
         }
 
         public void OnCutActive1(Transform spriteGroup)
@@ -102,6 +103,7 @@ namespace Assets.Script.Game
             sequence.Append(spriteGroup.GetChild(0).DOMoveY(10, 0.7f).SetRelative().SetEase(Ease.OutQuart));
             GameManager.PushTarget(sequence, snodeList[2]);
             GameManager.PushTarget(sequence, snodeList[3]);
+            SoundManager.Play("Animation", 0);
         }
 
         public void OnCutActive2(Transform spriteGroup)
