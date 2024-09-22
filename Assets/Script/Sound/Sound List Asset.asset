@@ -45,6 +45,4 @@ MonoBehaviour:
     name: Stamp
   - clip: {fileID: 8300000, guid: f4869179537b298479c75b9421cf068f, type: 3}
     name: Typing
-  - clip: {fileID: 8300000, guid: 69c61b3a359cc4b4db312d793306799a, type: 3}
-    name: Stamp
   floder: {fileID: 102900000, guid: f9fcf42de120bf94391942ee77a3b508, type: 3}
