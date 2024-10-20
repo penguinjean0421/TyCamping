@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "group5.sln"
+    "dotnet.defaultSolution": "TyCamping.sln"
 }
