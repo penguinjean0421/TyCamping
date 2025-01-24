@@ -3,7 +3,7 @@
 ![Title_TyCamping](https://github.com/user-attachments/assets/27b57a39-a167-4a57-971b-3dc5f33d80f3)
 
 - 2024 충북 게임잼 참여한 "5히려 좋아"조 입니다.
-  - [2024 충북 게임잼 아카이브]() 
+  - [2024 충북 게임잼 아카이브](https://cbgc-gamejam.notion.site/5-47a2f59592c64f208b3bab6e4d804b5f) 
 - [게임 다운로드](https://drive.google.com/drive/folders/1l6MTjuXYJxPZhx6kIeO8iGcPn5Sfco9z)
 ## Sound Credit
 ### 배경음악
